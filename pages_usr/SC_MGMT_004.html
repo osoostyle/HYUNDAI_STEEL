@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header">
+            <h1 class="logo">
+                <span class="logo_img"></span>
+                <span class="logo_text body14B">표준관리시스템</span>
+            </h1>
+            <ul class="gnb">
+                <li><a href="#" class="body16M">경영매뉴얼</a></li>
+                <li><a href="#" class="body16M">관리표준</a></li>
+                <li><a href="#" class="body16M">기술표준</a></li>
+                <li><a href="#" class="body16M">인증기록관리</a></li>
+                <li class="oversea-corp">
+                    <a href="#" class="body16M">해외법인</a>
+                    <div class="gnb_sub">
+                        <button class="body14R btn_gnb_sub">관리표준</button>
+                        <button class="body14R btn_gnb_sub on">기술표준</button>
+                    </div>
+                </li>
+                <li><a href="#" class="body16M">전사표준현황</a></li>
+                <li><a href="#" class="body16M">수급업체 작업표준</a></li>
+            </ul>
+            <div class="quick_navi">
+                <ul class="my_work">
+                    <li>
+                        <span class="txt">결재</span>
+                        <span class="num">10</span>
+                    </li>
+                    <li>
+                        <span class="txt">진행</span>
+                        <span class="num">10</span>
+                    </li>
+                    <li>
+                        <span class="txt">작성</span>
+                        <span class="num">15</span>
+                    </li>
+                    <li>
+                        <span class="txt">공람</span>
+                        <span class="num">5</span>
+                    </li>
+                </ul>
+    
+                <button class="btn_my_menu">
+                    <em class="body16M">홍길동</em><span class="body14M">책임</span>
+                </button>
+    
+                <div class="my_quick_box" style="display:none;">
+                    <div class="my_div">
+                        <div class="my_name">
+                            <em>홍길동</em><span>책임</span>
+                        </div>
+                        <p>품질인증표준팀</p>
+                        <button class="btn btn-line-01 btn_logout">
+                            <span>로그아웃</span>
+                            <i class="ico_logout"></i>
+                        </button>
+                    </div>
+                    <div class="my_setting">
+                        <ul>
+                            <li><a href="#" class="my_m my_m_01">시스템 관리</a></li>
+                            <li><a href="#" class="my_m my_m_02">개인 결재함</a></li>
+                            <li><a href="#" class="my_m my_m_03">부서 결재함</a></li>
+                            <li><a href="#" class="my_m my_m_04">나의 표준</a></li>
+                            <li><a href="#" class="my_m my_m_05">메인 화면 편집</a></li>
+                        </ul>
+    
+                    </div>
+                </div>
+    
+                <div class="quick_menu_div">
+                    <button class="btn_quick_menu fold"></button>
+                    <div class="quick_menu_box">
+                        <div class="quick_top">
+                            <span class="body14M">Quick Menu</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_01"></i>
+                                    <span class="summary12B">표준등록</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_02"></i>
+                                    <span class="summary12B">내가 결재할 문서</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_03"></i>
+                                    <span class="summary12B">나의표준</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_04"></i>
+                                    <span class="summary12B">팀 표준</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_05"></i>
+                                    <span class="summary12B">즐겨찾기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_06"></i>
+                                    <span class="summary12B">정보 및 문의</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+            
+            
+        </header>
+        <!--// header -->
+    
+        <!-- container -->
+        <div class="container">
+            <div class="inner">
+    
+                <!-- tab -->
+                <div class="tab_wrap">
+                    <div class="tab">
+                        <span class="body14R ellipsis">관리표준-환경/기술</span>
+                        <button class="btn_tab_close">닫기</button>
+                    </div>
+                    <div class="tab active">
+                        <span class="body14R ellipsis">관리표준</span>
+                        <button class="btn_tab_close">닫기</button>
+                    </div>
+                    <button class="btn_add_tab">탭추가</button>
+                </div>
+    
+                <div class="content_wrap">
+                    <div class="left_filter_cont">
+                        <div class="left_title">
+                            <span class="body16B">TITLE</span>
+                        </div>
+                        <div class="left_filter_div">
+                            <p class="body16R f_tit">표준 종류</p>
+                            <div class="btn_f_div">
+                                <button class="btn_f btn_f_all on">전체</button>
+                                <button class="btn_f">규정</button>
+                                <button class="btn_f">규칙</button>
+                                <button class="btn_f">지침</button>
+                            </div>
+                        </div>
+                        <div class="left_filter_div">
+                            <p class="body16R f_tit">표준 분류</p>
+                            <div class="btn_f_div btn_f_div2">
+                                <button class="btn_f btn_f_all">전체</button>
+                                <button class="btn_f  on">연구개발</button>
+                                <button class="btn_f">영업</button>
+                                <button class="btn_f">구매</button>
+                                <button class="btn_f">생산관리</button>
+                                <button class="btn_f">조업</button>
+                                <button class="btn_f">안전관리</button>
+                                <button class="btn_f">...</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <ol class="breadcrumb">
+                            <li>LEV01</li>
+                            <li>LEV02</li>
+                            <li>LEV03</li>
+                            <li>LEV04</li>
+                            <li class="on">LEV05</li>
+                        </ol>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        </div>
+        <!-- //container -->
+    
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer_div">
+                <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+                <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+                <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+
+<!-- Modal -->
+<div class="modal_wrap active">
+    <!-- 즐겨찾기 Toast -->
+    <div class="toast_message toast_popup bg-status-yellow" id="favoriteMessage">
+        <i class="ico_favorite"></i>
+        <p class="body16M fc-100">즐겨찾기에 추가했습니다.</p>
+    </div>
+    <!-- 복사 Toast -->
+    <div class="toast_message toast_popup bg-status-blue" id="copyMessage">
+        <p class="body16M fc-white">URL을 클립보드로 복사했습니다.</p>
+    </div>
+
+    <div class="modal page-modal2">
+        <div class="modal_top">
+            <h1 class="head32B title">당진 1냉연 2CGL 합금화로 조업 기준</h1>
+            <button class="btn-favorite"></button>
+            <button class="btn-copyurl txthide">URL 복사</button>
+
+            <ul class="title-ul">
+                <li class="body16M">EKHG 030804</li>
+                <li class="body16M">기준</li>
+                <li class="body16M">2차</li>
+                <li class="body16M">선행연구팀</li>
+                <li class="body16M fc-orange">유효일 경과</li>
+            </ul>
+        </div>
+
+        <div class="modal_cont">
+            <ul class="tab-link">
+                <li><a href="#tab01" class="body14R">표준정보</a></li>
+                <li><a href="#tab02" class="body14R">결재/공람</a></li>
+                <li><a href="#tab03" class="body14R">개정 이력</a></li>
+                <li class="on"><a href="SC_MGMT_004.html" class="body14R">기타 이력</a></li>
+            </ul>
+            
+            <div class="tab-cont scrollBar3 etc_history">
+                <div class="box-white accordion_02">
+                    <div class="accordion-item active">
+                        <div class="accordion-link">
+                            <h2 class="head20B"><span class="head18B">기타 이력</span></h2>
+                        </div>
+                        <div class="accordion-desc">
+                            <ul class="box-in-form">
+                                <li class="flex">
+                                    <div class="th form-tit tit1">
+                                        <p class="list-dot body14B">이벤트 종류</p>
+                                    </div>
+                                    <div class="td form-div">
+                                        <div class="select_div select_multi_div" style="width:200px;">
+                                            <button class="select_btn">이벤트 종류</button>
+                                            <div class="select_list select_multi_list">
+                                                <ul>
+                                                    <li class="ipt_chk2_div">
+                                                        <input type="checkbox" class="ipt_chk" id="event_1" name="check1"><label for="event_1" class="label_chk"><span>이벤트 종류1</span></label>
+                                                    </li>
+                                                    <li class="ipt_chk2_div">
+                                                        <input type="checkbox" class="ipt_chk" id="event_2" name="check1"><label for="event_2" class="label_chk"><span>이벤트 종류2</span></label>
+                                                    </li>
+                                                    <li class="ipt_chk2_div">
+                                                        <input type="checkbox" class="ipt_chk" id="event_3" name="check1"><label for="event_3" class="label_chk"><span>이벤트 종류3</span></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="th form-tit tit1">
+                                        <p class="list-dot body14B">이벤트 발생</p>
+                                    </div>
+                                    <div class="ipt_date_wrap">
+                                        <div class="ipt_div">
+                                            <input type="text" class="ipt_date" value="2025.01.02">
+                                            <button class="ico_calendar"></button>
+                                        </div>
+                                        <span class="line body16R" style="width:27px;">~</span>
+                                        <div class="ipt_div">
+                                            <input type="text" class="ipt_date" value="2025.01.02">
+                                            <button class="ico_calendar"></button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="table">
+                                    <div class="th form-tit tit2">
+                                        <p class="list-dot body14B">이벤트 발생</p>
+                                    </div>
+                                    <div class="srch_ipt_wrap">
+                                        <div class="ipt_div">
+                                            <input type="text" placeholder="수행자">
+                                            <button type="reset" class="btn_del_keyword"></button>
+                                        </div>
+                                        <button class="btn_srch btn btn-medium btn-line-02"><i class="ico_btn_srch"></i></button>
+                                        <button class="btn_srch btn btn-medium btn-line-02"><i class="ico_btn_refresh"></i></button>
+                                    </div>
+                                    <div class="selected_item_div">
+                                        <div class="selected_item">
+                                            <span class="body14B">김영주(OOO팀)</span>
+                                            <button class="del"></button>
+                                        </div>
+                                        <div class="selected_item">
+                                            <span class="body14B">진석진(OOO팀)</span>
+                                            <button class="del"></button>
+                                        </div>
+                                        <div class="selected_item">
+                                            <span class="body14B">백수희(OOO팀)</span>
+                                            <button class="del"></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="accordion accordion_04">
+                                <div class="accordion-item">
+                                    <div class="accordion-link">
+                                        <span class="txt1 body14R">2024-11-16 18:00</span>
+                                        <p class="txt2 body14R">임진주│매니저개정 필요로 유효성 평가 완료</p>
+                                        <button class="btn_accr"></button>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        text
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-link">
+                                        <span class="txt1 body14R">2024-11-16 15:34</span>
+                                        <p class="txt2 body14R">조태훈 팀장│유효성 평가 반려</p>
+                                        <button class="btn_accr"></button>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        text
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-link">
+                                        <span class="txt1 body14R">2024-11-15 18:03</span>
+                                        <p class="txt2 body14R">임진주 매니저│유효함으로 유효성 평가 완료</p>
+                                        <button class="btn_accr"></button>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        text
+                                    </div>
+                                </div>
+                                <div class="accordion-item active">
+                                    <div class="accordion-link">
+                                        <span class="txt1 body14R">2024-11-16 18:00</span>
+                                        <p class="txt2 body14R">임진주님이 표준 문서를 <em class="body14B fc-red">개정 필요</em>로 유효성 평가를 완료했습니다.</p>
+                                        <button class="btn_accr"></button>
+                                    </div>
+                                    <div class="accordion-desc bg-gray50">
+                                        <div class="tit_div"><p class="list-dot body14B">유효성 평가 결과</p></div>
+                                        <table class="tbl-st1">
+                                            <colgroup>
+                                                <col width="100px">
+                                                <col width="*">
+                                                <col width="136px">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th><span class="body14M">평가 문항</span></th>
+                                                    <th><span class="body14M">평가 내용</span></th>
+                                                    <th><span class="body14M">평가 결과</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="body14R">결재/협조정보</td>
+                                                    <td>000 변경에 따른 표준 개정</td>
+                                                    <td class="td_btn">
+                                                        <div class="btn_div">
+                                                            <button class="btn btn-line-02 btn-small" disabled><span>예</span></button>
+                                                            <button class="btn btn-line-02 btn-small"><span>아니오</span></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="body14R">표제부</td>
+                                                    <td>지적 사항 확인 내용 추가</td>
+                                                    <td class="td_btn">
+                                                        <div class="btn_div">
+                                                            <button class="btn btn-line-02 btn-small"><span>예</span></button>
+                                                            <button class="btn btn-line-02 btn-small" disabled><span>아니오</span></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="body14R">내용</td>
+                                                    <td>000 변경에 따른 표준 개정</td>
+                                                    <td class="td_btn">
+                                                        <div class="btn_div">
+                                                            <button class="btn btn-line-02 btn-small"><span>예</span></button>
+                                                            <button class="btn btn-line-02 btn-small" disabled><span>아니오</span></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <ul class="opinion_list mt10">
+                                            <li>
+                                                <p class="body14B list-dot txt1">평가 의견</p>
+                                                <div class="opinion_text_box">
+                                                    <p class="body14R">당진, 순천공장의 수<br>
+                                                        ....</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p class="body14B txt1 list-dot">평가 의견</p>
+                                                <p class="body14R txt2">연구개발 > 연구개발기획</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion-item active">
+                                    <div class="accordion-link">
+                                        <span class="txt1 body14R">2024-11-16 18:00</span>
+                                        <p class="txt2 body14R">추재훈님이 표준 문서 제정을 승인했습니다.</p>
+                                        <button class="btn_accr"></button>
+                                    </div>
+                                    <div class="accordion-desc bg-gray50">
+                                        <ul class="opinion_list">
+                                            <li>
+                                                <p class="body14B list-dot txt1">결재 의견
+                                                    *</p>
+                                                <div class="opinion_text_box">
+                                                    <p class="body14R">당진, 순천공장의 수<br>
+                                                        ....</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item active">
+                                    <div class="accordion-link">
+                                        <span class="txt1 body14R">2024-11-16 18:00</span>
+                                        <p class="txt2 body14R">조태훈님이 표준 문서의 유효성 평가를 임진주님에게 요청했습니다.</p>
+                                        <button class="btn_accr"></button>
+                                    </div>
+                                    <div class="accordion-desc bg-gray50">
+                                        <ul class="opinion_list">
+                                            <li>
+                                                <p class="body14B list-dot txt1">평가 담당자</p>
+                                                <p class="body14R txt2">임진주 매니저 (OOO 팀)</p>
+                                            </li>
+                                            <li>
+                                                <p class="body14B list-dot txt1">요청 의견</p>
+                                                <div class="opinion_text_box">
+                                                    <p class="body14R">당진, 순천공장의 수<br>
+                                                        당진, 순천공장의 수<br>....
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <button class="btn_result_view mt20">
+                                <span class="body14M fc-blue">이력 더보기</span><i class="ico_add"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <a href="#tab01" class="go-top"><span class="summary12B">TOP</span></a>
+
+        <button class="btn_close">닫기</button>
+    </div>
+    
+</div>
+<!-- //Modal -->
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script>
+
+</script>
+</body>
+</html>

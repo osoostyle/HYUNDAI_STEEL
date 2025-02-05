@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header">
+            <h1 class="logo">
+                <span class="logo_img"></span>
+                <span class="logo_text body14B">표준관리시스템</span>
+            </h1>
+            <ul class="gnb">
+                <li><a href="#" class="body16M">경영매뉴얼</a></li>
+                <li><a href="#" class="body16M">관리표준</a></li>
+                <li><a href="#" class="body16M">기술표준</a></li>
+                <li><a href="#" class="body16M">인증기록관리</a></li>
+                <li class="oversea-corp">
+                    <a href="#" class="body16M">해외법인</a>
+                    <div class="gnb_sub">
+                        <button class="body14R btn_gnb_sub">관리표준</button>
+                        <button class="body14R btn_gnb_sub on">기술표준</button>
+                    </div>
+                </li>
+                <li><a href="#" class="body16M">전사표준현황</a></li>
+                <li><a href="#" class="body16M">수급업체 작업표준</a></li>
+            </ul>
+            <div class="quick_navi">
+                <ul class="my_work">
+                    <li>
+                        <span class="txt">결재</span>
+                        <span class="num">10</span>
+                    </li>
+                    <li>
+                        <span class="txt">진행</span>
+                        <span class="num">10</span>
+                    </li>
+                    <li>
+                        <span class="txt">작성</span>
+                        <span class="num">15</span>
+                    </li>
+                    <li>
+                        <span class="txt">공람</span>
+                        <span class="num">5</span>
+                    </li>
+                </ul>
+    
+                <button class="btn_my_menu">
+                    <em class="body16M">홍길동</em><span class="body14M">책임</span>
+                </button>
+    
+                <div class="my_quick_box" style="display:none;">
+                    <div class="my_div">
+                        <div class="my_name">
+                            <em>홍길동</em><span>책임</span>
+                        </div>
+                        <p>품질인증표준팀</p>
+                        <button class="btn btn-line-01 btn_logout">
+                            <span>로그아웃</span>
+                            <i class="ico_logout"></i>
+                        </button>
+                    </div>
+                    <div class="my_setting">
+                        <ul>
+                            <li><a href="#" class="my_m my_m_01">시스템 관리</a></li>
+                            <li><a href="#" class="my_m my_m_02">개인 결재함</a></li>
+                            <li><a href="#" class="my_m my_m_03">부서 결재함</a></li>
+                            <li><a href="#" class="my_m my_m_04">나의 표준</a></li>
+                            <li><a href="#" class="my_m my_m_05">메인 화면 편집</a></li>
+                        </ul>
+    
+                    </div>
+                </div>
+    
+                <div class="quick_menu_div">
+                    <button class="btn_quick_menu fold"></button>
+                    <div class="quick_menu_box">
+                        <div class="quick_top">
+                            <span class="body14M">Quick Menu</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_01"></i>
+                                    <span class="summary12B">표준등록</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_02"></i>
+                                    <span class="summary12B">내가 결재할 문서</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_03"></i>
+                                    <span class="summary12B">나의표준</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_04"></i>
+                                    <span class="summary12B">팀 표준</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_05"></i>
+                                    <span class="summary12B">즐겨찾기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="quick_m">
+                                    <i class="ico_qm ico_qm_06"></i>
+                                    <span class="summary12B">정보 및 문의</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+            
+            
+        </header>
+        <!--// header -->
+    
+        <!-- container -->
+        <div class="container">
+            <div class="inner">
+    
+                <!-- tab -->
+                <div class="tab_wrap">
+                    <div class="tab">
+                        <span class="body14R ellipsis">관리표준-환경/기술</span>
+                        <button class="btn_tab_close">닫기</button>
+                    </div>
+                    <div class="tab active">
+                        <span class="body14R ellipsis">관리표준</span>
+                        <button class="btn_tab_close">닫기</button>
+                    </div>
+                    <button class="btn_add_tab">탭추가</button>
+                </div>
+    
+                <div class="content_wrap">
+                    <div class="left_filter_cont">
+                        <div class="left_title">
+                            <span class="body16B">TITLE</span>
+                        </div>
+                        <div class="left_filter_div">
+                            <p class="body16R f_tit">표준 종류</p>
+                            <div class="btn_f_div">
+                                <button class="btn_f btn_f_all on">전체</button>
+                                <button class="btn_f">규정</button>
+                                <button class="btn_f">규칙</button>
+                                <button class="btn_f">지침</button>
+                            </div>
+                        </div>
+                        <div class="left_filter_div">
+                            <p class="body16R f_tit">표준 분류</p>
+                            <div class="btn_f_div btn_f_div2">
+                                <button class="btn_f btn_f_all">전체</button>
+                                <button class="btn_f  on">연구개발</button>
+                                <button class="btn_f">영업</button>
+                                <button class="btn_f">구매</button>
+                                <button class="btn_f">생산관리</button>
+                                <button class="btn_f">조업</button>
+                                <button class="btn_f">안전관리</button>
+                                <button class="btn_f">...</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <ol class="breadcrumb">
+                            <li>LEV01</li>
+                            <li>LEV02</li>
+                            <li>LEV03</li>
+                            <li>LEV04</li>
+                            <li class="on">LEV05</li>
+                        </ol>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        </div>
+        <!-- //container -->
+    
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer_div">
+                <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+                <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+                <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+
+<!-- Modal -->
+<div class="modal_wrap active">
+    <!-- 즐겨찾기 Toast -->
+    <div class="toast_message toast_popup bg-status-yellow" id="favoriteMessage">
+        <i class="ico_favorite"></i>
+        <p class="body16M fc-100">즐겨찾기에 추가했습니다.</p>
+    </div>
+    <!-- 복사 Toast -->
+    <div class="toast_message toast_popup bg-status-blue" id="copyMessage">
+        <p class="body16M fc-white">URL을 클립보드로 복사했습니다.</p>
+    </div>
+
+    <div class="modal page-modal2">
+        <div class="modal_top">
+            <h1 class="head32B title">당진 1냉연 2CGL 합금화로 조업 기준</h1>
+            <button class="btn-favorite"></button>
+            <button class="btn-copyurl txthide">URL 복사</button>
+
+            <ul class="title-ul">
+                <li class="body16M">EKHG 030804</li>
+                <li class="body16M">기준</li>
+                <li class="body16M">2차</li>
+                <li class="body16M">선행연구팀</li>
+                <li class="body16M fc-orange">유효일 경과</li>
+            </ul>
+        </div>
+
+        <div class="modal_cont">
+            <ul class="tab-link">
+                <li class="on"><a href="#tab01" class="body14R">표준정보</a></li>
+                <li><a href="#tab02" class="body14R">결재/공람</a></li>
+                <li><a href="#tab03" class="body14R">개정 이력</a></li>
+                <li><a href="SC_MGMT_004.html" class="body14R">기타 이력</a></li>
+            </ul>
+            <div class="flex tab-cont scrollBar3">
+                <div class="left_cont box-white" id="tab01">
+                    <div class="accordion accordion_02">
+                        <!-- 표준정보 -->
+                        <div class="accordion-item active">
+                            <div class="accordion-link">
+                                <h2 class="head20B"><span class="head18B">표준 정보</span></h2>
+                            </div>
+                            <div class="accordion-desc">
+                                <ul class="info_list mb5">
+                                    <li class="w100">
+                                        <p class="body14B info_txt1 list-dot">표준 종류</p>
+                                        <p class="body14R info_txt2">연구개발 > 연구개발기획</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="body14B info_txt1 list-dot">작성공장</p>
+                                        <p class="body14R info_txt2">당진</p>
+                                    </li>
+                                    <li>
+                                        <p class="body14B info_txt1 list-dot">적용 범위</p>
+                                        <p class="body14R info_txt2">SITE 조직, 판교 본부</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="body14B info_txt1 list-dot">유효일</p>
+                                        <p class="body14R info_txt2">2025-11-03</p>
+                                    </li>
+                                    <li>
+                                        <p class="body14B info_txt1 list-dot">개정일</p>
+                                        <p class="body14R info_txt2">2025-11-03</p>
+                                    </li>
+                                    <li class="w100">
+                                        <p class="body14B info_txt1 list-dot">제정일</p>
+                                        <p class="body14R info_txt2">2025-11-07</p>
+                                    </li>
+                                    <li class="w100">
+                                        <p class="body14B info_txt1 list-dot">목적</p>
+                                        <p class="body14R info_txt2">그룹상 설비 점검을 통해 설비 고장 예방 및 제품 품질 확보를 위함</p>
+                                    </li>
+                                </ul>
+                                <div class="accordion accordion_03">
+                                    <div class="accordion-item">
+                                        <div class="accordion-link">
+                                            <span class="txt1 body14R">열람</span>
+                                            <p class="txt2 body14R">OOO 팀, XXX 팀, 홍길동</p>
+                                            <button class="btn_accr"></button>
+                                        </div>
+                                        <div class="accordion-desc">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 결재/공람 -->
+                        <div class="accordion-item active" id="tab02">
+                            <div class="accordion-link">
+                                <h2 class="head20B"><span class="head18B">결재 / 공람</span></h2>
+                            </div>
+                            <div class="accordion-desc">
+                                <ul class="pay_process">
+                                    <li>
+                                        <i class="ico_arr_circle"></i>
+                                        <p class="pr_status summary12B">평가 요청 [0]</p>
+                                        <div class="pay_info">
+                                            <p class="body14R pay_date">2024-10-29 14:54</p>
+                                            <p class="body14R"><em class="body14B">조태호</em> <span>매니저</span></p>
+                                            <p class="body14R">OOO 팀</p>
+                                        </div>
+                                        <div class="pr_message">
+                                            <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 ...  <a href="#" class="caption11B more">더보기</a></p>
+                                            <div class="more_box">
+                                                <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있다.
+                                                </p>
+                                                <button class="close-message"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="ico_arr_circle"></i>
+                                        <p class="pr_status summary12B">평가 [1]</p>
+                                        <div class="pay_info">
+                                            <p class="body14R pay_date">2024-10-29 14:54</p>
+                                            <p class="body14R">OOO 팀 외 5</p>
+                                            <p class="body14B"><i class="ico_clock"></i><span class="fc-orange">개정 필요</span></p>
+
+                                            <!-- <p class="body14B"><i class="ico_check"></i><span class="fc-skyblue">유효함</span></p>
+                                            <p class="body14B"><i class="ico_check_off"></i><span class="fc-disable">유효하지 않음</span></p> -->
+
+                                        </div>
+                                        <div class="pr_message">
+                                            <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 ...  <a href="#" class="caption11B more">더보기</a></p>
+                                            <div class="more_box">
+                                                <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있다.
+                                                </p>
+                                                <button class="close-message"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="current">
+                                        <i class="ico_arr_circle"></i>
+                                        <p class="pr_status summary12B">평가 합의 [2]</p>
+                                        <div class="pay_info">
+                                            <p class="body14R"><em class="body14B">조태호</em> <span>책임 매니저(대결)</span></p>
+                                            <p class="body14R">OOO 팀</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="accordion accordion_03">
+                                    <div class="accordion-item active">
+                                        <div class="accordion-link">
+                                            <span class="txt1 body14R">검토</span>
+                                            <p class="txt2 body14R">품질인증표준팀, 이소민 책임매니저, 이민준 팀장 외 2</p>
+                                            <button class="btn_accr"></button>
+                                        </div>
+                                        <div class="accordion-desc scrollBar4">
+                                            <ul class="examine_list">
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">김태형 매니저</span>
+                                                        <span class="body14R fc-500 mr10">품질인증표준팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">확인했습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">이소민 책임 매니저</span>
+                                                        <span class="body14R fc-500 mr10">OOO 팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">작성된 프로세스에 대해 이견이 없습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">이민준 팀장</span>
+                                                        <span class="body14R fc-500 mr10">품질인증표준팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">확인했습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">정혜정 팀장</span>
+                                                        <span class="body14R fc-500 mr10">WWW 팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">확인했습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">박동기 팀장</span>
+                                                        <span class="body14R fc-500 mr10">WWW 팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">작성된 프로세스에 대해 이견이 없습니다.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-link">
+                                            <span class="txt1 body14R">협조</span>
+                                            <p class="txt2 body14R">XXX 실, OOO 본부, □□□□ 실, △△△팀 외 5</p>
+                                            <button class="btn_accr"></button>
+                                        </div>
+                                        <div class="accordion-desc scrollBar4">
+                                            <ul class="examine_list">
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">김태형 매니저</span>
+                                                        <span class="body14R fc-500 mr10">품질인증표준팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">확인했습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">이소민 책임 매니저</span>
+                                                        <span class="body14R fc-500 mr10">OOO 팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">작성된 프로세스에 대해 이견이 없습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">이민준 팀장</span>
+                                                        <span class="body14R fc-500 mr10">품질인증표준팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">확인했습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">정혜정 팀장</span>
+                                                        <span class="body14R fc-500 mr10">WWW 팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">확인했습니다.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="body14R mr10">박동기 팀장</span>
+                                                        <span class="body14R fc-500 mr10">WWW 팀</span>
+                                                        <span class="body14R fc-400">2024-01-01 11:34</span>
+                                                    </div>
+                                                    <div class="confirmed">
+                                                        <p class="body14M">작성된 프로세스에 대해 이견이 없습니다.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item active">
+                                        <div class="accordion-link">
+                                            <span class="txt1 body14R">공람</span>
+                                            <p class="txt2 body14R">OOO 본부, XXX 팀, 홍길동</p>
+                                            <button class="btn_accr"></button>
+                                        </div>
+                                        <div class="accordion-desc">
+                                            <table class="accr-in-box">
+                                                <colgroup>
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                    <col width="25%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="body14R">대상</th>
+                                                        <th class="body14R">요청자</th>
+                                                        <th class="body14R">만료기한</th>
+                                                        <th class="body14R">확인일</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>품질인증<br>표준팀
+                                                        </td>
+                                                        <td>
+                                                            김태형<br>매니저
+                                                        </td>
+                                                        <td class="td_left">2024-06-06<br> 11:34</td>
+                                                        <td class="td_left">2024-06-06<br> 11:34</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>품질인증<br>표준팀
+                                                        </td>
+                                                        <td>
+                                                            김태형<br>매니저
+                                                        </td>
+                                                        <td class="td_left">2024-06-06<br> 11:34</td>
+                                                        <td class="td_left">2024-06-06<br> 11:34</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>이민준 팀장<br>
+                                                            ooo 팀
+                                                        </td>
+                                                        <td>
+                                                            김태형<br>매니저
+                                                        </td>
+                                                        <td class="td_left">2024-06-06<br> 11:34</td>
+                                                        <td class="td_left">2024-06-06<br> 11:34</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 유효성 평가 -->
+                        <div class="accordion-item active">
+                            <div class="accordion-link">
+                                <h2 class="head20B"><span class="head18B">유효성 평가</span></h2>
+                            </div>
+                            <div class="accordion-desc">
+                                <ul class="pay_process">
+                                    <li>
+                                        <i class="ico_arr_circle"></i>
+                                        <p class="pr_status summary12B">평가 요청 [0]</p>
+                                        <div class="pay_info">
+                                            <p class="body14R pay_date">2024-10-29 14:54</p>
+                                            <p class="body14R"><em class="body14B">조태호</em> <span>매니저</span></p>
+                                            <p class="body14R">OOO 팀</p>
+                                        </div>
+                                        <div class="pr_message">
+                                            <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 ...  <a href="#" class="caption11B more">더보기</a></p>
+                                            <div class="more_box">
+                                                <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있다.
+                                                </p>
+                                                <button class="close-message"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="ico_arr_circle"></i>
+                                        <p class="pr_status summary12B">평가 [1]</p>
+                                        <div class="pay_info">
+                                            <p class="body14R pay_date">2024-10-29 14:54</p>
+                                            <p class="body14R">OOO 팀 외 5</p>
+                                            <p class="body14B fc-orange"><i class="ico_clock"></i><span>개정 필요</span></p>
+                                        </div>
+                                        <div class="pr_message">
+                                            <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 ...  <a href="#" class="caption11B more">더보기</a></p>
+                                            <div class="more_box">
+                                                <p class="caption11R">당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있는 내용인 것 같습니다. 한번 더 고려하여 살펴 봐 주시길 바랍니다.<br>
+                                                    당진, 순천공장의 XX 프로세스에 적용 할 수 있다.
+                                                </p>
+                                                <button class="close-message"></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="current">
+                                        <i class="ico_arr_circle"></i>
+                                        <p class="pr_status summary12B">평가 합의 [2]</p>
+                                        <div class="pay_info">
+                                            <p class="body14R"><em class="body14B">조태호</em> <span>책임 매니저(대결)</span></p>
+                                            <p class="body14R">OOO 팀</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="alert_box">
+                                    <i class="ico_alert"></i>
+                                    <span class="body14M">개정필요</span>
+                                </div>
+                                <button class="btn_result_view mt20">
+                                    <span class="body14M fc-blue">평가 결과 상세 보기</span><i class="ico_add"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 개정 이력 -->
+                        <div class="accordion-item active" id="tab03">
+                            <div class="accordion-link">
+                                <h2 class="head20B"><span class="head18B">개정 이력</span></h2>
+                            </div>
+                            <div class="accordion-desc">
+                                <table class="tbl-st1 fold-table">
+                                    <colgroup>
+                                        <col width="54px">
+                                        <col width="*">
+                                        <col width="82px">
+                                        <col width="82px">
+                                        <col width="82px">
+                                        <col width="88px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th><span class="body14M">차수</span></th>
+                                            <th><span class="body14M">개정사유</span></th>
+                                            <th><span class="body14M">문서보기</span></th>
+                                            <th><span class="body14M">담당자</span></th>
+                                            <th><span class="body14M">담당부서</span></th>
+                                            <th><span class="body14M">제/개정일</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="tr_list active">
+                                            <td class="body14R">
+                                                <button class="btn_arr_tbl"></button>
+                                                <span>5</span>
+                                            </td>
+                                            <td>000 변경에 따른 표준 개정</td>
+                                            <td><button class="ico_file ico_pdf"></button></td>
+                                            <td>조태훈<br>
+                                                매니저</td>
+                                            <td>품질인증팀</td>
+                                            <td class="fc-blue">개정 중</td>
+                                        </tr>
+                                        <tr class="tr_view open">
+                                            <td colspan="6">
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 전</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다.</p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 후</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. </p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tr_list">
+                                            <td class="body14R">
+                                                <button class="btn_arr_tbl"></button>
+                                                <span>4</span>
+                                            </td>
+                                            <td>지적 사항 확인 내용 추가</td>
+                                            <td><button class="ico_file ico_pdf"></button></td>
+                                            <td>구자경<br>
+                                                책임매니저</td>
+                                            <td>OOO 팀</td>
+                                            <td>2023-12-02</td>
+                                        </tr>
+                                        <tr class="tr_view">
+                                            <td colspan="6">
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 전</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다.</p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 후</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. </p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tr_list">
+                                            <td class="body14R">
+                                                <button class="btn_arr_tbl"></button>
+                                                <span>3</span>
+                                            </td>
+                                            <td>000 변경에 따른 표준 개정</td>
+                                            <td><button class="ico_file ico_pdf"></button></td>
+                                            <td>조태훈<br>
+                                                매니저</td>
+                                            <td>품질인증팀</td>
+                                            <td class="fc-blue">개정 중</td>
+                                        </tr>
+                                        <tr class="tr_view">
+                                            <td colspan="6">
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 전</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다.</p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 후</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. </p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tr_list">
+                                            <td class="body14R">
+                                                <button class="btn_arr_tbl"></button>
+                                                <span>2</span>
+                                            </td>
+                                            <td>000 변경에 따른 표준 개정</td>
+                                            <td><button class="ico_file ico_pdf"></button></td>
+                                            <td>조태훈<br>
+                                                매니저</td>
+                                            <td>품질인증팀</td>
+                                            <td class="fc-blue">개정 중</td>
+                                        </tr>
+                                        <tr class="tr_view">
+                                            <td colspan="6">
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 전</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다.</p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 후</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. </p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tr_list">
+                                            <td class="body14R">
+                                                <button class="btn_arr_tbl"></button>
+                                                <span>1</span>
+                                            </td>
+                                            <td>000 변경에 따른 표준 개정</td>
+                                            <td><button class="ico_file ico_pdf"></button></td>
+                                            <td>조태훈<br>
+                                                매니저</td>
+                                            <td>품질인증팀</td>
+                                            <td class="fc-blue">개정 중</td>
+                                        </tr>
+                                        <tr class="tr_view">
+                                            <td colspan="6">
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 전</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다.</p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                                <div class="revision_cont">
+                                                    <p class="body14B fc-400">변경 후</p>
+                                                    <div class="r_txt_box bg-gray50 fold">
+                                                        <p style="font-size:14px;">변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. 변경 전 이런 저런 내용이었는데 OOO에 의해 수정이 필요했습니다. </p>
+                                                        <a href="#" class="btn-txt">더보기</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tr_list">
+                                            <td class="body14R">
+                                                <button class="btn_arr_tbl"></button>
+                                                <span>0</span>
+                                            </td>
+                                            <td>000 변경에 따른 표준 개정</td>
+                                            <td><button class="ico_file ico_pdf"></button></td>
+                                            <td>조태훈<br>
+                                                매니저</td>
+                                            <td>품질인증팀</td>
+                                            <td class="fc-blue">개정 중</td>
+                                        </tr>
+
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right_cont">
+                    <div class="btn_func_div" style="width:352px;">
+                        <button class="btn_func btn-primary"><span class="summary12B">개정</span></button>
+                        <button class="btn_func btn-primary"><span class="summary12B">평가 요청</span></button>
+                        <button class="btn_func btn-primary"><span class="summary12B">재기안</span></button>
+                        <button class="btn_func btn-line-01"><span class="summary12B">공람요청</span></button>
+                        <button class="btn_func btn-line-01"><span class="summary12B">열람 권한 변경</span></button>
+                        <button class="btn_func btn-line-01"><span class="summary12B">표준 재분류</span></button>
+                        <button class="btn_func btn-line-01"><span class="summary12B">부서 변경</span></button>
+                        <button class="btn_func btn-line-01"><span class="summary12B">폐기 요청</span></button>
+                        <button class="btn_func btn-line-01"><span class="summary12B">기안 취소</span></button>
+                        <button class="btn_func btn-line-01"><span class="summary12B">삭제</button>
+                        <button class="btn_func btn-line-01 btn_func_setting">
+                            <i class="ico_setting"></i><i class="arr_func_setting"></i>
+                        </button>
+                    </div>
+                    <div class="document">
+                        <ul>
+                            <li>
+                                <div class="document_tit">
+                                    <p class="list-dot body16B">본문 파일</p>
+                                    <a href="#" class="btn_doc_download"><span>모두 다운로드</span></a>
+                                </div>
+                                <ul>
+                                    <li class="add_file">
+                                        <i class="ico_file ico_ppt"></i>
+                                        <p class="file_name summary12B fc-500">EKHG-030804 당진 냉연공장 입회 및 샘플 작업 표준.pdf <span class="file_size summary12R fc-300">1,351 KB</span></p>
+                                        <button class="btn_file_download"></button>
+                                    </li>
+                                    <li class="add_file">
+                                        <i class="ico_file ico_ppt"></i>
+                                        <p class="file_name summary12B fc-500">EKHG-030804 당진 냉연공장 입회 및 샘플.pdf <span class="file_size summary12R fc-300">1,351 KB</span></p>
+                                        <button class="btn_file_download"></button>
+                                    </li>
+                                    <li class="add_file">
+                                        <i class="ico_file ico_ppt"></i>
+                                        <p class="file_name summary12B fc-500">EKHG-030804 당진.pdf <span class="file_size summary12R fc-300">1,351 KB</span></p>
+                                        <button class="btn_file_download"></button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="document_tit">
+                                    <p class="list-dot body16B">첨부 파일</p>
+                                    <a href="#" class="btn_doc_download"><span>모두 다운로드</span></a>
+                                </div>
+                                <ul>
+                                    <li class="add_file_none">
+                                        <p class="summary12R fc-400">첨부 파일이 없습니다.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="document_tit">
+                                    <p class="list-dot body16B">상위 규칙</p>
+                                </div>
+                                <ul>
+                                    <li class="add_file bg-trans">
+                                        <i class="ico_file ico_ppt"></i>
+                                        <p class="file_name summary12B fc-500">규칙│당진 ooo 조업 기준</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="document_tit">
+                                    <p class="list-dot body16B">관련 표준</p>
+                                </div>
+                                <ul>
+                                    <li class="add_file">
+                                        <i class="ico_file ico_xls"></i>
+                                        <p class="file_name summary12B fc-500">규칙│당진 ooo 조업 기준</p>
+                                    </li>
+                                    <li class="add_file">
+                                        <i class="ico_file ico_ppt"></i>
+                                        <p class="file_name summary12B fc-500">지침│연속 소둔 모사장비 운용 지침</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <a href="#tab01" class="go-top"><span class="summary12B">TOP</span></a>
+
+        <button class="btn_close">닫기</button>
+    </div>
+    
+</div>
+<!-- //Modal -->
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script>
+
+</script>
+</body>
+</html>

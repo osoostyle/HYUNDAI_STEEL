@@ -341,21 +341,19 @@ table.tbl-p{}
 .tree .first::before{display: none;}
 .tree li{position: relative;margin:7px 0;}
 .tree li::before,.tree li::after{content:'';position: absolute;left:7px;z-index:110;}
-.tree li::before {top: 0;width: 15px;height: 1em;border-bottom: 1px dashed #bcc2d6;}
+.tree li::before{top:-2px;width:16px;height: 1em;border-bottom: 1px dashed #bcc2d6;}
 .tree>li::before {display:none;}
 .tree>li:first-child::before{border-left: none;}
-.tree li span{display:inline-block;vertical-align:middle;line-height:16px;position:relative;z-index:110;}
-.tree li.on>span{}
+.tree li span{display:inline-block;vertical-align:middle;line-height:16px;position:relative;z-index:110;width:calc(100% - 26px);}
 .tree li.selected>span{color:#2264DC;font-weight:bold;}
-
-.tree .depth-2::after {content:'';top: 13px;width: 15px;height: calc(100% - 20px);border-left: 1px dashed #bcc2d6;position: absolute;left: 6px;z-index:110;}
-.tree .depth-2.no-children{margin-left:7px;}
-.tree li ul{margin-left:15px;}
-.tree li ul li ul{margin-left:22px;}
-
-.tree .has-children::before{left:-8px;z-index:110;}
-.tree .no-children::before{left:-15px;width:9px;}
-.tree .no-children::after{left:-15px;}
+.tree li ul{margin-left:16px;}
+.tree .depth-2::before{left:-8px;z-index:110;width:8px;}
+.tree .depth-3::before{left:-24px;z-index:110;width:24px;}
+.tree .depth-4::before{left:-40px;z-index:110;width:40px;}
+.tree .depth-5::before{left:-56px;z-index:110;width:56px;}
+.tree .depth-6::before{left:-72px;z-index:110;width:72px;}
+.tree .depth-7::before{left:-88px;z-index:110;width:88px;}
+.tree .depth-8::before{left:-104px;z-index:110;width:104px;}
 
 .tree .bg_hover{display:none;width:268px;height:34px;border-radius:4px;position:absolute;top:-5px;z-index:105;cursor:move;}
 .tree .on>.bg_hover{display:block;background:rgba(202, 240, 248, 0.25);border:1px solid rgba(76, 154, 237, 0.25);}
@@ -366,9 +364,19 @@ table.tbl-p{}
 .tree .depth-1.on>.bg_hover,
 .tree .depth-1.selected>.bg_hover{left:-15px;width:calc(100% + 20px);}
 .tree .depth-2.on>.bg_hover,
-.tree .depth-2.selected>.bg_hover{left:-30px;width:calc(100% + 35px);}
+.tree .depth-2.selected>.bg_hover{left:-31px;width:calc(100% + 36px);}
 .tree .depth-3.on>.bg_hover,
-.tree .depth-3.selected>.bg_hover{left:-52px;width:calc(100% + 57px);}
+.tree .depth-3.selected>.bg_hover{left:-47px;width:calc(100% + 52px);}
+.tree .depth-4.on>.bg_hover,
+.tree .depth-4.selected>.bg_hover{left:-63px;width:calc(100% + 68px);}
+.tree .depth-5.on>.bg_hover,
+.tree .depth-5.selected>.bg_hover{left:-79px;width:calc(100% + 84px);}
+.tree .depth-6.on>.bg_hover,
+.tree .depth-6.selected>.bg_hover{left:-95px;width:calc(100% + 100px);}
+.tree .depth-7.on>.bg_hover,
+.tree .depth-7.selected>.bg_hover{left:-111px;width:calc(100% + 116px);}
+.tree .depth-8.on>.bg_hover,
+.tree .depth-8.selected>.bg_hover{left:-127px;width:calc(100% + 132px);}
 
 .portlet_edit_right{width:846px;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:24px;padding-right:4px;margin-left:12px;padding-left:12px;/*height:479px;*/overflow-y:scroll;padding-bottom:24px;}
 .portlet_edit_box{width:253px;height:227px;background:#fff;border-radius:16px;border:1px solid var(--Grayscale-100);box-shadow: 0px 4px 12px 0px #0000001A;padding:16px;position:relative;}

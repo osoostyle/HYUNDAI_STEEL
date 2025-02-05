@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+
+    <!-- header -->
+    <header class="header">
+        <h1 class="logo">
+            <span class="logo_img"></span>
+            <span class="logo_text">표준관리시스템</span>
+        </h1>
+        <ul class="gnb">
+            <li><a href="#">경영매뉴얼</a></li>
+            <li><a href="#">관리표준</a></li>
+            <li><a href="#">기술표준</a></li>
+            <li><a href="#">인증기록관리</a></li>
+            <li class="oversea-corp">
+                <a href="#">해외법인</a>
+                <div class="gnb_sub">
+                    <button class="btn_gnb_sub">관리표준</button>
+                    <button class="btn_gnb_sub on">기술표준</button>
+                </div>
+            </li>
+            <li><a href="#">전사표준현황</a></li>
+            <li><a href="#">수급업체 작업표준</a></li>
+        </ul>
+        <div class="quick_navi">
+            <ul class="my_work">
+                <li>
+                    <span class="txt">결재</span>
+                    <span class="num">10</span>
+                </li>
+                <li>
+                    <span class="txt">진행</span>
+                    <span class="num">10</span>
+                </li>
+                <li>
+                    <span class="txt">작성</span>
+                    <span class="num">15</span>
+                </li>
+                <li>
+                    <span class="txt">공람</span>
+                    <span class="num">5</span>
+                </li>
+            </ul>
+
+            <button class="btn_my_menu">
+                <em>홍길동</em><span>책임</span>
+            </button>
+
+            <div class="my_quick_box" style="display:none;">
+                <div class="my_div">
+                    <div class="my_name">
+                        <em>홍길동</em><span>책임</span>
+                    </div>
+                    <p>품질인증표준팀</p>
+                    <button class="btn btn-line-01 btn_logout">
+                        <span>로그아웃</span>
+                        <i class="ico_logout"></i>
+                    </button>
+                </div>
+                <div class="my_setting">
+                    <ul>
+                        <li><a href="#" class="my_m my_m_01">시스템 관리</a></li>
+                        <li><a href="#" class="my_m my_m_02">개인 결재함</a></li>
+                        <li><a href="#" class="my_m my_m_03">부서 결재함</a></li>
+                        <li><a href="#" class="my_m my_m_04">나의 표준</a></li>
+                        <li><a href="#" class="my_m my_m_05">메인 화면 편집</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="quick_menu_div">
+                <button class="btn_quick_menu fold"></button>
+                <div class="quick_menu_box">
+                    <div class="quick_top">
+                        <span>Quick Menu</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_01"></i>
+                                <span>표준등록</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_02"></i>
+                                <span>내가 결재할 문서</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_03"></i>
+                                <span>나의표준</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_04"></i>
+                                <span>팀 표준</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_05"></i>
+                                <span>즐겨찾기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_06"></i>
+                                <span>정보 및 문의</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container">
+        <div class="inner">
+
+            <!-- tab -->
+            <div class="tab_wrap">
+                <div class="tab">
+                    <span class="ellipsis">관리표준-환경/기술</span>
+                    <button class="btn_tab_close">닫기</button>
+                </div>
+                <div class="tab active">
+                    <span class="ellipsis">기술표준 - PLTCM</span>
+                    <button class="btn_tab_close">닫기</button>
+                </div>
+                <button class="btn_add_tab">탭추가</button>
+            </div>
+
+            <div class="content">
+                
+                <!-- 검색 -->
+                <div class="search_box">
+                    <div class="srch_keyword">
+                        <div class="label">검색어</div>
+                    </div>
+                    <div class="srch_standard">
+                        <div class="label">표준 종류</div>
+                    </div>
+                    <div class="srch_factory active">
+                        <div class="label">작성 공장</div>
+                        <div class="selected_item_div">
+                            <div class="selected_item">
+                                <span>당진</span>
+                                <button class="del"></button>
+                            </div>
+                            <div class="selected_item">
+                                <span>서울</span>
+                                <button class="del"></button>
+                            </div>
+                            <div class="selected_item">
+                                <span>서울</span>
+                                <button class="del"></button>
+                            </div>
+                            <div class="selected_item">
+                                <span>+2</span>
+                                <button class="del"></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="srch_btn_div">
+                        <button class="btn_srch">조회</button>
+                        <button class="btn_filter">조회</button>
+                    </div>
+                </div>
+
+                <!-- 선강후판품질실 표준 현황 -->
+                <section class="main_chart_section">
+                    <div class="main_chart_left">
+                        <div class="title">선강후판품질실 표준 현황</div>
+                        <div class="main_chart_box">
+                            <i class="ico_main_chart"></i>
+                            <ul class="standard_status">
+                                <li>
+                                    <span class="txt">전체</span>
+                                    <em class="num">176</em>
+                                </li>
+                                <li>
+                                    <span class="txt">관리표준</span>
+                                    <em class="num">66</em>
+                                </li>
+                                <li>
+                                    <span class="txt">기술표준</span>
+                                    <em class="num">110</em>
+                                </li>
+                                <li>
+                                    <span class="txt">유효일 경과</span>
+                                    <em class="num">10</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main_chart_right">
+                        <div class="main_chart_box">
+                            <div class="chart_div" style="margin-top:-10px;">
+                                <canvas id="mainBarChart" width="1000" height="242"></canvas>
+
+                                <div class="label_tooltip" style="left:174px;">
+                                    <span>저탄소엔지니어링팀
+                                </div>
+                            </div>
+                            <div class="legend_div">
+                                <ul>
+                                    <li>
+                                        <span class="label_shape" style="background-color:#2264DC;"></span>
+                                        <span class="label_txt">표준 수</span>
+                                    </li>
+                                    <li>
+                                        <span class="label_shape" style="background-color:#EC672A;"></span>
+                                        <span class="label_txt">만료</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn_zoom"></button>
+                        </div?>
+                    </div>
+                </section>
+
+                <section class="main_portlet_wrap">
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="title">팀 표준</a>
+                            <button class="btn_refresh">새로고침</button>
+                            <button class="btn_setting">설정</button>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span>관리표준</span></a></li>
+                                <li><a href="#"><span>기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>(본사-경영지원)지침 비상계획 TEXT TEXT</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>(본사-경영지원)지침 비상계획 TEXT TEXT</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="title">결재함</a>
+                            <button class="btn_refresh">새로고침</button>
+                            <button class="btn_setting">설정</button>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span>결재할 표준</span></a></li>
+                                <li><a href="#"><span>진행 중인 표준</span></a></li>
+                                <li><a href="#"><span>작성 중인 표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="89px">
+                                        <col width="*">
+                                        <col width="92px">
+                                        <col width="60px">
+                                        <col width="74px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">제정</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">검토</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">유효성평가</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">폐기</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">검토</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none;">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="89px">
+                                        <col width="*">
+                                        <col width="92px">
+                                        <col width="60px">
+                                        <col width="74px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">제정</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획 비상계획비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">검토</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">유효성평가</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">폐기</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">검토</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none;">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="89px">
+                                        <col width="*">
+                                        <col width="92px">
+                                        <col width="60px">
+                                        <col width="74px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획 비상계획비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">제정</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">검토</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">유효성평가</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">폐기</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td class="td_right"><span class="status">검토</span></td>
+                                            <td>임국현</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="title">표준 유효성 평가</a>
+
+                            <button class="btn_refresh">새로고침</button>
+                            <button class="btn_setting">설정</button>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span>유효일 임박</span></a></li>
+                                <li><a href="#"><span>유효일 만료</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="32px">
+                                        <col width="53px">
+                                        <col width="*">
+                                        <col width="88px">
+                                        <col width="34px">
+                                        <col width="52px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>평가</em></td>
+                                            <td class="td_left"><span class="status">기술</span></td>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td class="td_left">지침</td>
+                                            <td class="td_dday">오늘</td>
+                                            <td>임국현</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>평가</em></td>
+                                            <td class="td_left"><span class="status">관리</span></td>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td class="td_left">지침</td>
+                                            <td class="td_dday">D-1</td>
+                                            <td>임국현</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>평가</em></td>
+                                            <td class="td_left"><span class="status">기술</span></td>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td class="td_left">지침</td>
+                                            <td class="td_dday">오늘</td>
+                                            <td>선우재덕</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>평가</em></td>
+                                            <td class="td_left"><span class="status">기술</span></td>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td class="td_left">지침</td>
+                                            <td class="td_dday">오늘</td>
+                                            <td>임국현</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>평가</em></td>
+                                            <td class="td_left"><span class="status">기술</span></td>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td class="td_left">지침</td>
+                                            <td class="td_dday">오늘</td>
+                                            <td>임국현</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="title">최근 조회 표준</a>
+                            <button class="btn_refresh">새로고침</button>
+                            <button class="btn_setting">설정</button>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span>관리표준</span></a></li>
+                                <li><a href="#"><span>기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                        <col width="72px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>(본사-경영지원)지침 비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                        <col width="72px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="title">즐겨찾기 표준 현황</a>
+                            <button class="btn_refresh">새로고침</button>
+                            <button class="btn_setting">설정</button>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span>관리표준</span></a></li>
+                                <li><a href="#"><span>기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont"> 
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                        <col width="72px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>(본사-경영지원)지침 비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                        <col width="72px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_left"><em>비상계획</em></td>
+                                            <td><em>지침</em></td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                            <td class="td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet portlet_default">
+                        <div class="portlet_top">
+                            <span class="title">표준 추가</span>
+                            <button class="btn_refresh" disabled>새로고침</button>
+                            <button class="btn_setting" disabled>설정</button>
+                        </div>
+                        <div class="portlet_cont">
+                            <button class="btn_add_portlet">포틀릿 추가하기</button>
+                        </div>
+                    </div>
+
+                    
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_div">
+            <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+            <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+            <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+</div>
+
+<!-- Modal -->
+<div class="modal_wrap active">
+    <div class="modal portlet-edit-modal">
+        <div class="modal_top">
+            <h1 class="head32B title">포틀릿 편집</h1>
+            <p class="body16R alert_txt">추가할 항목을 포틀릿에 끌어다 놓으면 추가됩니다.<br>
+                포틀릿은 끌어서 순서를 바꾸고 크기를 변경할 수 있습니다.</p>
+        </div>
+
+        <div class="modal_cont">
+            <div class="portlet_edit_left">
+                <div class="srch_portlet">
+                    <div class="ipt_div">
+                        <input type="text" placeholder="표준 분류 검색">
+                        <button type="reset" class="btn_del_keyword"></button>
+                    </div>
+                    <button class="btn_srch"></button>
+                </div>
+                <div class="p_edit_tab_wrap">
+                    <ul class="p_edit_tab">
+                        <li><a href="#">개인함</a></li>
+                        <li class="on"><a href="#">관리표준</a></li>
+                        <li><a href="#">기술표준</a></li>
+                        <li><a href="#">검색</a></li>
+                    </ul>
+                    <div class="p_edit_tab_cont scrollBar2">
+                        <ul class="tree">
+                            <li class="first depth-1">
+                                <span>Depth1</span>
+                                <ul>
+                                    <li class="depth-2">
+                                        <span>Depth2</span>
+                                        <ul>
+                                            <li class="depth-3">
+                                                <span>Depth3</span>
+                                                <ul>
+                                                    <li class="depth-4">
+                                                        <span>Depth4</span>
+                                                        <ul>
+                                                            <li class="depth-5">
+                                                                <span>Depth5</span>
+                                                                <ul>
+                                                                    <li class="depth-6">
+                                                                        <span>Depth6</span>
+                                                                        <ul>
+                                                                            <li class="depth-7">
+                                                                                <span>Depth7</span>
+                                                                                <ul>
+                                                                                    <li class="depth-8">
+                                                                                        <i class="tree-toggle-icon open"></i><span>Depth8</span>
+                                                                                    </li>
+                                                                                    <li class="depth-8">
+                                                                                        <i class="tree-toggle-icon open"></i><span>Depth8</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                
+                                                                            <li class="depth-7 no-children">
+                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                        
+                                                                    <li class="depth-6 no-children">
+                                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                        
+                                                    <li class="depth-4 no-children">
+                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                
+                                            <li class="depth-3 no-children">
+                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="depth-2">
+                                        <span>제품개발 규정</span>
+                                        <ul>
+                                            <li class="depth-3">
+                                                <span>TEXT TEXT</span>
+                                                <ul>
+                                                    <li class="depth-4">
+                                                        <span>TEXT TEXT</span>
+                                                        <ul>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                        
+                                                    <li class="depth-4 no-children">
+                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                
+                                            <li class="depth-3 no-children">
+                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth-2">
+                                        <span>개발지원 규정</span>  
+                                        <ul>
+                                            <li class="depth-3">
+                                                <span>TEXT TEXT</span>
+                                                <ul>
+                                                    <li class="depth-4">
+                                                        <span>TEXT TEXT</span>
+                                                        <ul>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                        
+                                                    <li class="depth-4 no-children">
+                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                
+                                            <li class="depth-3 no-children">
+                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth-2">
+                                        <span>기타</span>  
+                                        <ul>
+                                            <li class="depth-3">
+                                                <span>TEXT TEXT</span>
+                                                <ul>
+                                                    <li class="depth-4">
+                                                        <span>TEXT TEXT</span>
+                                                        <ul>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                        
+                                                    <li class="depth-4 no-children">
+                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                
+                                            <li class="depth-3 no-children">
+                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="first depth-1 selected">
+                                <div class="bg_hover"></div>
+                                <span>영업</span>
+                                <ul>
+                                    <li class="depth-2 no-children">
+                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                    </li>
+                                    <li class="depth-2 no-children">
+                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="first depth-1">
+                                <span>구매</span>
+                                <ul>
+                                    <li class="depth-2">
+                                        <span>연구개발기획</span>
+                                        <ul>
+                                            <li class="depth-3">
+                                                <span>TEXT TEXT</span>
+                                                <ul>
+                                                    <li class="depth-4">
+                                                        <span>TEXT TEXT</span>
+                                                        <ul>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                            <li class="depth-5">
+                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                        
+                                                    <li class="depth-4 no-children">
+                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                
+                                            <li class="depth-3 no-children">
+                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="portlet_edit_right scrollBar">
+                <div class="portlet_edit_box">
+                    <div class="p_edit_top">
+                        <strong class="head18B">결재함(개인)</strong>
+                    </div>
+                    <!-- p_edit_top 영역 마우스 오버시 -->
+                    <div class="drag_div" style="width:220px"></div>
+                    <!-- // -->
+                    <div class="p_edit_cont">
+                        <img src="../assets/images/svg/img_portlet_skeleton.svg" alt="포틀릿 스켈레톤 이미지">
+                    </div>
+                    <button class="close_portlet"></button>
+                </div>
+
+                <div class="portlet_edit_box active">
+                    <div class="p_edit_top">
+                        <strong class="head18B">포틀릿 2</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                            <p class="body14R">끌어다 놓으십시오.</p>
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+                    <span class="arr_size"></span>
+                </div>
+
+                <div class="portlet_edit_box no-category">
+                    <div class="p_edit_top">
+                        <strong class="head18B">표준 양식</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                            <p class="body14R">카테고리가 존재하지 않습니다.<br>
+                            다시 추가하여 주십시오.</p>
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+                </div>
+                <div class="portlet_edit_box no-connection">
+                    <div class="p_edit_top">
+                        <strong class="head18B">연결 안됨</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                            <button class="btn_add_portlet">포틀릿 추가하기</button>
+                            <p class="body14R">추가해 주세요.</p>
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+                </div>
+                <div class="portlet_edit_box">
+                    <div class="p_edit_top">
+                        <strong class="head18B">포틀릿5</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+
+                    <!-- 우측 하단 마우스 오버시 -->
+                    <span class="arr_size_change"></span>
+                    <!-- // -->
+                </div>
+                <div class="portlet_edit_box">
+                    <div class="p_edit_top">
+                        <strong class="head18B">포틀릿5</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+
+                    <!-- 우측 하단 마우스 오버시 -->
+                    <span class="arr_size_change disabled"></span>
+                    <!-- // -->
+                </div>
+                <div class="portlet_edit_box no-connection">
+                    <div class="p_edit_top">
+                        <strong class="head18B">연결 안됨</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                            <button class="btn_add_portlet">포틀릿 추가하기</button>
+                            <p class="body14R">추가해 주세요.</p>
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+                </div>
+                <div class="portlet_edit_box portlet_2x1">
+                    <div class="p_edit_top">
+                        <strong class="head18B">포틀릿 2 x 1</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                            <p class="body14R">끌어다 놓으십시오.</p>
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+                    <span class="arr_size_change"></span>
+                </div>
+
+                <div class="portlet_edit_box portlet_1x2">
+                    <div class="p_edit_top">
+                        <strong class="head18B">포틀릿 1 x 2</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                            <p class="body14R">끌어다 놓으십시오.</p>
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+                    <span class="arr_size_change"></span>
+                </div>
+
+                <div class="portlet-editbox-wrap wrap2">
+                    <div class="portlet_edit_box no-connection">
+                        <div class="p_edit_top">
+                            <strong class="head18B">연결 안됨</strong>
+                        </div>
+                        <div class="p_edit_cont">
+                            <div class="div">
+                                <button class="btn_add_portlet">포틀릿 추가하기</button>
+                                <p class="body14R">추가해 주세요.</p>
+                            </div>
+                        </div>
+                        <button class="close_portlet"></button>
+                    </div>
+
+                    <div class="portlet_edit_box no-connection">
+                        <div class="p_edit_top">
+                            <strong class="head18B">연결 안됨</strong>
+                        </div>
+                        <div class="p_edit_cont">
+                            <div class="div">
+                                <button class="btn_add_portlet">포틀릿 추가하기</button>
+                                <p class="body14R">추가해 주세요.</p>
+                            </div>
+                        </div>
+                        <button class="close_portlet"></button>
+                    </div>
+
+                    <div class="portlet_edit_box no-connection">
+                        <div class="p_edit_top">
+                            <strong class="head18B">연결 안됨</strong>
+                        </div>
+                        <div class="p_edit_cont">
+                            <div class="div">
+                                <button class="btn_add_portlet">포틀릿 추가하기</button>
+                                <p class="body14R">추가해 주세요.</p>
+                            </div>
+                        </div>
+                        <button class="close_portlet"></button>
+                    </div>
+
+                    <div class="portlet_edit_box no-connection">
+                        <div class="p_edit_top">
+                            <strong class="head18B">연결 안됨</strong>
+                        </div>
+                        <div class="p_edit_cont">
+                            <div class="div">
+                                <button class="btn_add_portlet">포틀릿 추가하기</button>
+                                <p class="body14R">추가해 주세요.</p>
+                            </div>
+                        </div>
+                        <button class="close_portlet"></button>
+                    </div>
+                </div>
+
+                <div class="portlet_edit_box portlet_1x2">
+                    <div class="p_edit_top">
+                        <strong class="head18B">포틀릿 1 x 2</strong>
+                    </div>
+                    <div class="p_edit_cont">
+                        <div class="div">
+                            <p class="body14R">끌어다 놓으십시오.</p>
+                        </div>
+                    </div>
+                    <button class="close_portlet"></button>
+                    <span class="arr_size_change"></span>
+                </div>
+                <div class="portlet-editbox-wrap">
+                    <div class="portlet_edit_box no-connection">
+                        <div class="p_edit_top">
+                            <strong class="head18B">연결 안됨</strong>
+                        </div>
+                        <div class="p_edit_cont">
+                            <div class="div">
+                                <button class="btn_add_portlet">포틀릿 추가하기</button>
+                                <p class="body14R">추가해 주세요.</p>
+                            </div>
+                        </div>
+                        <button class="close_portlet"></button>
+                    </div>
+
+                    <div class="portlet_edit_box no-connection">
+                        <div class="p_edit_top">
+                            <strong class="head18B">연결 안됨</strong>
+                        </div>
+                        <div class="p_edit_cont">
+                            <div class="div">
+                                <button class="btn_add_portlet">포틀릿 추가하기</button>
+                                <p class="body14R">추가해 주세요.</p>
+                            </div>
+                        </div>
+                        <button class="close_portlet"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        
+        </div>
+        <div class="modal_bottom">
+            <button class="btn btn-line-01 btn-medium btn_m"><span class="body14B">취소</span></button>
+            <button class="btn btn-primary btn-medium btn_m"><span class="body14B">저장</span></button>
+        </div>
+
+        <button class="btn_close">닫기</button>
+    </div>
+</div>
+<!-- //Modal -->
+
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script>
+treemap();
+</script>
+
+    
+</body>
+</html>

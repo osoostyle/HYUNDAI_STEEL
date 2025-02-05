@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+
+    <!-- header -->
+    <header class="header">
+        <h1 class="logo">
+            <span class="logo_img"></span>
+            <span class="logo_text body14B">표준관리시스템</span>
+        </h1>
+        <ul class="gnb">
+            <li><a href="#" class="body16M">경영매뉴얼</a></li>
+            <li><a href="#" class="body16M">관리표준</a></li>
+            <li><a href="#" class="body16M">기술표준</a></li>
+            <li><a href="#" class="body16M">인증기록관리</a></li>
+            <li class="oversea-corp">
+                <a href="#" class="body16M">해외법인</a>
+                <div class="gnb_sub">
+                    <button class="body14R btn_gnb_sub">관리표준</button>
+                    <button class="body14R btn_gnb_sub on">기술표준</button>
+                </div>
+            </li>
+            <li><a href="#" class="body16M">전사표준현황</a></li>
+            <li><a href="#" class="body16M">수급업체 작업표준</a></li>
+        </ul>
+        <div class="quick_navi">
+            <ul class="my_work">
+                <li>
+                    <span class="txt">결재</span>
+                    <span class="num">10</span>
+                </li>
+                <li>
+                    <span class="txt">진행</span>
+                    <span class="num">10</span>
+                </li>
+                <li>
+                    <span class="txt">작성</span>
+                    <span class="num">15</span>
+                </li>
+                <li>
+                    <span class="txt">공람</span>
+                    <span class="num">5</span>
+                </li>
+            </ul>
+
+            <button class="btn_my_menu">
+                <em class="body16M">홍길동</em><span class="body14M">책임</span>
+            </button>
+
+            <div class="my_quick_box" style="display:none;">
+                <div class="my_div">
+                    <div class="my_name">
+                        <em>홍길동</em><span>책임</span>
+                    </div>
+                    <p>품질인증표준팀</p>
+                    <button class="btn btn-line-01 btn_logout">
+                        <span>로그아웃</span>
+                        <i class="ico_logout"></i>
+                    </button>
+                </div>
+                <div class="my_setting">
+                    <ul>
+                        <li><a href="#" class="my_m my_m_01">시스템 관리</a></li>
+                        <li><a href="#" class="my_m my_m_02">개인 결재함</a></li>
+                        <li><a href="#" class="my_m my_m_03">부서 결재함</a></li>
+                        <li><a href="#" class="my_m my_m_04">나의 표준</a></li>
+                        <li><a href="#" class="my_m my_m_05">메인 화면 편집</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="quick_menu_div">
+                <button class="btn_quick_menu fold"></button>
+                <div class="quick_menu_box">
+                    <div class="quick_top">
+                        <span class="body14M">Quick Menu</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_01"></i>
+                                <span class="summary12B">표준등록</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_02"></i>
+                                <span class="summary12B">내가 결재할 문서</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_03"></i>
+                                <span class="summary12B">나의표준</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_04"></i>
+                                <span class="summary12B">팀 표준</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_05"></i>
+                                <span class="summary12B">즐겨찾기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_06"></i>
+                                <span class="summary12B">정보 및 문의</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container">
+        <div class="inner">
+
+            <!-- tab -->
+            <div class="tab_wrap">
+                <div class="tab">
+                    <span class="body14R ellipsis">관리표준-환경/기술</span>
+                    <button class="btn_tab_close">닫기</button>
+                </div>
+                <div class="tab active">
+                    <span class="body14R ellipsis">기술표준 - PLTCM</span>
+                    <button class="btn_tab_close">닫기</button>
+                </div>
+                <button class="btn_add_tab">탭추가</button>
+            </div>
+
+            <div class="main_content">
+                
+                <!-- 검색 -->
+                <div class="search_box">
+                    <div class="srch_keyword">
+                        <div class="label">검색어</div>
+                        <div class="ipt_div">
+                            <input type="text" placeholder="검색어를 입력해 주세요.">
+                            <button type="reset" class="btn_del_keyword"></button>
+                        </div>
+                    </div>
+                    <div class="srch_standard">
+                        <div class="label">표준 종류</div>
+                        <div class="selected_item_div">
+                        </div>
+                        <div class="srch_modal_box">
+                            <div class="srch_modal_tit">관리표준</div>
+                            <ul class="srch_chk_wrap">
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chkAll1" name="chkAll1" class="ipt_chk">
+                                    <label for="chkAll1" class="label_chk"><span>전체</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chk1_1" name="chk1_1" class="ipt_chk">
+                                    <label for="chk1_1" class="label_chk"><span>규정</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chk1_2" name="chk1_2" class="ipt_chk">
+                                    <label for="chk1_2" class="label_chk"><span>규칙</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chk1_3" name="chk1_3" class="ipt_chk">
+                                    <label for="chk1_3" class="label_chk"><span>지침</span></label>
+                                </li>
+                            </ul>
+
+                            <div class="srch_modal_tit">기술표준</div>
+                            <ul class="srch_chk_wrap">
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chkAll2" name="chkAll2" class="ipt_chk">
+                                    <label for="chkAll2" class="label_chk"><span>전체</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chk2_1" name="chk2_1" class="ipt_chk">
+                                    <label for="chk2_1" class="label_chk"><span>규격</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chk2_2" name="chk2_2" class="ipt_chk">
+                                    <label for="chk2_2" class="label_chk"><span>기준</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="chk2_3" name="chk2_3" class="ipt_chk">
+                                    <label for="chk2_3" class="label_chk"><span>작업표준</span></label>
+                                </li>
+                            </ul>
+                            <button class="btn_modal_close">닫기</button>
+                        </div>
+                    </div>
+                    <div class="srch_factory">
+                        <div class="label">작성 공장</div>
+                        <div class="selected_item_div">
+                        </div>
+                        <div class="srch_modal_box">
+                            <ul class="srch_chk_wrap">
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chkAll" name="f2_chkAll" class="ipt_chk">
+                                    <label for="f2_chkAll" class="label_chk"><span>전체</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_1" name="f2_chk1_1" class="ipt_chk">
+                                    <label for="f2_chk1_1" class="label_chk"><span>본사</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_2" name="f2_chk1_2" class="ipt_chk">
+                                    <label for="f2_chk1_2" class="label_chk"><span>당진제철소</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_3" name="f2_chk1_3" class="ipt_chk">
+                                    <label for="chk1_3" class="label_chk"><span>인천공장</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_4" name="f2_chk1_4" class="ipt_chk">
+                                    <label for="f2_chk1_4" class="label_chk"><span>포항공장</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_5" name="f2_chk1_5" class="ipt_chk">
+                                    <label for="f2_chk1_5" class="label_chk"><span>순천공장</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_6" name="f2_chk1_6" class="ipt_chk">
+                                    <label for="f2_chk1_6" class="label_chk"><span>울산공장</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_7" name="f2_chk1_7" class="ipt_chk">
+                                    <label for="f2_chk1_7" class="label_chk"><span>예산공장</span></label>
+                                </li>
+                                <li class="ipt_chk_div">
+                                    <input type="checkbox" id="f2_chk1_8" name="f2_chk1_8" class="ipt_chk" disabled="">
+                                    <label for="f2_chk1_8" class="label_chk"><span>해외</span></label>
+                                </li>
+                            </ul>
+                            <button class="btn_modal_close">닫기</button>
+                        </div>
+                    </div> 
+                    <div class="srch_btn_div">
+                        <button class="btn_srch">조회</button>
+                        <button class="btn_filter">검색조건펼침</button>
+                    </div>
+
+                    <!-- 검색 조건 패널 -->
+                    <div class="search_filter_box">
+
+                        <div class="filter_box_inner">
+                            <div class="srch_div">
+                                <div class="srch_modal_tit">검색어</div>
+                                <div class="ipt_div">
+                                    <input type="text" placeholder="검색어를 입력해 주세요.">
+                                    <button type="reset" class="btn_del_keyword"></button>
+                                </div>
+                                <p class="txt">검색어는 표준명, 파일 내용, 표준번호에서 검색합니다.</p>
+                            </div>
+                            <div class="srch_div">
+                                <div class="srch_modal_tit">표준 종류</div>
+                                
+                                <div class="div">
+                                    <P class="label">관리표준:</P>
+                                    <ul class="srch_chk_wrap">
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chkAll" name="f1_chkAll" class="ipt_chk">
+                                            <label for="f1_chkAll" class="label_chk"><span>전체</span></label>
+                                        </li>
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chk1_1" name="f1_chk1_1" class="ipt_chk">
+                                            <label for="f1_chk1_1" class="label_chk"><span>규정</span></label>
+                                        </li>
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chk1_2" name="f1_chk1_2" class="ipt_chk">
+                                            <label for="f1_chk1_2" class="label_chk"><span>규칙</span></label>
+                                        </li>
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chk1_3" name="f1_chk1_3" class="ipt_chk">
+                                            <label for="f1_chk1_3" class="label_chk"><span>지침</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="div">
+                                    <P class="label">기술표준:</P>
+                                    <ul class="srch_chk_wrap">
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chkAll2" name="f1_chkAll2" class="ipt_chk">
+                                            <label for="f1_chkAll2" class="label_chk"><span>전체</span></label>
+                                        </li>
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chk2_1" name="f1_chk2_1" class="ipt_chk">
+                                            <label for="f1_chk2_1" class="label_chk"><span>규정</span></label>
+                                        </li>
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chk2_2" name="f1_chk2_2" class="ipt_chk">
+                                            <label for="f1_chk2_2" class="label_chk"><span>규칙</span></label>
+                                        </li>
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chk2_3" name="f1_chk2_3" class="ipt_chk">
+                                            <label for="f1_chk2_3" class="label_chk"><span>지침</span></label>
+                                        </li>
+                                        <li class="ipt_chk_div">
+                                            <input type="checkbox" id="f1_chk2_4" name="f1_chk2_4" class="ipt_chk">
+                                            <label for="f1_chk2_4" class="label_chk"><span>지침</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="srch_div">
+                                <div class="srch_modal_tit">작성 공장</div>
+                                <ul class="srch_chk_wrap">
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chkAll3" name="f1_chkAll3" class="ipt_chk">
+                                        <label for="f1_chkAll3" class="label_chk"><span>전체</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_1" name="f1_chk3_1" class="ipt_chk">
+                                        <label for="f1_chk3_1" class="label_chk"><span>본사</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_2" name="f1_chk3_2" class="ipt_chk">
+                                        <label for="f1_chk3_2" class="label_chk"><span>당진제철소</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_3" name="f1_chk3_3" class="ipt_chk">
+                                        <label for="chk1_3" class="label_chk"><span>인천공장</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_4" name="f1_chk3_4" class="ipt_chk">
+                                        <label for="f1_chk3_4" class="label_chk"><span>포항공장</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_5" name="f1_chk3_5" class="ipt_chk">
+                                        <label for="f1_chk3_5" class="label_chk"><span>순천공장</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_6" name="f1_chk3_6" class="ipt_chk">
+                                        <label for="f1_chk3_6" class="label_chk"><span>울산공장</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_7" name="f1_chk3_7" class="ipt_chk">
+                                        <label for="f1_chk3_7" class="label_chk"><span>예산공장</span></label>
+                                    </li>
+                                    <li class="ipt_chk_div">
+                                        <input type="checkbox" id="f1_chk3_8" name="f1_chk3_8" class="ipt_chk">
+                                        <label for="f1_chk3_8" class="label_chk"><span>해외</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="srch_div srch_div2">
+                                <div class="srch_modal_tit">담당 부서</div>
+                                <div class="department_srch">
+                                    <div class="ipt_chk_div">
+                                        <input type="checkbox" id="aa" name="aa" class="ipt_chk">
+                                        <label for="aa" class="label_chk"><span>전체</span></label>
+                                    </div>
+                                
+                                    <div class="ipt_div">
+                                        <input type="text" placeholder="부서 선택">
+                                        <button type="reset" class="btn_del_keyword"></button>
+                                    </div>
+                                    <button class="btn btn-line-02 btn-medium">선택</button>
+                                    <ul class="srch_rdo_wrap">
+                                        <li class="ipt_rdo_div">
+                                            <input type="radio" id="rdo_bb1" name="rdo_bb" class="ipt_rdo" checked="checked">
+                                            <label for="rdo_bb1" class="label_rdo"><span>소속 본부</span></label>
+                                        </li>
+                                        <li class="ipt_rdo_div">
+                                            <input type="radio" id="rdo_bb2" name="rdo_bb"class="ipt_rdo">
+                                            <label for="rdo_bb2" class="label_rdo"><span>소속 사업부</span></label>
+                                        </li>
+                                        <li class="ipt_rdo_div">
+                                            <input type="radio" id="rdo_bb3" name="rdo_bb"class="ipt_rdo">
+                                            <label for="rdo_bb3" class="label_rdo"><span>소속실</span></label>
+                                        </li>
+                                        <li class="ipt_rdo_div">
+                                            <input type="radio" id="rdo_bb4" name="rdo_bb"class="ipt_rdo" disabled>
+                                            <label for="rdo_bb4" class="label_rdo"><span>소속팀</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="selected_item_div">
+                                    <div class="selected_item">
+                                        <span>OOO 팀</span>
+                                        <button class="del"></button>
+                                    </div>
+                                    <div class="selected_item">
+                                        <span>△△△팀 </span>
+                                        <button class="del"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="srch_filter_btn_div">
+                            <button class="btn btn-line-01 btn_reset">
+                                <span>초기화</span>
+                                <i class="ico_reset"></i>
+                            </button>
+                            <button class="btn btn-primary btn_search">
+                                <span>검색</span>
+                                <i class="ico_srch"></i>
+                            </button>
+                        </div>
+    
+    
+                        <button class="btn_modal_close">닫기</button>
+                    </div>
+                    <!-- //검색 조건 패널-->
+
+                </div>
+
+                <!-- 선강후판품질실 표준 현황 -->
+                <section class="main_chart_section">
+                    <div class="main_chart_left">
+                        <div class="title head18B">선강후판품질실 표준 현황</div>
+                        <div class="main_chart_box">
+                            <i class="ico_main_chart"></i>
+                            <ul class="standard_status">
+                                <li>
+                                    <span class="body14B txt">전체</span>
+                                    <a class="body14B num" href="#">176</a>
+                                </li>
+                                <li>
+                                    <span class="body14B txt">관리표준</span>
+                                    <a class="body14B num" href="#">66</a>
+                                </li>
+                                <li>
+                                    <span class="body14B txt">기술표준</span>
+                                    <a class="body14B num" href="#">110</a>
+                                </li>
+                                <li>
+                                    <span class="body14B txt">유효일 경과</span>
+                                    <a class="body14B num" href="#">10</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main_chart_right">
+                        <div class="main_chart_box">
+                            <div class="chart_div" style="margin-top:-10px;">
+                                <canvas id="teamChart1" width="456" height="242"></canvas>
+                            </div>
+                            <div class="legend_div">
+                                <ul class="legend">
+                                    <li>
+                                        <span class="label_shape" style="background-color:#2264DC;"></span>
+                                        <span class="label_txt">팀 보유 표준</span>
+                                    </li>
+                                    <li>
+                                        <span class="label_shape" style="background-color:#EC672A;"></span>
+                                        <span class="label_txt">유효일 경과</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main_chart_box">
+                            <div class="chart_div" style="margin-top:-10px;">
+                                <canvas id="teamChart2" width="456" height="242"></canvas>
+                            </div>
+                            <div class="legend_wrap">
+                                <div class="legend_div">
+                                    <ul class="legend">
+                                        <li>
+                                            <span class="label_shape" style="background-color:#2264DC;"></span>
+                                            <span class="label_txt">규정</span>
+                                        </li>
+                                        <li>
+                                            <span class="label_shape" style="background-color:#EC672A;"></span>
+                                            <span class="label_txt">규칙</span>
+                                        </li>
+                                        <li>
+                                            <span class="label_shape" style="background-color:#3BB000"></span>
+                                            <span class="label_txt">지침</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="legend_div">
+                                    <ul class="legend">
+                                        <li>
+                                            <span class="label_shape" style="background-color:#2264DC;"></span>
+                                            <span class="label_txt">규격</span>
+                                        </li>
+                                        <li>
+                                            <span class="label_shape" style="background-color:#EC672A;"></span>
+                                            <span class="label_txt">기준</span>
+                                        </li>
+                                        <li>
+                                            <span class="label_shape" style="background-color:#3BB000"></span>
+                                            <span class="label_txt">작업표준</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main_portlet_wrap">
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="head18B title">팀 표준</a>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="head18B title">결재함</a>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">결재할 표준</span></a></li>
+                                <li><a href="#"><span class="body14R">진행 중인 표준</span></a></li>
+                                <li><a href="#"><span class="body14R">작성 중인 표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="89px">
+                                        <col width="*">
+                                        <col width="92px">
+                                        <col width="60px">
+                                        <col width="74px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">제정</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">검토</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">유효성평가</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">폐기</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">검토</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none;">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="89px">
+                                        <col width="*">
+                                        <col width="92px">
+                                        <col width="60px">
+                                        <col width="74px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">제정</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획 비상계획비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">검토</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">유효성평가</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">폐기</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">검토</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none;">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="89px">
+                                        <col width="*">
+                                        <col width="92px">
+                                        <col width="60px">
+                                        <col width="74px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획 비상계획비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">제정</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">검토</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">유효성평가</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">폐기</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td class="body14M td_right"><span class="status">검토</span></td>
+                                            <td class="body14R">임국현</td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="head18B title">유효성 평가</a>
+
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">유효일 임박</span></a></li>
+                                <li><a href="#"><span class="body14R">유효일 만료</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="32px">
+                                        <col width="53px">
+                                        <col width="*">
+                                        <col width="88px">
+                                        <col width="34px">
+                                        <col width="52px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left"><em>평가</em></td>
+                                            <td class="body14M td_left"><span class="status">기술</span></td>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14R td_left">지침</td>
+                                            <td class="body14R td_dday">오늘</td>
+                                            <td class="body14R">임국현</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left"><em>평가</em></td>
+                                            <td class="body14M td_left"><span class="status">관리</span></td>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14R td_left">지침</td>
+                                            <td class="body14R td_dday">D-1</td>
+                                            <td class="body14R">임국현</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left"><em>평가</em></td>
+                                            <td class="body14M td_left"><span class="status">기술</span></td>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14R td_left">지침</td>
+                                            <td class="body14R td_dday">오늘</td>
+                                            <td>선우재덕</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left"><em>평가</em></td>
+                                            <td class="body14M td_left"><span class="status">기술</span></td>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14R td_left">지침</td>
+                                            <td class="body14R td_dday">오늘</td>
+                                            <td class="body14R">임국현</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left"><em>평가</em></td>
+                                            <td class="body14M td_left"><span class="status">기술</span></td>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14R td_left">지침</td>
+                                            <td class="body14R td_dday">오늘</td>
+                                            <td class="body14R">임국현</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="head18B title">최근 조회 표준</a>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="head18B title">즐겨찾기 표준</a>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont"> 
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="*">
+                                        <col width="24px">
+                                        <col width="88px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td>품질인증팀</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet portlet_default">
+                        <div class="portlet_top">
+                            <span class="title">표준 추가</span>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                                <button class="btn_setting">설정</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <button class="btn_add_portlet">포틀릿 추가하기</button>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet main_portlet_2x1">
+                        <div class="portlet_top">
+                            <a href="#" class="title">팀 표준</a>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet">
+                        <div class="portlet_top">
+                            <a href="#" class="title">팀 표준</a>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_portlet main_portlet_1x2">
+                        <div class="portlet_top">
+                            <a href="#" class="title">팀 표준</a>
+                            <div class="p_btn_div">
+                                <button class="btn_refresh">새로고침</button>
+                            </div>
+                        </div>
+                        <div class="portlet_cont">
+                            <ul class="p_tab">
+                                <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                            </ul>
+                            <div class="p_tab_cont">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p_tab_cont" style="display:none">
+                                <table class="tbl-p">
+                                    <colgroup>
+                                        <col width="*">
+                                        <col width="40px">
+                                        <col width="36px">
+                                        <col width="78px">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">(본사-경영지원)지침 비상계획 TEXT TEXT</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body14M td_left">비상계획</td>
+                                            <td class="body14M">지침</td>
+                                            <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                            <td class="body14R td_date">2023-11-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-portlet-wrap">
+                        <div class="main_portlet">
+                            <div class="portlet_top">
+                                <a href="#" class="title">즐겨찾기 표준</a>
+                                <div class="p_btn_div">
+                                    <button class="btn_refresh">새로고침</button>
+                                </div>
+                            </div>
+                            <div class="portlet_cont">
+                                <ul class="p_tab">
+                                    <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                    <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                                </ul>
+                                <div class="p_tab_cont"> 
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">(본사-경영지원)지침 비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="p_tab_cont" style="display:none">
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main_portlet">
+                            <div class="portlet_top">
+                                <a href="#" class="title">즐겨찾기 표준</a>
+                                <div class="p_btn_div">
+                                    <button class="btn_refresh">새로고침</button>
+                                </div>
+                            </div>
+                            <div class="portlet_cont">
+                                <ul class="p_tab">
+                                    <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                    <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                                </ul>
+                                <div class="p_tab_cont"> 
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">(본사-경영지원)지침 비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="p_tab_cont" style="display:none">
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main_portlet">
+                            <div class="portlet_top">
+                                <a href="#" class="title">즐겨찾기 표준</a>
+                                <div class="p_btn_div">
+                                    <button class="btn_refresh">새로고침</button>
+                                </div>
+                            </div>
+                            <div class="portlet_cont">
+                                <ul class="p_tab">
+                                    <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                    <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                                </ul>
+                                <div class="p_tab_cont"> 
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">(본사-경영지원)지침 비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="p_tab_cont" style="display:none">
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main_portlet">
+                            <div class="portlet_top">
+                                <a href="#" class="title">즐겨찾기 표준</a>
+                                <div class="p_btn_div">
+                                    <button class="btn_refresh">새로고침</button>
+                                </div>
+                            </div>
+                            <div class="portlet_cont">
+                                <ul class="p_tab">
+                                    <li class="on"><a href="#"><span class="body14R">관리표준</span></a></li>
+                                    <li><a href="#"><span class="body14R">기술표준</span></a></li>
+                                </ul>
+                                <div class="p_tab_cont"> 
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">(본사-경영지원)지침 비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="p_tab_cont" style="display:none">
+                                    <table class="tbl-p">
+                                        <colgroup>
+                                            <col width="144px">
+                                            <col width="*">
+                                            <col width="24px">
+                                            <col width="88px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14M td_left">비상계획</td>
+                                                <td class="body14M">지침</td>
+                                                <td><img src="../assets/images/svg/file_icon/ico_pdf.svg" alt=""></td>
+                                                <td>품질인증팀</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_div">
+            <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+            <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+            <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script>
+ portletTab();   
+</script>
+
+
+<!-- Chart Js -->
+<script src="../assets/plugins/chart/Chart.3.9.1.min.js"></script>
+<script src="../assets/plugins/chart/chartjs-plugin-datalabels.min.js"></script><!-- v2.2.0 -->
+<script>
+    const ctx1 = document.getElementById('teamChart1').getContext('2d');
+    
+    const barChartData1 = {
+        labels: ['관리표준','기술표준'],
+        datasets: [{
+            label: "관리표준",
+            backgroundColor: "#2264DC", 
+            categoryPercentage: 0.24,
+            barPercentage: 0.84,
+            data: [40,27],
+            datalabels: {
+                color: '#2264DC',
+            },
+         },
+        {
+            label: "기술표준",
+            backgroundColor: "#EC672A",
+            categoryPercentage: 0.24,
+            barPercentage: 0.84,
+            data: [43,53],
+            datalabels: {
+                color: '#EC672A',
+            },
+        }]
+    }
+    
+    //config
+    const barChart1 = new Chart(ctx1, {
+        type: 'bar',	
+        data: barChartData1,
+        options: {
+            layout: {
+                padding: {
+                    bottom: -15,
+                }
+            },
+            scales: {
+                x:{
+                    grid: {
+                        display:false,
+                        drawBorder: false,
+                    },
+                    ticks: {
+                        color: '#4F5A7E',
+                        font:  {
+                            size: 12,
+                            family: 'Noto Sans KR',
+                        },
+                        padding: 20,
+                    }
+                },
+                y: {
+                    grid: {
+                        borderColor: '#eeeeee',
+                        borderWidth: 1,
+                        drawBorder: false,
+                        color: (line) => (line.index === 0 ? '#B5B9C0' : '#EEEFF5'),
+                    },
+                    beginAtZero: true,
+                    ticks: {
+                        color: '#4F5A7E',
+                        font:  {
+                            size: 14,
+                            family: 'Noto Sans KR',
+                        },
+                        max: 60,
+                        min: 0,
+                        stepSize: 10,
+                        padding: 16,
+                    }
+                },
+            },
+            tooltips: {
+                  intersect: false,
+            },
+            plugins: {
+                legend: {
+                    display: false,
+                },
+                datalabels: {
+                    font: {
+                        size: 12,
+                        lineHeight:0.5,
+                    },
+                    padding:1,
+                    align: 'end',
+                    anchor: 'end',
+                },
+            }
+        },
+        plugins:[
+            //subLabels,
+            ChartDataLabels
+        ],
+    });
+
+
+    const ctx2 = document.getElementById('teamChart2').getContext('2d');
+    
+    const barChartData2 = {
+        labels: ['관리표준','기술표준'],
+        datasets: [{
+            label: "규격",
+            backgroundColor: "#2264DC", 
+            categoryPercentage: 0.36,
+            barPercentage: 0.84,
+            data: [40,27],
+            datalabels: {
+                color: '#2264DC',
+            },
+         },
+        {
+            label: "기준",
+            backgroundColor: "#EC672A",
+            categoryPercentage: 0.36,
+            barPercentage: 0.84,
+            data: [43,53],
+            datalabels: {
+                color: '#FE777B',
+            },
+        },
+        {
+            label: "작업표준",
+            backgroundColor: "#3BB000",
+            categoryPercentage: 0.36,
+            barPercentage: 0.84,
+            data: [18,34],
+            datalabels: {
+                color: '#3BB000',
+            },
+        }
+    ]
+    }
+    
+    //config
+    const barChart2= new Chart(ctx2, {
+        type: 'bar',	
+        data: barChartData2,
+        options: {
+            layout: {
+                padding: {
+                    bottom: -15,
+                }
+            },
+            scales: {
+                x:{
+                    grid: {
+                        display:false,
+                        drawBorder: false,
+                    },
+                    ticks: {
+                        color: '#4F5A7E',
+                        font:  {
+                            size: 12,
+                            family: 'Noto Sans KR',
+                        },
+                        padding: 20,
+                    }
+                },
+                y: {
+                    grid: {
+                        borderColor: '#eeeeee',
+                        borderWidth: 1,
+                        drawBorder: false,
+                        color: (line) => (line.index === 0 ? '#B5B9C0' : '#EEEFF5'),
+                    },
+                    beginAtZero: true,
+                    ticks: {
+                        color: '#4F5A7E',
+                        font:  {
+                            size: 14,
+                            family: 'Noto Sans KR',
+                        },
+                        max: 60,
+                        min: 0,
+                        stepSize: 10,
+                        padding: 16,
+                    }
+                },
+            },
+            tooltips: {
+                  intersect: false,
+            },
+            plugins: {
+                legend: {
+                    display: false,
+                },
+                datalabels: {
+                    font: {
+                        size: 12,
+                        lineHeight:0.5,
+                    },
+                    padding:1,
+                    align: 'end',
+                    anchor: 'end',
+                },
+            }
+        },
+        plugins:[
+            //subLabels,
+            ChartDataLabels
+        ],
+    });
+
+</script>
+
+
+</body>
+</html>
