@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/common.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.styleGuideContent{padding:0 120px;transform-origin: top left;}
+.styleGuideTitle{font-size:32px;font-weight:700;color:#2E3033;height:80px;border-bottom:1px solid #2E3033;padding-top:20px;}
+.styleGuideContent .title{width:140px;font-size:24px;font-weight:700;flex-shrink:0;line-height:1;}
+.styleGuideContent>.flex{padding-top:24px;padding-bottom:24px;}
+.styleGuideContent h3{font-size:30px;font-weight:700;color:#222;padding:30px 28px;border-bottom:1px solid var(--Grayscale-300);;}
+
+.textStyle{padding-top:32px;border-bottom:1px solid var(--Grayscale-300);}
+.textStyle li{display:flex;align-items:center;margin-bottom:32px;}
+.div1{width:270px;font-size:14px;color:#E51737;font-weight:bold;}
+.div2{width:880px;font-size:inherit;color:#000;}
+.div3{width:132px;}
+.div4{width:132px;}
+.div5{width:132px;}
+.div6{width:132px;}
+</style>
+</head>
+
+<!-- <body lang="zh-Hans"> 중국어 간체 표기-->
+<body>
+<div class="main_wrapper">
+
+    <!-- header -->
+    <header class="header">
+        <h1 class="logo">
+            <span class="logo_img"></span>
+            <span class="logo_text">표준관리시스템</span>
+        </h1>
+        <ul class="gnb">
+            <li><a href="#">경영매뉴얼</a></li>
+            <li><a href="#">관리표준</a></li>
+            <li><a href="#">기술표준</a></li>
+            <li><a href="#">인증기록관리</a></li>
+            <li class="oversea-corp">
+                <a href="#">해외법인</a>
+                <div class="gnb_sub">
+                    <button class="btn_gnb_sub">관리표준</button>
+                    <button class="btn_gnb_sub on">기술표준</button>
+                </div>
+            </li>
+            <li><a href="#">전사표준현황</a></li>
+            <li><a href="#">수급업체 작업표준</a></li>
+        </ul>
+        <div class="quick_navi">
+            <ul class="my_work">
+                <li>
+                    <span class="txt">결재</span>
+                    <span class="num">10</span>
+                </li>
+                <li>
+                    <span class="txt">진행</span>
+                    <span class="num">10</span>
+                </li>
+                <li>
+                    <span class="txt">작성</span>
+                    <span class="num">15</span>
+                </li>
+                <li>
+                    <span class="txt">공람</span>
+                    <span class="num">5</span>
+                </li>
+            </ul>
+
+            <button class="btn_my_menu">
+                <em>홍길동</em><span>책임</span>
+            </button>
+
+            <div class="my_quick_box" style="display:none;">
+                <div class="my_div">
+                    <div class="my_name">
+                        <em>홍길동</em><span>책임</span>
+                    </div>
+                    <p>품질인증표준팀</p>
+                    <button class="btn btn-line-01 btn_logout">
+                        <span>로그아웃</span>
+                        <i class="ico_logout"></i>
+                    </button>
+                </div>
+                <div class="my_setting">
+                    <ul>
+                        <li><a href="#" class="my_m my_m_01">시스템 관리</a></li>
+                        <li><a href="#" class="my_m my_m_02">개인 결재함</a></li>
+                        <li><a href="#" class="my_m my_m_03">부서 결재함</a></li>
+                        <li><a href="#" class="my_m my_m_04">나의 표준</a></li>
+                        <li><a href="#" class="my_m my_m_05">메인 화면 편집</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="quick_menu_div">
+                <button class="btn_quick_menu fold"></button>
+                <div class="quick_menu_box" style="display:none;">
+                    <div class="quick_top">
+                        <span>Quick Menu</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_01"></i>
+                                <span>표준등록</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_02"></i>
+                                <span>내가 결재할 문서</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_03"></i>
+                                <span>나의표준</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_04"></i>
+                                <span>팀 표준</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_05"></i>
+                                <span>즐겨찾기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="quick_m">
+                                <i class="ico_qm ico_qm_06"></i>
+                                <span>정보 및 문의</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container">
+        <div class="styleGuideContent">
+            <h2 class="styleGuideTitle">Typograph</h2>
+            <section>
+                <!-- <p>Font family : 기본 폰트 및 다국어를 고려한 폰트</p> -->
+                <h3>Noto Sans CJK KR</h3>
+                <ul class="textStyle">
+                    <li>
+                        <div class="div1">Head40B</div>
+                        <div class="div2">
+                            <!-- <p class="head40B">Hyundai steel 현대제철 现代钢铁</p> 중국어 적용 시-->
+                            <p class="head40B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">40px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">-1%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head40R</div>
+                        <div class="div2">
+                            <p class="head40R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">40px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">-1%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head32B</div>
+                        <div class="div2">
+                            <p class="head32B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">32px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">-1%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head32R</div>
+                        <div class="div2">
+                            <p class="head32R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">32px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">-1%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head24B</div>
+                        <div class="div2">
+                            <p class="head24B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">24px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">-1%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head24R</div>
+                        <div class="div2">
+                            <p class="head24R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">24px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">-1%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head20B</div>
+                        <div class="div2">
+                            <p class="head20B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">20px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head20R</div>
+                        <div class="div2">
+                            <p class="head20R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">20px</div>
+                        <div class="div5">140%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head18B</div>
+                        <div class="div2">
+                            <p class="head18B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">18px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Head18R</div>
+                        <div class="div2">
+                            <p class="head18R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">18px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                </ul>
+                <ul class="textStyle">
+                    <li>
+                        <div class="div1">Body16B</div>
+                        <div class="div2">
+                            <p class="body16B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">16px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Body16M</div>
+                        <div class="div2">
+                            <p class="body16M">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Medium</div>
+                        <div class="div4">16px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Body16R</div>
+                        <div class="div2">
+                            <p class="body16R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">16px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+
+                    <li>
+                        <div class="div1">Body14B</div>
+                        <div class="div2">
+                            <p class="body14B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">14px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Body14M</div>
+                        <div class="div2">
+                            <p class="body14M">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Medium</div>
+                        <div class="div4">14px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Body14R</div>
+                        <div class="div2">
+                            <p class="body14R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">14px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                </ul>
+
+                <ul class="textStyle">
+                    <li>
+                        <div class="div1">Summary12B</div>
+                        <div class="div2">
+                            <p class="summary12B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">12px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Summary12R</div>
+                        <div class="div2">
+                            <p class="summary12R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">12px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                </ul>
+                <ul class="textStyle">
+                    <li>
+                        <div class="div1">Caption11B</div>
+                        <div class="div2">
+                            <p class="caption11B">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Bold</div>
+                        <div class="div4">11px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                    <li>
+                        <div class="div1">Caption11R</div>
+                        <div class="div2">
+                            <p class="caption11R">Hyundai steel 현대제철</p>
+                        </div>
+                        <div class="div3">Regular</div>
+                        <div class="div4">11px</div>
+                        <div class="div5">130%</div>
+                        <div class="div6">0%</div>
+                    </li>
+                </ul>
+
+            </section>
+
+        </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_div">
+            <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+            <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+            <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+
+</body>
+</html>
