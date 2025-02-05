@@ -46,3 +46,23 @@ footer.footer{width:100%;height:66px; text-align:left;background:#fff;border-top
 .admin_container .left_filter_cont ul li i.admin_snb04 {background-image: url("../images_admin/admin_ico-snb04.svg");}
 .admin_container .left_filter_cont ul li i.admin_snb05 {background-image: url("../images_admin/admin_ico-snb05.svg");}
 .admin_container .left_filter_cont ul li i.admin_snb06 {background-image: url("../images_admin/admin_ico-snb06.svg");}
+
+.admin_container .breadcrumb {margin-bottom:16px;}
+
+
+/* 왼쪽에 트리가 위치하는 경우의 cont */
+.Wrap_tree_cont {display: flex; height: 100%; gap: 40px;}
+.Wrap_tree_cont .title {margin-bottom:10px;}
+.Wrap_tree_cont .l_Side {display: flex; flex-direction: column;}
+.Wrap_tree_cont .l_Side .portlet_edit_left {flex-grow: 1; gap: 10px; display: flex; flex-direction: column;}
+.Wrap_tree_cont .l_Side .portlet_edit_left .p_edit_tab_wrap {flex-grow: 1; display: flex;}
+.Wrap_tree_cont .l_Side .portlet_edit_left .p_edit_tab_wrap .p_edit_tab_cont {width: 100%; height: 100%;}
+.Wrap_tree_cont .r_Box {flex-grow: 1; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;}
+.Wrap_tree_cont .r_Box .box-white {width: 100%;}
+.Wrap_tree_cont .r_Box .box-white .head20B {padding-bottom: 10px;border-bottom: 1px solid #D2D7E5;margin-bottom: 10px;}
+.Wrap_tree_cont .r_Box .box-white .box-in-form {display: flex; flex-wrap: wrap;}
+.Wrap_tree_cont .r_Box .box-white .box-in-form li {margin-top: 0; width: 50%;}
+.Wrap_tree_cont .r_Box .box-white .box-in-form li.w100 {width: 100%;}
+
+.srch_portlet .btn_reset {width:56px;height:48px;background:#fff url(../images/svg/ico_reset.svg) no-repeat center center;border-radius:8px;border:1px solid var(--Grayscale-400);box-shadow: 0px 0px 8px 0px #0000000A;margin-left:10px;}
+
