@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/admin_ssj.css">
+<link rel="stylesheet" href="../assets/css/admin_osy.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+
+    <!-- header -->
+    <header class="admin_header">
+        <h1 class="logo">
+            <span class="logo_img"></span>
+            <span class="logo_text body14B">표준관리시스템 시스템관리</span>
+        </h1>
+        <ul class="gnb">
+            <li class="active"><a href="#" class="body16M">표준관리</a></li>
+            <li><a href="#" class="body16M">해외법인 표준관리</a></li>
+            <li><a href="#" class="body16M">경영 매뉴얼</a></li>
+            <li><a href="#" class="body16M">수급업체 작업표준</a></li>
+            <li><a href="#" class="body16M">이력 조회</a></li>
+            <li><a href="#" class="body16M">시스템 관리</a></li>
+        </ul>
+        <div class="btnzone">
+            <button class="btn btn-logout btn-medium"><span class="body16M">나가기</span><i class="ico-btn ico_arr"></i></button>
+        </div>
+        
+        
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container admin_container">
+        <div class="inner">
+
+            <div class="content_wrap">
+
+                <!-- SNB -->
+                <div class="left_filter_cont">
+                    <ul class="snb">
+                        <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_1.svg"></div>관리표준 분류 체계</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_2.svg"></div>기술표준 분류 체계</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_3.svg"></div>유효성 평가표</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_4.svg"></div>결재 모니터링</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_5.svg"></div>담당 부서 삭제된 표준</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_6.svg"></div>폐기된 표준</a></li>
+                    </ul>
+                </div>
+                <!-- //SNB -->
+
+
+                <!-- contents -->
+                <div class="content">
+                    <!-- location -->
+                    <ol class="breadcrumb">
+                        <li>표준 관리</li>
+                        <li class="on">유효성 평가표</li>
+                    </ol>
+
+                    
+                    <div class="Wrap_tree_cont">
+                        <div class="r_Box">
+                                             
+                            <div class="btn_div">
+                                <button class="btn btn-primary btn-medium"><span class="body14B">등록</span></button>
+                                <button class="btn btn-line-01 btn-medium"><span class="body14B">삭제</span></button>
+                            </div>
+
+                            <div class="search_result_cont">
+                                <div class="tbl_cont">
+                                    <table class="tbl-st1">
+                                        <colgroup>
+                                            <col width="60px">
+                                            <col width="308px">
+                                            <col width="180px">
+                                            <col width="180px">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="ipt_chk_div">
+                                                        <input type="checkbox" id="all" name="all" class="ipt_chk" title="행 전체 선택">
+                                                        <label for="all" class="label_chk"></label>
+                                                    </div>
+                                                </th>
+                                                <th><span class="body14M">평가표 이름</span></th>
+                                                <th><span class="body14M">사용 여부</span></th>
+                                                <th><span class="body14M">등록일</span></th>
+                                                <th><span class="body14M">내용</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body14R">
+                                                    <div class="ipt_chk_div">
+                                                        <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
+                                                        <label for="row1" class="label_chk"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="td_left">
+                                                    당진 1냉연 2CGL 합금화로 조업기준당진
+                                                </td>
+                                                <td class="body14R">
+                                                    <label class="toggle-switch">
+                                                        <input role="switch" type="checkbox" class="body14R" checked>
+                                                        <span>ON/OFF</span>
+                                                    </label>
+                                                </td>
+                                                <td class="body14R">2024-12-31</td>
+                                                <td class="body14R">-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14R">
+                                                    <div class="ipt_chk_div">
+                                                        <input type="checkbox" id="row2" name="row2" class="ipt_chk" title="행 선택">
+                                                        <label for="row2" class="label_chk"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="td_left">
+                                                    당진 1냉연 2CGL 합금화로 조업기준당진
+                                                </td>
+                                                <td class="body14R">
+                                                    <label class="toggle-switch">
+                                                        <input role="switch" type="checkbox" class="body14R">
+                                                        <span>ON/OFF</span>
+                                                    </label>
+                                                </td>
+                                                <td class="body14R">2024-12-31</td>
+                                                <td class="body14R">-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14R">
+                                                    <div class="ipt_chk_div">
+                                                        <input type="checkbox" id="row2" name="row2" class="ipt_chk" title="행 선택">
+                                                        <label for="row2" class="label_chk"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="td_left">
+                                                    당진 1냉연 2CGL 합금화로 조업기준당진
+                                                </td>
+                                                <td class="body14R">
+                                                    <label class="toggle-switch">
+                                                        <input role="switch" type="checkbox" class="body14R">
+                                                        <span>ON/OFF</span>
+                                                    </label>
+                                                </td>
+                                                <td class="body14R">2024-12-31</td>
+                                                <td class="body14R">-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14R">
+                                                    <div class="ipt_chk_div">
+                                                        <input type="checkbox" id="row2" name="row2" class="ipt_chk" title="행 선택">
+                                                        <label for="row2" class="label_chk"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="td_left">
+                                                    당진 1냉연 2CGL 합금화로 조업기준당진
+                                                </td>
+                                                <td class="body14R">
+                                                    <label class="toggle-switch">
+                                                        <input role="switch" type="checkbox" class="body14R">
+                                                        <span>ON/OFF</span>
+                                                    </label>
+                                                </td>
+                                                <td class="body14R">2024-12-31</td>
+                                                <td class="body14R">-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14R">
+                                                    <div class="ipt_chk_div">
+                                                        <input type="checkbox" id="row2" name="row2" class="ipt_chk" title="행 선택">
+                                                        <label for="row2" class="label_chk"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="td_left">
+                                                    당진 1냉연 2CGL 합금화로 조업기준당진
+                                                </td>
+                                                <td class="body14R">
+                                                    <label class="toggle-switch">
+                                                        <input role="switch" type="checkbox" class="body14R">
+                                                        <span>ON/OFF</span>
+                                                    </label>
+                                                </td>
+                                                <td class="body14R">2024-12-31</td>
+                                                <td class="body14R">-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body14R">
+                                                    <div class="ipt_chk_div">
+                                                        <input type="checkbox" id="row2" name="row2" class="ipt_chk" title="행 선택">
+                                                        <label for="row2" class="label_chk"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="td_left">
+                                                    당진 1냉연 2CGL 합금화로 조업기준당진
+                                                </td>
+                                                <td class="body14R">
+                                                    <label class="toggle-switch">
+                                                        <input role="switch" type="checkbox" class="body14R">
+                                                        <span>ON/OFF</span>
+                                                    </label>
+                                                </td>
+                                                <td class="body14R">2024-12-31</td>
+                                                <td class="body14R">-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tbl_bottom">
+                                    <div class="paging">
+                                        <a href="#" class="p_arr p_first disabled"></a>
+                                        <a href="#" class="p_arr p_prev disabled"></a>
+                                        <a href="javascript:void(0);" class="on"><span>1</span></a>
+                                        <a href="#"><span>2</span></a>
+                                        <a href="#"><span>3</span></a>
+                                        <a href="#"><span>4</span></a>
+                                        <a href="#"><span>5</span></a>
+                                        <a href="#"><span>6</span></a>
+                                        <a href="#"><span>7</span></a>
+                                        <a href="#"><span>8</span></a>
+                                        <a href="#"><span>9</span></a>
+                                        <a href="#"><span>10</span></a>
+                                        <a href="#" class="p_arr p_next"></a>
+                                        <a href="#" class="p_arr p_last"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //contents -->
+            </div>
+
+        </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_div">
+            <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+            <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+            <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+
+
+</body>
+</html>
