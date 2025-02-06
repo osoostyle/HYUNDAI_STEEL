@@ -288,3 +288,19 @@ function toggleButton() {
   });
 }
 
+
+
+
+//이미지 업로드 컴포넌트
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        document.getElementById('preview').src = e.target.result;
+        $('.upImg').show();
+    };
+    reader.readAsDataURL(input.files[0]);
+  } else {
+    document.getElementById('preview').src = "";
+  }
+}
