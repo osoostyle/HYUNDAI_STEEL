@@ -60,6 +60,29 @@
 .admin_container .main_linkbnr_wrap .linkbnr .banner .text_box .text {width:100%; text-align:center; color:var(--Secondary-DeepBlue);}
 
 
+/* 시스템관리 - 표준관리 */
+.admin_container .search_cont .btn_div {position:initial;}
+/* 결재 단계 */
+.step_wrap {width:100%; padding:40px 32px;} 
+.approval_step {position:relative; display:inline-flex; justify-content:flex-start; gap:46px; max-width:100%;}
+.approval_step::before {position:absolute; left:30px; bottom:26px; z-index:1; content:''; width:calc(100% - 60px); height:2px; border-top:2px dotted var(--Grayscale-300);}
+.approval_step li {display:inline-flex; flex-direction:column; justify-content:center; gap:8px; min-width:84px; padding-left:16px; padding-right:16px;}
+.approval_step li .state {text-align:center;}
+.approval_step li .circle_box {position:relative; z-index:2; display:inline-flex; justify-content:center; align-items:center; min-width:52px; height:52px; padding:0 10px; margin:auto; font-family:'Pretendard'; color:var(--Text-White); letter-spacing:-1px; border-radius:26px; box-sizing:border-box;}
+    .approval_step li.gray-01 .state {color:var(--Text-400);}
+    .approval_step li.gray-01 .circle_box {background-color:var(--Grayscale-400);}
+    .approval_step li.gray-02 .state {color:var(--Text-500);}
+    .approval_step li.gray-02 .circle_box {background-color:var(--Grayscale-500);}
+    .approval_step li.gray-03 .state {color:var(--Text-600);}
+    .approval_step li.gray-03 .circle_box {background-color:var(--Grayscale-600);}
+    .approval_step li.gray-04 .state {color:var(--Text-700);}
+    .approval_step li.gray-04 .circle_box {background-color:var(--Grayscale-700);}
+    .approval_step li.completion .state {color:var(--Primary-Blue);}
+    .approval_step li.completion .circle_box {padding:0 16px; background-color:var(--Secondary-SkyBlue);}
+    .approval_step li.reject .state {color:var(--Status-Error);}
+    .approval_step li.reject .circle_box {background-color:var(--Status-Error);}
+
+
 /* 시스템관리 - 이력조회 */
 /* 검색 조건 */
 .admin_container .srch_wrap .title_box {display:flex; justify-content:space-between; align-items:center; gap:10px; width:100%; padding:16px 8px 8px 0; border-bottom:1px solid var(--Grayscale-300); cursor:pointer;}
@@ -78,3 +101,4 @@
 .admin_container .search_result_cont td .ctnt_area {display:inline-flex; justify-content:space-between; align-items:center; gap:10px;}
 .admin_container .search_result_cont td .ctnt_area .text {width:80px; text-align:center; word-break:break-all; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; overflow:hidden;}
  
+
