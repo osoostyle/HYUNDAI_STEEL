@@ -60,6 +60,7 @@
 .admin_container .srch_wrap .accordion-desc .form-div .ipt_chk_div {margin:6px 16px 6px 0;}
 .admin_container .srch_wrap .accordion-desc .form-div .btn-line-02 span {color:var(--fontColor);}
 .admin_container .srch_wrap .box-in-form + .srch_filter_btn_div {padding-top:24px; border-top:1px solid var(--Grayscale-300);}
+/* 검색 결과 */
 .admin_container .wrap_pt40_pb40_gap24 {display:flex; flex-direction:column; gap:24px; padding-top:40px; padding-bottom:40px;}
 .admin_container .search_result_cont td .ctnt_area {display:inline-flex; justify-content:space-between; align-items:center; gap:10px;}
 .admin_container .search_result_cont td .ctnt_area .text {width:80px; text-align:center; word-break:break-all; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; overflow:hidden;}
