@@ -44,8 +44,7 @@
                     <!-- SNB -->
                     <div class="left_filter_cont">
                         <ul class="snb">
-                            <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_1.svg"></div>경영 매뉴얼 분류 체계</a></li>
-                            <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_4.svg"></div>결재 모니터링</a></li>
+                            <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb3_1.svg"></div>인증 기록 분류 체계</a></li>
                         </ul>
                     </div>
                     <!-- //SNB -->
@@ -76,9 +75,6 @@
     
                                 <div class="box-white">
                                     <div class="title">
-                                        <div class="imgBox">
-                                            <img src="../assets/images_admin/thum_default.svg"> <!-- 기본이미지 -->
-                                        </div>
                                         <div class="txtbox">
                                             <h4 class="head20B">ISO/IATF</h4>
                                             <ol class="breadcrumb">
@@ -249,34 +245,6 @@
                         </div>
                     </li>
 
-                    <li class="table mb16">
-                        <div class="th form-tit tit1 vert-top">
-                            <p class="list-dot body14B">디렉토리 이미지</p>
-                        </div>
-                        <div class="td form-div">
-                            <!-- 이미지 등록 컴포넌트-->
-                            <div class="imgUploader imgSize-123"> <!-- 기본이미지 등록컴포넌트는 'imgSize-123'이 들어가지않습니다. 각 올려지는 이미지크기에 맞게 size-??? 클래스가 추가됩니다.-->
-                                <ul class="imgList">
-                                    <li>
-                                        <input type="file" id="btn_imgUp" onchange="readURL(this);">
-                                        <label for="btn_imgUp" class="btn_imgUp">이미지 선택</label>
-                                        
-                                    </li>
-                                    <li class="upImg" style="display:none;">
-                                        <img src="" id="preview">
-                                        <button class="btn-del">이미지 삭제</button>
-                                    </li>
-                                </ul>
-                                <div class="guideTxt">
-                                    <p class="body14R">1level은 경영 매뉴얼 메인 화면에 디렉토리로 표시됩니다.<br>
-                                        함께 출력될 이미지를 등록해 주십시오.</p>
-                                    <span class="summary12R">※ 123 X 123 pixel의 gif 형식</span>
-                                </div>
-                            </div>
-                            <!-- //이미지 등록 컴포넌트-->
-                        </div>
-                    </li>
-
                     <li class="table w100 pay_detail">
                         <div class="th form-tit tit2 justify-between">
                             <h5 class="list-dot body14B">권한 관리</h5>
@@ -349,6 +317,105 @@
 
                     <li class="table">
                         <div class="th form-tit tit2">
+                            <p class="list-dot body14B">문서 구분</p>
+                        </div>
+                        <div class="td form-div">
+                            <div class="flex">
+                                <div class="ipt_div w100">
+                                    <input type="text" placeholder="문서 구분 추가">
+                                    <button type="reset" class="btn_del_keyword"></button>
+                                </div>
+                                <button class="btn btn-line-02 btn-medium" style="width:123px;"><span>추가</span></button>
+                            </div>
+
+                            <!-- 문서 구분 목록 -->
+                            <ul class="docu_sort_list mt16">
+                                <li class="docuBox_drag">
+                                    <i class="ico_file ico_file_etc"></i>
+                                    <div class="docuNmBox">
+                                        <div class="docuNm body14R">관리계획서
+                                            <button class="btn_edit">변경</button>
+                                        </div>
+                                        <div class="docuNmEditBox">
+                                            <div class="ipt_div">
+                                                <input type="text" placeholder="" value="관리계획서">
+                                                <button type="reset" class="btn_del_keyword"></button>
+                                            </div>
+                                            <div class="btn_div">
+                                                <button class="btn_save">저장</button>
+                                                <button class="btn_reset">취소</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn-del">삭제</button>
+                                </li>
+
+                                <li class="docuBox_drag">
+                                    <i class="ico_file ico_file_etc"></i>
+                                    <div class="docuNmBox">
+                                        <div class="docuNm body14R">관리계획서
+                                            <button class="btn_edit">변경</button>
+                                        </div>
+                                        <div class="docuNmEditBox">
+                                            <div class="ipt_div">
+                                                <input type="text" placeholder="" value="관리계획서">
+                                                <button type="reset" class="btn_del_keyword"></button>
+                                            </div>
+                                            <div class="btn_div">
+                                                <button class="btn_save">저장</button>
+                                                <button class="btn_reset">취소</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn-del">삭제</button>
+                                </li>
+                                <li class="docuBox_drag">
+                                    <i class="ico_file ico_file_etc"></i>
+                                    <div class="docuNmBox">
+                                        <div class="docuNm body14R">관리계획서
+                                            <button class="btn_edit">변경</button>
+                                        </div>
+                                        <div class="docuNmEditBox">
+                                            <div class="ipt_div">
+                                                <input type="text" placeholder="" value="관리계획서">
+                                                <button type="reset" class="btn_del_keyword"></button>
+                                            </div>
+                                            <div class="btn_div">
+                                                <button class="btn_save">저장</button>
+                                                <button class="btn_reset">취소</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn-del">삭제</button>
+                                </li>
+
+                                <li class="docuBox_drag">
+                                    <i class="ico_file ico_file_etc"></i>
+                                    <div class="docuNmBox">
+                                        <div class="docuNm body14R">관리계획서
+                                            <button class="btn_edit">변경</button>
+                                        </div>
+                                        <div class="docuNmEditBox">
+                                            <div class="ipt_div">
+                                                <input type="text" placeholder="" value="관리계획서">
+                                                <button type="reset" class="btn_del_keyword"></button>
+                                            </div>
+                                            <div class="btn_div">
+                                                <button class="btn_save">저장</button>
+                                                <button class="btn_reset">취소</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn-del">삭제</button>
+                                </li>
+                            </ul>
+                            <!-- //문서 구분 목록 -->
+
+                        </div>
+                    </li>   
+
+                    <li class="table">
+                        <div class="th form-tit tit2">
                             <p class="list-dot body14B">설명</p>
                         </div>
                         <div class="td form-div">
@@ -375,8 +442,6 @@
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../assets/js/script.js"></script>
 <script type="text/javascript" src="../assets/js/script_ssj.js"></script>
-<script>
-    toggleButton();
-</script>
+
 </body>
 </html>
