@@ -6,12 +6,14 @@
 .gap_0 {gap:0 !important;}
 .space-between {align-content:space-between;}
 .justify-end {justify-content:flex-end;}
+
 .btn-more {position:relative; min-width:44px;}
 .btn-more span {font-size:0; text-indent:-9999px; overflow:hidden;}
 .btn-more::before,
 .btn-more::after {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); content:''; background-color:var(--Grayscale-500); border-radius:2px;}
 .btn-more::before {width:14px; height:2px;}
 .btn-more::after {width:2px; height:14px;}
+
 .btn-order-wrap {display:inline-flex; justify-content:space-between; align-items:center; gap:10px; padding-left:8px; padding-right:8px; text-align:left;}
 .btn-order-wrap .order-title {width:100px; text-align:center;}
 .btn-order {display:inline-flex; align-items:center; width:18px; height:18px;}
@@ -19,6 +21,17 @@
 .btn-order [type="checkbox"]::before {position:absolute; top:0; left:0; content:''; width:100%; height:100%; background:url(../images_admin/arrow_drop_down.svg) center no-repeat;}
 .btn-order [type="checkbox"]:checked::before {transform:scaleY(-1);}
 .btn-order span {font-size:0; text-indent:-9999px; overflow:hidden;}
+
+.toggle-switch {display:inline-flex; justify-content:center; align-items:center; width:64px; height:32px;}
+.toggle-switch [type="checkbox"] {position:relative; appearance:none; width:64px; height:32px; padding:4px; border-radius:49px; background-color:var(--Grayscale-150); cursor:pointer; box-sizing:border-box; transition:all .15s ease;}
+.toggle-switch [type="checkbox"]::before {position:absolute; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); left:4px; content:''; width:24px; height:24px; background-color:var(--Primary-White); border-radius:16px;}
+.toggle-switch [type="checkbox"]::after {position:absolute; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); right:6px; content:'OFF'; width:26px; text-align:center; color:var(--Text-300);}
+.toggle-switch [type="checkbox"]:checked {background-color:var(--Primary-Blue); border-color:var(--Primary-Blue);}
+.toggle-switch [type="checkbox"]:checked::before {left:auto; right:4px;}
+.toggle-switch [type="checkbox"]:checked::after {right:auto; left:6px; content:'ON'; color:var(--Text-White);}
+.toggle-switch [type="checkbox"]:focus-visible {outline-offset:max(2px, 0.1em); outline:max(2px, 0.1em) solid var(--Grayscale-150);}
+.toggle-switch [type="checkbox"] + span {font-size:0; text-indent:-9999px; overflow:hidden;}  
+
 .datePicker_wrap {display:flex; align-items:center; gap:8px;}
 .datePicker_wrap input.datePicker {width:194px; border-color:var(--Primary-Black); background:var(--Primary-White) url(../images_admin/admin_ico_date.svg) center right 16px no-repeat; color:var(--Primary-Black);}
 
