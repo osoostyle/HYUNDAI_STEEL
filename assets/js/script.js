@@ -10,8 +10,9 @@ $(function(){
   });
 
   //검색어
-  $(".oversea-corp").click(function(){
-    $(this).toggleClass("active");
+  $(".gnb>li>a").click(function(){
+    $(".gnb>li").removeClass('active');
+    $(this).parent().toggleClass("active");
   });
   
 
@@ -114,6 +115,34 @@ $(function(){
     $(this).parent().addClass("on");
   });  
 
+  $(".payment_status").on("click",function(){
+    $(".tr_process").hide();
+    $(this).parent().next(".tr_process").slideDown();
+  }); 
+
+  $(".open-list-layer").click(function(e){
+    $(".list-layer").toggle();
+    e.preventDefault(); 
+  }); 
+  $(".btn-close-layer").click(function(){
+    $(".list-layer").hide();
+  }); 
+
+  
+  $(".list-layer li a").on("click",function(e){
+    $(this).addClass("active");
+    e.preventDefault(); 
+  }); 
+  $(".btn-close").on("click",function(){
+    $(this).parent(".list-layer").hide();
+  }); 
+
+  $(".btn-array").click(function(){
+    $(this).toggleClass("active");
+  });
+
+  
+  
 
 });
 

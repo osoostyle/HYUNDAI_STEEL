@@ -208,6 +208,19 @@ input[type="password"]::-ms-clear {
 .btn_f_div1 .btn_f{min-width:65px;padding:0 19px;}
 .btn_f_div2 .btn_f{width:auto}
 
+/* Sub Left Menu */
+.left_menu_cont{border-top:2px solid var(--Secondary-SkyBlue);}
+.left_menu{padding-bottom:16px;}
+.left_menu>li{}
+.left_menu>li>a{display:flex;justify-content:space-between;height:48px;padding:13px 32px 13px 28px;color:var(--Grayscale-700);border-left:4px solid #fff;}
+.left_menu>li.active>a{background-color:#CAF0F84D;border-left:4px solid var(--Primary-Blue);}
+.left_menu>li.active>a p{color:var(--Primary-Blue);font-weight:700;}
+.menu-tag{display:flex;align-items:center;min-width:24px;padding:0 8px;color:#fff;height:21px;background:var(--Secondary-DarkBlue);border-radius:4px;}
+
+.left_menu + .left_title{border-top:2px solid var(--Grayscale-200)}
+
+
+
 /* Breadcrumb */
 .breadcrumb li{font-size:12px;font-weight:400;color:var(--Grayscale-400);line-height:16px;background:url(../images/svg/arr_breadcrumb.svg) no-repeat 0 center;padding-left:28px;display:inline-block;margin-left:7px;}
 .breadcrumb li:first-child{background:none;padding-left:0;margin-left:0;}
@@ -424,6 +437,16 @@ textarea.textarea{width:100%;height:164px;padding:16px;overflow-y:scroll;resize:
 .scrollBar4::-webkit-scrollbar-button{display:none;}
 /* //SC_MGMT_003화면 */
 
+/*Tooltip*/
+.tooltip{display:inline-block;background:#1D4676;border-radius:8px;padding:10px 12px;box-shadow: 0px 2px 8px 0px #00000026;opacity:0.7;position:relative;}
+.tooltip::before{content:'';display:block;background:url(../images/svg/arr_lable_tooltip.svg) no-repeat 0 0;width:14px;height:7px;position:absolute;}
+.tooltip p{color:#fff;text-align:left;}
+
+.tooltip-up-left::before{bottom:-7px;left:10px;transform:rotate(180deg);}
+.tooltip-up-right::before{bottom:-7px;right:10px;transform:rotate(180deg);}
+.tooltip-down-left::before{top:-7px;left:10px;}
+.tooltip-down-right::before{top:-7px;right:10px;}
+
 /** Modal **/
 .modal_wrap{position:fixed;width:100%;height:100%;top:0px;left:0px;z-index:100;display:none;transition:transform .3s ease-out;}
 .modal_wrap.active{display:block;}
@@ -478,6 +501,7 @@ textarea.textarea{width:100%;height:164px;padding:16px;overflow-y:scroll;resize:
 .mt20{margin-top:20px;}
 .mt24{margin-top:24px;}
 
+.ml8{margin-left:8px;}
 .ml10{margin-left:10px;}
 .ml16{margin-left:16px;}
 .ml24{margin-left:24px;}
