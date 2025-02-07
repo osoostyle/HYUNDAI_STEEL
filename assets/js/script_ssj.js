@@ -33,3 +33,26 @@ $(function(){
     $(this).parent('.docuBox_drag').hide();
 	});
 });
+
+
+
+//평가 항목 추가
+$(function(){
+  $(".btn-addeval").click(function() {
+    $('.add_eval_div').removeClass('dimmed');
+	});
+});
+
+$(function(){
+  $(".btn-del").click(function() {
+    $(this).parent().parent().parent('.add_eval_div').addClass('dimmed');
+	});
+});
+
+$(function(){
+  $(".btn-del").click(function() {
+    $(this).parent('.eval_contBox').hide();
+	});
+});
+
+
