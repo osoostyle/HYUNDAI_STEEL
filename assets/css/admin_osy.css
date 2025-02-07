@@ -5,14 +5,9 @@
 /* common */
 .gap_0 {gap:0 !important;}
 .space-between {align-content:space-between;}
+.justify-between {justify-content:space-between;}
 .justify-end {justify-content:flex-end;}
 
-.btn-more {position:relative; min-width:44px;}
-.btn-more span {font-size:0; text-indent:-9999px; overflow:hidden;}
-.btn-more::before,
-.btn-more::after {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); content:''; background-color:var(--Grayscale-500); border-radius:2px;}
-.btn-more::before {width:14px; height:2px;}
-.btn-more::after {width:2px; height:14px;}
 
 .btn-order-wrap {display:inline-flex; justify-content:space-between; align-items:center; gap:10px; padding-left:8px; padding-right:8px; text-align:left;}
 .btn-order-wrap .order-title {width:100px; text-align:center;}
@@ -100,5 +95,13 @@
 .admin_container .wrap_pt40_pb40_gap24 {display:flex; flex-direction:column; gap:24px; padding-top:40px; padding-bottom:40px;}
 .admin_container .search_result_cont td .ctnt_area {display:inline-flex; justify-content:space-between; align-items:center; gap:10px;}
 .admin_container .search_result_cont td .ctnt_area .text {width:80px; text-align:center; word-break:break-all; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; overflow:hidden;}
- 
-
+.admin_container .search_result_cont td .accordion-link::after {display:none;}
+.admin_container .search_result_cont td .accordion-item .btn_accr {position:relative; width:44px; height:44px; border-color:var(--Grayscale-400); border-radius:8px; background:var(--Primary-White) url();}
+.admin_container .search_result_cont td .accordion-item .btn_accr::before,
+.admin_container .search_result_cont td .accordion-item .btn_accr::after {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); content:''; background-color:var(--Grayscale-500); border-radius:2px;}
+.admin_container .search_result_cont td .accordion-item .btn_accr::before {width:14px; height:2px; transition:all .15s ease;}
+.admin_container .search_result_cont td .accordion-item .btn_accr::after {display:block; width:2px; height:14px;}
+.admin_container .search_result_cont td .accordion-item.active .btn_accr {border-color:var(--Grayscale-200);}
+.admin_container .search_result_cont td .accordion-item.active .btn_accr::before {background-color:var(--Grayscale-200);}
+.admin_container .search_result_cont td .accordion-item.active .btn_accr::after {display:none;}
+.admin_container .search_result_cont td .accordion-item .accordion-desc {margin-top:15px; padding:15px;}
