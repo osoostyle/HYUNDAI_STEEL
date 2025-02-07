@@ -3,13 +3,18 @@
 
 
 /* common */
+.mt0 {margin-top:0 !important;}
 .gap10 {gap:10px;}
 .gap16 {gap:16px;}
 .gap24 {gap:24px;}
 .w110px {width:110px !important;}
+.w140px {width:140px !important;}
 .w240px {width:240px !important;}
 .w270px {width:270px !important;}
+.w290px {width:290px !important;}
+.w320px {width:320px !important;}
 .w454px {width:454px !important;}
+.flex-inline {display:inline-flex;}
 .flex-column {flex-direction:column;}
 .justify-start {justify-content:flex-start !important;}
 .justify-end {justify-content:flex-end !important;}
