@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/admin_ssj.css">
+<link rel="stylesheet" href="../assets/css/admin_osy.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+
+    <!-- header -->
+    <header class="admin_header">
+        <h1 class="logo">
+            <span class="logo_img"></span>
+            <span class="logo_text body14B">표준관리시스템 시스템관리</span>
+        </h1>
+        <ul class="gnb">
+            <li><a href="#" class="body16M">표준관리</a></li>
+            <li><a href="#" class="body16M">해외법인 표준관리</a></li>
+            <li><a href="#" class="body16M">경영 매뉴얼</a></li>
+            <li class="active"><a href="#" class="body16M">수급업체 작업표준</a></li>
+            <li><a href="#" class="body16M">이력 조회</a></li>
+            <li><a href="#" class="body16M">시스템 관리</a></li>
+        </ul>
+        <div class="btnzone">
+            <button class="btn btn-logout btn-medium"><span class="body16M">나가기</span><i class="ico-btn ico_arr"></i></button>
+        </div>
+        
+        
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container admin_container">
+        <div class="inner">
+
+            <div class="content_wrap">
+
+                <!-- SNB -->
+                <div class="left_filter_cont">
+                    <ul class="snb">
+                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_4.svg"></div>결재 모니터링</a></li>
+                        <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_6.svg"></div>폐기된 표준</a></li>
+                    </ul>
+                </div>
+                <!-- //SNB -->
+
+
+                <!-- contents -->
+                <div class="content">
+                    <!-- location -->
+                    <ol class="breadcrumb">
+                        <li>경영 매뉴얼</li>
+                        <li class="on">결재 모니터링</li>
+                    </ol>
+
+
+                    <!-- tab menu -->                 
+                    <ul class="tab-link">
+                        <li class="on"><a href="#tab01" class="body14R">제·개정</a></li>
+                        <li><a href="#tab02" class="body14R">유효성 평가</a></li>
+                        <li><a href="#tab03" class="body14R">표준 재분류</a></li>
+                        <li><a href="#tab04" class="body14R">담당 부서 변경</a></li>
+                        <li><a href="#tab05" class="body14R">열람 권한 변경</a></li>
+                        <li><a href="#tab06" class="body14R">폐기 요청</a></li>
+                    </ul>
+                    <!-- //tab menu -->
+                    
+
+                    <!-- 검색 값 -->
+                    <div class="w100 flex justify-between align-between mt50">
+                        <div class="search_cont mt0">
+                            <div class="select_div w240px">
+                                <button class="select_btn">검색 대상</button>
+                                <div class="select_list">
+                                    <ul>
+                                        <li><a href="#">표준명</a></li>
+                                        <li><a href="#">발주/도급부서</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ipt_div w370px">
+                                <input type="text" maxlength="20" placeholder="검색어를 입력해 주세요.">
+                                <button type="reset" class="btn_del_keyword"></button>
+                            </div>
+                            <button class="btn_srch btn btn-medium btn-darkgray"><i class="ico_btn_srch"></i></button>
+                            <button class="btn_srch btn btn-medium btn-darkgray"><i class="ico_btn_refresh"></i></button>
+                        </div>
+
+                        <div class="flex-inline gap10">
+                            <button class="btn btn-gray btn-medium"><span class="body14B">복원</span></button>
+                            <button class="btn btn-gray btn-medium btn_list"><span class="body14B">목록저장</span><i class="ico-btn ico_list"></i></button>
+                        </div>
+                    </div>
+                    <!-- //검색 값 -->
+
+
+                    <!-- 검색 목록 -->
+                    <div class="search_result_cont">
+                        <div class="tbl_cont">
+                            <table class="tbl-st1">
+                                <colgroup>
+                                    <col width="60px">
+                                    
+                                    <col width="90px">
+                                    <col width="80px">
+                                    <col width="*">
+                                    <col width="120px">
+                                    <col width="90px">
+        
+                                    <col width="60px">
+                                    <col width="90px">
+                                    <col width="90px">
+                                    <col width="90px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="all" name="all" class="ipt_chk" title="행 전체 선택">
+                                                <label for="all" class="label_chk"></label>
+                                            </div>
+                                        </th>
+                                        <th><span class="body14M">표준번호</span></th>
+                                        <th><span class="body14M">종류</span></th>
+                                        <th><span class="body14M">표준명</span></th>
+                                        <th>
+                                            <div class="w100 btn-td-wrap">
+                                                <span class="body14M title">발주/도급부서</span>
+                                                <label class="btn-order f-right">
+                                                    <input role="switch" type="checkbox">
+                                                    <span>순서 변경</span>
+                                                </label>
+                                            </div>    
+                                        </th>                                    
+                                        <th><span class="body14M">담당자</span></th>
+                                        <th><span class="body14M">차수</span></th>
+                                        <th><span class="body14M">개정</span></th>
+                                        <th><span class="body14M">개정일</span></th>
+                                        <th><span class="body14M">폐기일</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
+                                                <label for="row1" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">작업표준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">당진 1냉연 2CGL 합금화로 조업기준당진 1냉연 2CGL 합금화로 조업기준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">선행연구팀</td>
+                                        <td class="body14R">조태호 <br>
+                                            매니저</td>
+                                        <td class="body14R">0</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row2" name="row2" class="ipt_chk" title="행 선택">
+                                                <label for="row2" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">작업표준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">당진 1냉연 2CGL 합금화로 조업기준당진 1냉연 2CGL 합금화로 조업기준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">(당)냉연생산<br>
+                                            기술팀</td>
+                                        <td class="body14R">구자철 <br>
+                                            책임매니저</td>
+                                        <td class="body14R">0</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row3" name="row3" class="ipt_chk" title="행 선택">
+                                                <label for="row3" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">기준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">연속소둔 모사장비 운용 작업표준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">선행연구팀</td>
+                                        <td class="body14R">조태호 매니저</td>
+                                        <td class="body14R">2</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row4" name="row4" class="ipt_chk" title="행 선택">
+                                                <label for="row4" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">기준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">당진 1냉연 2CGL 합금화로 조업기준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">(당)냉연생산<br>기술팀</td>
+                                        <td class="body14R">구자철 <br>
+                                            책임매니저</td>
+                                        <td class="body14R">1</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row5" name="row5" class="ipt_chk" title="행 선택">
+                                                <label for="row5" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">작업표준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">연속소둔 모사장비 운용 작업표준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">선행연구팀</td>
+                                        <td class="body14R">조태호 매니저</td>
+                                        <td class="body14R">0</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row6" name="row6" class="ipt_chk" title="행 선택">
+                                                <label for="row6" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">작업표준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">당진 1냉연 2CGL 합금화로 조업기준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">(당)냉연생산<br>기술팀</td>
+                                        <td class="body14R">구자철 <br>책임매니저</td>
+                                        <td class="body14R">0</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row7" name="row7" class="ipt_chk" title="행 선택">
+                                                <label for="row7" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">기준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">연속소둔 모사장비 운용 작업표준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">선행연구팀</td>
+                                        <td class="body14R">조태호 매니저</td>
+                                        <td class="body14R">2</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row8" name="row8" class="ipt_chk" title="행 선택">
+                                                <label for="row8" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">작업표준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">당진 1냉연 2CGL 합금화로 조업기준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">(당)냉연생산<br>기술팀</td>
+                                        <td class="body14R">구자철 <br>책임매니저</td>
+                                        <td class="body14R">0</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row9" name="row9" class="ipt_chk" title="행 선택">
+                                                <label for="row9" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">기준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">연속소둔 모사장비 운용 작업표준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">선행연구팀</td>
+                                        <td class="body14R">조태호 매니저</td>
+                                        <td class="body14R">2</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row10" name="row10" class="ipt_chk" title="행 선택">
+                                                <label for="row10" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">작업표준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">당진 1냉연 2CGL 합금화로 조업기준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">(당)냉연생산<br>기술팀</td>
+                                        <td class="body14R">구자철 <br>책임매니저</td>
+                                        <td class="body14R">0</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="body14R">
+                                            <div class="ipt_chk_div">
+                                                <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
+                                                <label for="row1" class="label_chk"></label>
+                                            </div>
+                                        </td>
+                                        <td class="body14R">EKHG<br>-030803</td>
+                                        <td class="body14R">기준</td>
+                                        <td class="td_left">
+                                            <div class="flex">
+                                                <i class="ico_file ico_pdf"></i>
+                                                <p class="body14R">연속소둔 모사장비 운용 작업표준</p>
+                                            </div>
+                                        </td>
+        
+                                        <td class="body14R">선행연구팀</td>
+                                        <td class="body14R">조태호 매니저</td>
+                                        <td class="body14R">2</td>
+                                        <td class="body14R">2016-05-15</td>
+                                        <td class="body14R">2024-12-31</td>
+                                        <td class="body14R">2024-12-31</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tbl_bottom">
+                            <div class="paging">
+                                <a href="#" class="p_arr p_first disabled"></a>
+                                <a href="#" class="p_arr p_prev disabled"></a>
+                                <a href="javascript:void(0);" class="on"><span>1</span></a>
+                                <a href="#"><span>2</span></a>
+                                <a href="#"><span>3</span></a>
+                                <a href="#"><span>4</span></a>
+                                <a href="#"><span>5</span></a>
+                                <a href="#"><span>6</span></a>
+                                <a href="#"><span>7</span></a>
+                                <a href="#"><span>8</span></a>
+                                <a href="#"><span>9</span></a>
+                                <a href="#"><span>10</span></a>
+                                <a href="#" class="p_arr p_next"></a>
+                                <a href="#" class="p_arr p_last"></a>
+                            </div>
+                            <div class="body14B result_num">1,2324 건</div>
+                        </div>
+                    </div>
+                    <!-- /검색 목록 -->
+
+
+                </div>
+                <!-- //contents -->
+            </div>
+
+        </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_div">
+            <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+            <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+            <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+
+
+</body>
+</html>

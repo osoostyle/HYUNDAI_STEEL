@@ -4,6 +4,7 @@
 
 /* common */
 .mt0 {margin-top:0 !important;}
+.mt50 {margin-top:50px !important;}
 .gap10 {gap:10px;}
 .gap16 {gap:16px;}
 .gap24 {gap:24px;}
@@ -13,6 +14,7 @@
 .w270px {width:270px !important;}
 .w290px {width:290px !important;}
 .w320px {width:320px !important;}
+.w370px {width:370px !important;}
 .w454px {width:454px !important;}
 .flex-inline {display:inline-flex;}
 .flex-column {flex-direction:column;}
@@ -31,22 +33,15 @@
 .btn-order [type="checkbox"]:checked::before {transform:scaleY(-1);}
 .btn-order span {font-size:0; text-indent:-9999px; overflow:hidden;}
 
-.btn-complete {position:relative; width:24px; height:24px;}
-.btn-complete::before {
-    position:absolute; left:0; top:0; width:100%; height:100%;
-    content:'';  background:url(../images_admin/admin_ico-snb1_3.svg) no-repeat; background-color:var(--Primary-White); 
-    -webkit-mask-image: url(../images_admin/admin_ico-snb1_3.svg);
-    -webkit-mask-repeat: no-repeat; 
-    -webkit-mask-position: center center; 
-    -webkit-mask-size: 100%;
-} 
+.btn-complete {position:relative; width:24px; height:24px; overflow:hidden;}
+.btn-complete::before {position:absolute; left:0; top:0; width:100%; height:100%; content:''; background:url(../images_admin/list_add_check.svg) center no-repeat;} 
 .btn-complete span {font-size:0; text-indent:-9999px; overflow:hidden;}
 
 .ipt_rdo_btn_wrap {display:inline-flex;}
 .ipt_rdo_btn_wrap .ipt_rdo_btnst {position:absolute; top:0; left:0; z-index:-1; visibility:hidden; text-indent:-9999px; opacity:0;}
 .ipt_rdo_btn_wrap .label_rdo_btnst {display:inline-flex; justify-content:center; align-items:center; min-width:60px; height:44px; background-color:var(--Grayscale-100); border:1px solid var(--Primary-White); color:var(--Primary-White); border-radius:8px;}
 .ipt_rdo_btn_wrap .label_rdo_btnst span {font-size:var(--f12);}
-.ipt_rdo_btn_wrap .ipt_rdo_btnst.btn-blue:checked ~ .label_rdo_btnst {background-color:var(--Primary-Blue); border-color:var(--Primary-Blue);}
+.ipt_rdo_btn_wrap .ipt_rdo_btnst.btn-primary:checked ~ .label_rdo_btnst {background-color:var(--Primary-Blue); border-color:var(--Primary-Blue);}
 .ipt_rdo_btn_wrap .ipt_rdo_btnst.btn-gray:checked ~ .label_rdo_btnst {background-color:var(--Grayscale-400); border-color:var(--Grayscale-400);}
 
 .toggle-switch {display:inline-flex; justify-content:center; align-items:center; width:64px; height:32px;}
