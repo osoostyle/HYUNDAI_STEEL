@@ -34,7 +34,7 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 .admin_container .left_filter_cont ul li { height: 64px; display: flex; align-items: center; padding: 0 24px; } 
 .admin_container .left_filter_cont ul li a { color: var(--Text-400); flex-grow: 1; display: flex; align-items: center; height: 100%; gap: 16px; } 
 .admin_container .left_filter_cont ul li .ico_snb { background-repeat: no-repeat; background-position: center; width: 24px; height: 24px; display: inline-block; text-align: center; } 
-.admin_container .left_filter_cont ul li .ico_snb img { display: inline-block; vertical-align: middle; filter: invert(58%) sepia(15%) saturate(498%) hue-rotate(188deg) brightness(101%) contrast(87%); } 
+.admin_container .left_filter_cont ul li .ico_snb img { display: inline-block; vertical-align: middle; } 
 .admin_container .left_filter_cont ul li.active { background: rgba(202,240,248,0.3); } 
 .admin_container .left_filter_cont ul li.active a { color: var(--fontColor); } 
 .admin_container .left_filter_cont ul li.active .ico_snb img { filter: invert(12%) sepia(5%) saturate(10%) hue-rotate(15deg) brightness(0%) contrast(70%); } 

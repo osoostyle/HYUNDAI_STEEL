@@ -3,6 +3,7 @@
 
 
 /* common */
+.w240px {width:240px !important;}
 .gap_0 {gap:0 !important;}
 .space-between {align-content:space-between;}
 .justify-between {justify-content:space-between;}
