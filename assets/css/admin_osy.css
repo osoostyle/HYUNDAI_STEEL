@@ -3,16 +3,19 @@
 
 
 /* common */
+.gap10 {gap:10px;}
+.gap16 {gap:16px;}
+.gap24 {gap:24px;}
 .w110px {width:110px !important;}
 .w240px {width:240px !important;}
 .w270px {width:270px !important;}
 .w454px {width:454px !important;}
+.flex-column {flex-direction:column;}
 .justify-start {justify-content:flex-start !important;}
 .justify-end {justify-content:flex-end !important;}
 .justify-between {justify-content:space-between !important;}
 .align-between {align-content:space-between !important;}
 .search_cont .ipt_div input[type='text'] {padding-right:40px;}
-.border-color-400 {border-color:var(--Grayscale-400) !important;}
 .shadow-8 {box-shadow:0 0 8px 0 #0000000A;}
 
 .btn-td-wrap {display:inline-flex; justify-content:space-between; align-items:center; gap:10px; padding-left:8px; padding-right:8px; text-align:left;}
@@ -116,7 +119,7 @@
 .admin_container .srch_wrap .accordion-desc .form-div .btn-line-02 span {color:var(--fontColor);}
 .admin_container .srch_wrap .box-in-form + .srch_filter_btn_div {padding-top:24px; border-top:1px solid var(--Grayscale-300);}
 /* 검색 결과 */
-.admin_container .wrap_pt40_pb40_gap24 {display:flex; flex-direction:column; gap:24px; padding-top:40px; padding-bottom:40px;}
+.wrap_pt40_pb40_gap24 {display:flex; flex-direction:column; gap:24px; padding-top:40px; padding-bottom:40px;}
 .admin_container .search_result_cont td .ctnt_area {display:inline-flex; justify-content:space-between; align-items:center; gap:10px;}
 .admin_container .search_result_cont td .ctnt_area .text {width:80px; text-align:center; word-break:break-all; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; overflow:hidden;}
 .admin_container .search_result_cont td .accordion-link::after {display:none;}
@@ -131,4 +134,7 @@
 .admin_container .search_result_cont td .accordion-item .accordion-desc {margin-top:15px; padding:15px;}
 
 
-/* 유효성 평가표 미리보기 */
+/* 유효성 평가표 */
+table.tbl-st1.border-color-400 {border-color:var(--Grayscale-400) !important;}
+.wrap_p16_rd4 {display:flex; flex-wrap:wrap; width:100%; padding:16px; border-radius:4px;}
+.modal_stitle_line {padding-bottom:12px; border-bottom:1px solid var(--Grayscale-200); box-sizing:border-box;}
