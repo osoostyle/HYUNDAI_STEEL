@@ -257,6 +257,26 @@ function treemap () {
     $(".tree li").mouseleave(function(){
       $(this).removeClass("on");
     })
+
+
+    //tree 우클릭 이벤트
+      $('.tree li>span').contextmenu(function(event) {
+        event.preventDefault();
+        //$(".tree_editPOP").clone().appendTo(".first");
+        //$(".tree_editPOP").addClass("on");
+
+        var $test = $(this);
+        $('.tree_editPOP').insertAfter($test);
+        $(this).next().addClass('on');
+        $(this).parent().addClass('on');
+
+        $(this).append("<i class='arr_downtree'></i>");
+      });
+      
+      $(".tree_editPOP").mouseleave(function(){
+        $(this).removeClass("on");
+        $('.arr_downtree').hide();
+      })
 }
 
 

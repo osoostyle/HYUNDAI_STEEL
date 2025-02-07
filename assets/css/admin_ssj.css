@@ -1,4 +1,4 @@
-@charset "utf-8";/*common*/
+@charset "utf-8"; /*common*/
 .box-round8 { border-radius: 8px; } 
 .vert-top { vertical-align: top; } 
 
@@ -42,7 +42,7 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 /* 왼쪽에 트리가 위치하는 경우의 cont */
 .Wrap_tree_cont { display: flex; height: 100%; gap: 40px; } 
 .Wrap_tree_cont .title { margin-bottom: 10px; } 
-.Wrap_tree_cont .l_Side { display: flex; flex-direction: column; } 
+.Wrap_tree_cont .l_Side { display: flex; flex-direction: column; z-index:1;} 
 .Wrap_tree_cont .l_Side .portlet_edit_left { flex-grow: 1; gap: 10px; display: flex; flex-direction: column; } 
 .Wrap_tree_cont .l_Side .portlet_edit_left .p_edit_tab_wrap { flex-grow: 1; display: flex; } 
 .Wrap_tree_cont .l_Side .portlet_edit_left .p_edit_tab_wrap .p_edit_tab_cont { width: 100%; height: 100%; } 
@@ -92,6 +92,12 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 
 /* treemap */
 .srch_portlet .btn_reset { width: 56px; height: 48px; background: #fff url(../images/svg/ico_reset.svg) no-repeat center center; border-radius: 8px; border: 1px solid var(--Grayscale-400); box-shadow: 0px 0px 8px 0px #0000000A; margin-left: 10px; } 
+
+.tree_editPOP { width: 150px; height: 178px; border-radius: 4px; border: 1px solid #D2D7E5; padding: 2px 0 0; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 999; position: absolute; right: -4px; top:20px; display:none; } 
+.tree_editPOP.on {display:block;}
+.tree_editPOP button { width: 100%; padding: 12px; text-align: left; box-sizing: border-box; } 
+.tree_editPOP button:hover { background:#F4F5F8; } 
+.arr_downtree {width:18px; height:8px; background:url(../images_admin/arr_downtree.svg) no-repeat center center; display:inline-block; vertical-align:middle; margin-left:10px;}
 
 /* admin popup */
 .page-modal .adminPOP_cont + .modal_bottom { padding-bottom: 32px; } 
@@ -150,13 +156,7 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 .add_eval_wrap .add_eval_div .eval_box .eval_cont { padding: 8px 0 0; display: flex; flex-direction: column; gap: 4px; } 
 .add_eval_wrap .add_eval_div .eval_box .eval_cont>li { display: flex; align-items: center; gap: 16px; justify-content: space-between; padding: 8px 16px; } 
 .add_eval_wrap .add_eval_div .eval_box .eval_cont>li .btn_move { width: 40px; height: 40px; border: 1px solid #8E97B4; border-radius: 4px; text-indent: -999px; overflow: hidden; position: relative; } 
-.add_eval_wrap .add_eval_div .eval_box .eval_cont>li .btn_move:before { content: "";  background:url(../images_admin/drag_handle.svg);  background-color: #4F5A7E; 
-    -webkit-mask-image: url(../images_admin/drag_handle.svg);
-    -webkit-mask-repeat: no-repeat; 
-    -webkit-mask-position: center center; 
-    -webkit-mask-size: 16px; 
-    -webkit-mask-size: 16px; 
-    text-indent: 0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; } 
+.add_eval_wrap .add_eval_div .eval_box .eval_cont>li .btn_move:before { content: ""; background:url(../images_admin/drag_handle.svg); background-color: #4F5A7E; -webkit-mask-image: url(../images_admin/drag_handle.svg); -webkit-mask-repeat: no-repeat; -webkit-mask-position: center center; -webkit-mask-size: 16px; -webkit-mask-size: 16px; text-indent: 0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; } 
 .add_eval_wrap .add_eval_div .eval_box .eval_cont>li .ipt_div { display: flex; flex-grow: 1; } 
 .add_eval_wrap .add_eval_div .eval_box .btn_div { justify-content: flex-end; padding: 8px 50px; } 
 
@@ -164,7 +164,7 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 .add_eval_wrap .add_eval_div.dimmed { } 
 .add_eval_wrap .add_eval_div.dimmed .eval_box::before { background: #D2D7E5; } 
 .add_eval_wrap .add_eval_div.dimmed .eval_box .eval_NmBox .btn-del { opacity: 0; } 
-.add_eval_wrap .add_eval_div.dimmed .eval_box .eval_NmBox .ipt_div input:placeholder-shown + .btn_del_keyword {opacity:1;}
+.add_eval_wrap .add_eval_div.dimmed .eval_box .eval_NmBox .ipt_div input:placeholder-shown + .btn_del_keyword { opacity:1; } 
 .add_eval_wrap .add_eval_div.dimmed input[type='text'] { border-color: #EEEFF5; background: #F4F5F8; } 
 .add_eval_wrap .add_eval_div.dimmed .eval_box .eval_cont>li .btn_move { border-color: #D2D7E5; } 
 .add_eval_wrap .add_eval_div.dimmed .eval_box .eval_cont>li .btn_move:before { color: #D2D7E5; background-color: #D2D7E5; } 
