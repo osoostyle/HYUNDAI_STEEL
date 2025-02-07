@@ -1,6 +1,9 @@
-@charset "utf-8"; /*common*/
+@charset "utf-8"; @import url("style_osy.css"); /*common*/
 .box-round8 { border-radius: 8px; } 
 .vert-top { vertical-align: top; } 
+.box-line-bottom { border-bottom:1px solid #D2D7E5; } 
+.hAuto { height:auto !important; } 
+
 
 /** admin HEADER **/
 header.admin_header { width: 100%; background: #222222; height: 80px; padding: 0 40px; display: flex; align-items: center; position: relative; z-index: 30; text-align: center; border-bottom: 1px solid #ECEEF0; box-shadow: 0px 4px 10px 0px #0000001A; min-width: 1440px; box-sizing: border-box; } 
@@ -42,7 +45,7 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 /* 왼쪽에 트리가 위치하는 경우의 cont */
 .Wrap_tree_cont { display: flex; height: 100%; gap: 40px; } 
 .Wrap_tree_cont .title { margin-bottom: 10px; } 
-.Wrap_tree_cont .l_Side { display: flex; flex-direction: column; z-index:1;} 
+.Wrap_tree_cont .l_Side { display: flex; flex-direction: column; z-index:1; } 
 .Wrap_tree_cont .l_Side .portlet_edit_left { flex-grow: 1; gap: 10px; display: flex; flex-direction: column; } 
 .Wrap_tree_cont .l_Side .portlet_edit_left .p_edit_tab_wrap { flex-grow: 1; display: flex; } 
 .Wrap_tree_cont .l_Side .portlet_edit_left .p_edit_tab_wrap .p_edit_tab_cont { width: 100%; height: 100%; } 
@@ -94,10 +97,10 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 .srch_portlet .btn_reset { width: 56px; height: 48px; background: #fff url(../images/svg/ico_reset.svg) no-repeat center center; border-radius: 8px; border: 1px solid var(--Grayscale-400); box-shadow: 0px 0px 8px 0px #0000000A; margin-left: 10px; } 
 
 .tree_editPOP { width: 150px; height: 178px; border-radius: 4px; border: 1px solid #D2D7E5; padding: 2px 0 0; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 999; position: absolute; right: -4px; top:20px; display:none; } 
-.tree_editPOP.on {display:block;}
+.tree_editPOP.on { display:block; } 
 .tree_editPOP button { width: 100%; padding: 12px; text-align: left; box-sizing: border-box; } 
 .tree_editPOP button:hover { background:#F4F5F8; } 
-.arr_downtree {width:18px; height:8px; background:url(../images_admin/arr_downtree.svg) no-repeat center center; display:inline-block; vertical-align:middle; margin-left:10px;}
+.arr_downtree { width:18px; height:8px; background:url(../images_admin/arr_downtree.svg) no-repeat center center; display:inline-block; vertical-align:middle; margin-left:10px; } 
 
 /* admin popup */
 .page-modal .adminPOP_cont + .modal_bottom { padding-bottom: 32px; } 
@@ -171,3 +174,19 @@ footer.footer { width: 100%; height: 66px; text-align: left; background: #fff; b
 .add_eval_wrap .add_eval_div.dimmed .eval_box .eval_cont>li .btn-del { opacity: 0.2; } 
 .add_eval_wrap .add_eval_div.dimmed .eval_box .btn_div .btn-darkgray { background-color: var(--Grayscale-100); border-color: var(--Grayscale-100); cursor: default; } 
 .add_eval_wrap .add_eval_div.dimmed .eval_box .btn_div .btn-darkgray span { color: var(--Grayscale-200); } 
+
+
+/* 복원지점없는 표준문서처리 */
+/* : 라디오 내부의 선택박스 */
+.box-in-form .table .td.w100:only-child .ipt_rdo_wrap:only-child { display: flex; flex-direction: column; gap: 20px; } 
+.box-in-form .table .td.w100:only-child .ipt_rdo_wrap:only-child>div {margin: 0; } 
+
+.ipt_rdo_div>.td.form-div { width: 100%; margin-top: 13px; display: flex; padding: 0 16px 0 32px; } 
+.ipt_rdo_div .td.form-div ul { width: 100%; display: flex; flex-direction: column; gap: 10px; } 
+.ipt_rdo_div .td.form-div ul li { display: flex; align-items: center; } 
+.ipt_rdo_div .td.form-div ul li .th { width: 156px; } 
+.ipt_rdo_div .td.form-div ul li .td { margin-top: 0; flex-grow: 1; } 
+.ipt_rdo_div .td.form-div ul li .td div { display: flex; gap: 10px; } 
+.ipt_rdo_div .td.form-div ul li .td .ipt_div { flex-grow: 1; } 
+.ipt_rdo_div .td.form-div ul li .td .btn-del { } 
+.ipt_rdo_div .td.form-div ul li .td .ipt_div { } 
