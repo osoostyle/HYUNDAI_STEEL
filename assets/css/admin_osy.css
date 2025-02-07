@@ -4,10 +4,13 @@
 
 /* common */
 .w240px {width:240px !important;}
-.gap_0 {gap:0 !important;}
-.space-between {align-content:space-between;}
-.justify-between {justify-content:space-between;}
-.justify-end {justify-content:flex-end;}
+.w270px {width:270px !important;}
+.w454px {width:454px !important;}
+.justify-start {justify-content:flex-start !important;}
+.justify-end {justify-content:flex-end !important;}
+.justify-between {justify-content:space-between !important;}
+.align-between {align-content:space-between !important;}
+.search_cont .ipt_div input[type='text'] {padding-right:40px;}
 
 
 .btn-order-wrap {display:inline-flex; justify-content:space-between; align-items:center; gap:10px; padding-left:8px; padding-right:8px; text-align:left;}
@@ -60,11 +63,11 @@
 .admin_container .search_cont .btn_div {position:initial;}
 /* 결재 단계 */
 .step_wrap {width:100%; padding:40px 32px;} 
-.approval_step {position:relative; display:inline-flex; justify-content:flex-start; gap:46px; max-width:100%;}
+.approval_step {position:relative; display:inline-flex; gap:36.5px;}
 .approval_step::before {position:absolute; left:30px; bottom:26px; z-index:1; content:''; width:calc(100% - 60px); height:2px; border-top:2px dotted var(--Grayscale-300);}
-.approval_step li {display:inline-flex; flex-direction:column; justify-content:center; gap:8px; min-width:84px; padding-left:16px; padding-right:16px;}
-.approval_step li .state {text-align:center;}
-.approval_step li .circle_box {position:relative; z-index:2; display:inline-flex; justify-content:center; align-items:center; min-width:52px; height:52px; padding:0 10px; margin:auto; font-family:'Pretendard'; color:var(--Text-White); letter-spacing:-1px; border-radius:26px; box-sizing:border-box;}
+.approval_step li {display:inline-flex; flex-direction:column; justify-content:flex-end; gap:8px; padding-left:16px; padding-right:16px; box-sizing:border-box;}
+.approval_step li .state {width:100%; text-align:center;}
+.approval_step li .circle_box {position:relative; z-index:2; display:inline-flex; justify-content:center; align-items:center; min-width:52px; height:52px; padding:0 10px; margin:0 auto; font-family:'Pretendard'; color:var(--Text-White); letter-spacing:-1px; border-radius:26px; box-sizing:border-box;}
     .approval_step li.gray-01 .state {color:var(--Text-400);}
     .approval_step li.gray-01 .circle_box {background-color:var(--Grayscale-400);}
     .approval_step li.gray-02 .state {color:var(--Text-500);}
