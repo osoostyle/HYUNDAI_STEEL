@@ -63,50 +63,22 @@
                         <li>표준 관리</li>
                         <li class="on">결재 모니터링</li>
                     </ol>
-                    
-
-                    <!-- tab menu -->                 
-                    <ul class="tab-link">
-                        <li class="on"><a href="#tab01" class="body14R">제·개정</a></li>
-                        <li><a href="#tab02" class="body14R">유효성 평가</a></li>
-                        <li><a href="#tab03" class="body14R">표준 재분류</a></li>
-                        <li><a href="#tab04" class="body14R">담당 부서 변경</a></li>
-                        <li><a href="#tab05" class="body14R">열람 권한 변경</a></li>
-                        <li><a href="#tab06" class="body14R">폐기 요청</a></li>
-                    </ul>
-                    <!-- //tab menu -->
 
 
-                    <!-- 결재 단계 -->
+                    <!-- 결재 단계 - 유효성 평가 -->
                     <div class="step_wrap">
                         <ul class="approval_step justify-start">
                             <li class="gray-01">
-                                <p class="state body16B">작성</p>
+                                <p class="state body16B">평가요청</p>
                                 <p class="circle_box head24B">7</p>
                             </li>
                             <li class="gray-02">
-                                <p class="state body16B">검토</p>
+                                <p class="state body16B">평가</p>
                                 <p class="circle_box head24B">11</p>
                             </li>
-                            <li class="gray-02">
-                                <p class="state body16B">심사</p>
-                                <p class="circle_box head24B">30</p>
-                            </li>
-                            <li class="gray-02">
-                                <p class="state body16B">협조</p>
-                                <p class="circle_box head24B">9</p>
-                            </li>
-                            <li class="gray-03">
-                                <p class="state body16B">승인</p>
-                                <p class="circle_box head24B">8</p>
-                            </li>
                             <li class="gray-04">
-                                <p class="state body16B">최종승인</p>
+                                <p class="state body16B">평가합의</p>
                                 <p class="circle_box head24B">3</p>
-                            </li>
-                            <li class="completion">
-                                <p class="state body16B">완료</p>
-                                <p class="circle_box head24B">9,999</p>
                             </li>
                             <li class="reject">
                                 <p class="state body16B">반려</p>
@@ -114,38 +86,67 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- //결재 단계 -->
+                    <!-- //결재 단계 - 유효성 평가 -->
 
 
-                    <!-- 검색 값 -->
-                    <div class="search_cont">
-                        <div class="select_div w240px">
-                            <button class="select_btn">표준 종류</button>
-                            <div class="select_list">
-                                <ul>
-                                    <li><a href="#">관리표준</a></li>
-                                    <li><a href="#">기술표준</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="select_div w240px">
-                            <button class="select_btn">검색 대상</button>
-                            <div class="select_list">
-                                <ul>
-                                    <li><a href="#">표준명</a></li>
-                                    <li><a href="#">담당 부서</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="ipt_div w270px">
-                            <input type="text" maxlength="20" placeholder="검색어를 입력해 주세요.">
-                            <button type="reset" class="btn_del_keyword"></button>
-                        </div>
-                        <button class="btn_srch btn btn-medium btn-darkgray"><i class="ico_btn_srch"></i></button>
-                        <button class="btn_srch btn btn-medium btn-darkgray"><i class="ico_btn_refresh"></i></button>
-                        <button class="btn btn-gray btn-medium btn_list"><span class="body14B">목록저장</span><i class="ico-btn ico_list"></i></button>
+                    <!-- 결재 단계 - 표준 재분류 -->
+                    <div class="step_wrap">
+                        <ul class="approval_step justify-start">
+                            <li class="gray-01">
+                                <p class="state body16B">승인</p>
+                                <p class="circle_box head24B">7</p>
+                            </li>
+                            <li class="reject">
+                                <p class="state body16B">반려</p>
+                                <p class="circle_box head24B">2</p>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- //검색 값 -->
+                    <!-- //결재 단계 - 표준 재분류 -->
+
+
+                    <!-- 결재 단계 - 담당 부서 변경 -->
+                    <div class="step_wrap">
+                        <ul class="approval_step justify-start">
+                            <li class="gray-01">
+                                <p class="state body16B">승인</p>
+                                <p class="circle_box head24B">7</p>
+                            </li>
+                            <li class="gray-02">
+                                <p class="state body16B">검토</p>
+                                <p class="circle_box head24B">11</p>
+                            </li>
+                            <li class="gray-02">
+                                <p class="state body16B">승인</p>
+                                <p class="circle_box head24B">30</p>
+                            </li>
+                            <li class="reject">
+                                <p class="state body16B">반려</p>
+                                <p class="circle_box head24B">2</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //결재 단계 - 담당 부서 변경 -->
+
+
+                    <!-- 결재 단계 - 열람 권한 요청 / 폐기 요청 -->
+                    <div class="step_wrap">
+                        <ul class="approval_step justify-start">
+                            <li class="gray-02">
+                                <p class="state body16B">검토</p>
+                                <p class="circle_box head24B">11</p>
+                            </li>
+                            <li class="gray-02">
+                                <p class="state body16B">승인</p>
+                                <p class="circle_box head24B">30</p>
+                            </li>
+                            <li class="reject">
+                                <p class="state body16B">반려</p>
+                                <p class="circle_box head24B">2</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //결재 단계 - 열람 권한 요청 / 폐기 요청 -->
 
 
                 </div>
