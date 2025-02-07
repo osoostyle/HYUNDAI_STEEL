@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/admin_ssj.css">
+<link rel="stylesheet" href="../assets/css/admin_osy.css">
+</head>
+
+<body>
+    <div class="main_wrapper">
+
+        <!-- header -->
+        <header class="admin_header">
+            <h1 class="logo">
+                <span class="logo_img"></span>
+                <span class="logo_text body14B">표준관리시스템 시스템관리</span>
+            </h1>
+            <ul class="gnb">
+                <li class="active"><a href="#" class="body16M">표준관리</a></li>
+                <li><a href="#" class="body16M">해외법인 표준관리</a></li>
+                <li><a href="#" class="body16M">경영 매뉴얼</a></li>
+                <li><a href="#" class="body16M">수급업체 작업표준</a></li>
+                <li><a href="#" class="body16M">이력 조회</a></li>
+                <li><a href="#" class="body16M">시스템 관리</a></li>
+            </ul>
+            <div class="btnzone">
+                <button class="btn btn-logout btn-medium"><span class="body16M">나가기</span><i class="ico-btn ico_arr"></i></button>
+            </div>
+            
+            
+        </header>
+        <!--// header -->
+    
+        <!-- container -->
+        <div class="container admin_container">
+            <div class="inner">
+    
+                <div class="content_wrap">
+
+                    <!-- SNB -->
+                    <div class="left_filter_cont">
+                        <ul class="snb">
+                            <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_1.svg"></div>관리표준 분류 체계</a></li>
+                            <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_2.svg"></div>기술표준 분류 체계</a></li>
+                            <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_3.svg"></div>유효성 평가표</a></li>
+                            <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_4.svg"></div>결재 모니터링</a></li>
+                            <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_5.svg"></div>담당 부서 삭제된 표준</a></li>
+                            <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_6.svg"></div>폐기된 표준</a></li>
+                        </ul>
+                    </div>
+                    <!-- //SNB -->
+    
+    
+                    <div class="content">
+                        <ol class="breadcrumb">
+                            <li>표준 관리</li>
+                            <li class="on">관리표준 분류 체계</li>
+                        </ol>
+    
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-- //container -->
+    
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer_div">
+                <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+                <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+                <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+
+<!-- Modal -->
+<div class="modal_wrap active">
+    <div class="modal page-modal">
+        <div class="modal_top">
+            <h1 class="head32B title">유효성 평가표 미리보기</h1>
+        </div>
+
+        <div class="modal_cont setting_standard scrollBar3 adminPOP_cont"> <!-- 관리자페이지 팝업의 경우 adminPOP_cont 클래스가 추가됩니다. -->
+
+            
+            <!-- 유효성 평가표 -->
+            <div class="search_result_cont">
+                <div class="tbl_cont">
+                    <table class="tbl-st1 border-color-400">
+                        <colgroup>
+                            <col width="180px">
+                            <col width="*">
+                            <col width="160px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><span class="body14M">평가 항목</span></th>
+                                <th><span class="body14M">평가 내용</span></th>
+                                <th>
+                                    <div class="w100 btn-td-wrap">
+                                        <span class="body14M title w110px">평가 결과</span>
+                                        <button class="btn-complete">
+                                            <span>전체 처리</span>
+                                        </button>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="body14R">결재/협조정보</td>
+                                <td class="body14R td_left">평가 내용 텍스트 입니다.</td>
+                                <td class="body14R">
+                                    <div class="ipt_rdo_wrap">
+                                        <div class="ipt_rdo_btn_wrap">
+                                            <input type="radio" id="yes1" name="answer1" class="ipt_rdo_btnst btn-blue" checked>
+                                            <label for="yes1" class="label_rdo_btnst"><span>예</span></label>
+                                        </div>
+                                        <div class="ipt_rdo_btn_wrap">
+                                            <input type="radio" id="no1" name="answer1" class="ipt_rdo_btnst btn-gray">
+                                            <label for="no1" class="label_rdo_btnst"><span>아니오</span></label>
+                                        </div>
+                                    </div>
+                                </td>       
+                            </tr>
+                            <tr>
+                                <td class="body14R">표제부</td>
+                                <td class="body14R td_left">평가 내용 텍스트 입니다.</td>
+                                <td class="body14R">
+                                    <div class="ipt_rdo_wrap">
+                                        <div class="ipt_rdo_btn_wrap">
+                                            <input type="radio" id="yes2" name="answer2" class="ipt_rdo_btnst btn-blue">
+                                            <label for="yes2" class="label_rdo_btnst"><span>예</span></label>
+                                        </div>
+                                        <div class="ipt_rdo_btn_wrap">
+                                            <input type="radio" id="no2" name="answer2" class="ipt_rdo_btnst btn-gray" checked>
+                                            <label for="no2" class="label_rdo_btnst"><span>아니오</span></label>
+                                        </div>
+                                    </div>
+                                </td>       
+                            </tr>
+                            <tr>
+                                <td class="body14R">내용</td>
+                                <td class="body14R td_left">평가 내용 텍스트 입니다.</td>
+                                <td class="body14R">
+                                    <div class="ipt_rdo_wrap">
+                                        <div class="ipt_rdo_btn_wrap">
+                                            <input type="radio" id="yes3" name="answer3" class="ipt_rdo_btnst btn-blue" checked>
+                                            <label for="yes3" class="label_rdo_btnst"><span>예</span></label>
+                                        </div>
+                                        <div class="ipt_rdo_btn_wrap">
+                                            <input type="radio" id="no3" name="answer3" class="ipt_rdo_btnst btn-gray">
+                                            <label for="no3" class="label_rdo_btnst"><span>아니오</span></label>
+                                        </div>
+                                    </div>
+                                </td>       
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 유효성 평가표 -->
+
+
+        </div>
+        <div class="modal_bottom">
+            <button class="btn btn-line-01 btn-medium btn_m shadow-8"><span class="body14B">닫기</span></button>
+        </div>
+
+        <button class="btn_close">닫기</button>
+    </div>
+</div>
+<!-- //Modal -->
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script>
+    toggleButton();
+</script>
+</body>
+</html>
