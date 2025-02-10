@@ -20,7 +20,6 @@
 .flex-column {flex-direction:column;}
 .justify-start {justify-content:flex-start !important;}
 .justify-end {justify-content:flex-end !important;}
-.justify-between {justify-content:space-between !important;}
 .align-between {align-content:space-between !important;}
 .search_cont .ipt_div input[type='text'] {padding-right:40px;}
 .shadow-8 {box-shadow:0 0 8px 0 #0000000A;}
