@@ -25,18 +25,6 @@
 .search_cont .ipt_div input[type='text'] {padding-right:40px;}
 .shadow-8 {box-shadow:0 0 8px 0 #0000000A;}
 
-.btn-td-wrap {display:inline-flex; justify-content:space-between; align-items:center; gap:10px; padding-left:8px; padding-right:8px; text-align:left;}
-.btn-td-wrap .title {width:100px; text-align:center;}
-.btn-order {display:inline-flex; align-items:center; width:18px; height:18px;}
-.btn-order [type="checkbox"] {position:relative; appearance:none; width:18px; height:18px; cursor:pointer;}
-.btn-order [type="checkbox"]::before {position:absolute; top:0; left:0; content:''; width:100%; height:100%; background:url(../images_admin/arrow_drop_down.svg) center no-repeat;}
-.btn-order [type="checkbox"]:checked::before {transform:scaleY(-1);}
-.btn-order span {font-size:0; text-indent:-9999px; overflow:hidden;}
-
-.btn-complete {position:relative; width:24px; height:24px; overflow:hidden;}
-.btn-complete::before {position:absolute; left:0; top:0; width:100%; height:100%; content:''; background:url(../images_admin/list_add_check.svg) center no-repeat;} 
-.btn-complete span {font-size:0; text-indent:-9999px; overflow:hidden;}
-
 .ipt_rdo_btn_wrap {display:inline-flex;}
 .ipt_rdo_btn_wrap .ipt_rdo_btnst {position:absolute; top:0; left:0; z-index:-1; visibility:hidden; text-indent:-9999px; opacity:0;}
 .ipt_rdo_btn_wrap .label_rdo_btnst {display:inline-flex; justify-content:center; align-items:center; min-width:60px; height:44px; background-color:var(--Grayscale-100); border:1px solid var(--Primary-White); color:var(--Primary-White); border-radius:8px;}
@@ -56,6 +44,8 @@
 
 .datePicker_wrap {display:flex; align-items:center; gap:8px;}
 .datePicker_wrap input.datePicker {width:194px; border-color:var(--Primary-Black); background:var(--Primary-White) url(../images_admin/admin_ico_date.svg) center right 16px no-repeat; color:var(--Primary-Black);}
+
+
 
 
 
@@ -138,3 +128,17 @@
 table.tbl-st1.border-color-400 {border-color:var(--Grayscale-400) !important;}
 .wrap_p16_rd4 {display:flex; flex-wrap:wrap; width:100%; padding:16px; border-radius:4px;}
 .modal_stitle_line {padding-bottom:12px; border-bottom:1px solid var(--Grayscale-200); box-sizing:border-box;}
+
+
+/* 테이블에 사용된 버튼 */
+.btn-td-wrap {display:inline-flex; justify-content:space-between; align-items:center; gap:10px; padding-left:8px; padding-right:8px; text-align:left;}
+.btn-td-wrap .title {width:100px; text-align:center;}
+.btn-order {display:inline-flex; align-items:center; width:18px; height:18px;}
+.btn-order [type="checkbox"] {position:relative; appearance:none; width:18px; height:18px; cursor:pointer;}
+.btn-order [type="checkbox"]::before {position:absolute; top:0; left:0; content:''; width:100%; height:100%; background:url(../images_admin/arrow_drop_down.svg) center no-repeat;}
+.btn-order [type="checkbox"]:checked::before {transform:scaleY(-1);}
+.btn-order span {font-size:0; text-indent:-9999px; overflow:hidden;}
+
+.btn-complete {position:relative; width:24px; height:24px; overflow:hidden;}
+.btn-complete::before {position:absolute; left:0; top:0; width:100%; height:100%; content:''; background:url(../images_admin/list_add_check.svg) center no-repeat;} 
+.btn-complete span {font-size:0; text-indent:-9999px; overflow:hidden;}

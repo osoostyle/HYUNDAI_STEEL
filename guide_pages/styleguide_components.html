@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
 <title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/admin_osy.css">
 <link rel="stylesheet" href="../assets/css/common.css">
 <link rel="stylesheet" href="../assets/css/style.css">
 <style>
@@ -180,6 +181,12 @@
                                     <input type="checkbox" id="aa5" name="aa5" class="ipt_chk" checked disabled>
                                     <label for="aa5" class="label_chk"><span>Selected disabled</span></label>
                                 </div>
+
+                                <br><br>
+                            <label class="toggle-switch">
+                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                <span>ON/OFF</span>
+                            </label>
                             </div>
                         </div>
                         <div style="min-width:200px;">
@@ -203,6 +210,18 @@
                                 <div class="ipt_rdo_div">
                                     <input type="radio" id="bb4" name="bb" class="ipt_rdo" checked disabled>
                                     <label for="bb4" class="label_rdo"><span>Selected disabled</span></label>
+                                </div>
+
+                                <br><br>
+                                <div class="ipt_rdo_wrap">
+                                    <div class="ipt_rdo_btn_wrap">
+                                        <input type="radio" id="yes1" name="answer1" class="ipt_rdo_btnst btn-primary" checked="">
+                                        <label for="yes1" class="label_rdo_btnst"><span>예</span></label>
+                                    </div>
+                                    <div class="ipt_rdo_btn_wrap">
+                                        <input type="radio" id="no1" name="answer1" class="ipt_rdo_btnst btn-gray">
+                                        <label for="no1" class="label_rdo_btnst"><span>아니오</span></label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -330,6 +349,14 @@
                             <br>
                             <div class="login_ipt_div id_ipt_div">
                                 <input type="text" name="" class="login_id" placeholder="아이디를 입력해 주세요." value="Disabled" disabled>
+                            </div>
+
+                            <br><br>
+                            <h4>Date Picker</h4>
+                            <div class="datePicker_wrap">
+                                <input type="text" class="datePicker" readonly="readonly" name="" dir="" id="" title="시작일" value="2025.01.03">
+                                ~
+                                <input type="text" class="datePicker" readonly="readonly" name="" dir="" id="" title="종료일" value="2025.01.10">
                             </div>
                         </div>  
                     </div>
@@ -469,6 +496,7 @@
                                 <button class="btn btn-primary btn-medium"><span class="body14B">등록</span></button>
                                 <button class="btn btn-gray btn-medium btn_list"><span class="body14B">목록저장</span><i class="ico-btn ico_list"></i></button>
                             </div>
+
                         </div>
                     </div>
 
