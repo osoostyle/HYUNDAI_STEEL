@@ -489,6 +489,7 @@ textarea.textarea{width:100%;height:164px;padding:16px;overflow-y:scroll;resize:
 .flex-column {flex-direction:column;}
 .flex-wrap{flex-wrap:wrap;}
 .items-center{align-items:center;}
+.align_end {align-items:flex-end;}
 .justify-center{justify-content:center;}
 .justify-between {justify-content:space-between;}
 .justify-start {justify-content:flex-start !important;}
@@ -511,6 +512,7 @@ textarea.textarea{width:100%;height:164px;padding:16px;overflow-y:scroll;resize:
 .w110px {width:110px !important;}
 .w140px {width:140px !important;}
 .w240px {width:240px !important;}
+.w248px {width:248px !important;}
 .w270px {width:270px !important;}
 .w290px {width:290px !important;}
 .w320px {width:320px !important;}
@@ -633,6 +635,18 @@ textarea.textarea{width:100%;height:164px;padding:16px;overflow-y:scroll;resize:
 .toggle-switch [type="checkbox"]:checked::after {right:auto; left:6px; content:'ON'; color:var(--Text-White);}
 .toggle-switch [type="checkbox"]:focus-visible {outline-offset:max(2px, 0.1em); outline:max(2px, 0.1em) solid var(--Grayscale-150);}
 .toggle-switch [type="checkbox"] + span {font-size:0; text-indent:-9999px; overflow:hidden;}  
+
+/* toggle-switch2 */
+.toggle-switch2 {display:inline-flex; justify-content:center; align-items:center; width:64px; height:32px;}
+.toggle-switch2 [type="checkbox"] {position:relative;appearance:none;width: 44px;height: 44px;border-radius: 8px;background-color:var(--Grayscale-150);cursor:pointer;box-sizing:border-box;transition:all .15s ease;overflow: hidden;}
+.toggle-switch2 [type="checkbox"]::before {position:absolute;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);left:4px; height:24px; }
+.toggle-switch2 [type="checkbox"]::after {position:absolute;content: 'ON';width: 100%;height: 100%;line-height: 44px;text-align:center;color:var(--Text-300);background: #8E97B4;font-size: 12px;font-weight: 700;color: #fff;}
+.toggle-switch2 [type="checkbox"]:checked {background-color:var(--Primary-Blue); border-color:var(--Primary-Blue);}
+.toggle-switch2 [type="checkbox"]:checked::before {left:auto; right:0;}
+.toggle-switch2 [type="checkbox"]:checked::after {right:auto;left: 0;content:'ON';color:var(--Text-White);background: #2264DC;}
+.toggle-switch2 [type="checkbox"]:disabled::after {content: "OFF";background: #EEEFF5;}
+.toggle-switch2 [type="checkbox"]:focus-visible {outline-offset:max(2px, 0.1em); outline:max(2px, 0.1em) solid var(--Grayscale-150);}
+.toggle-switch2 [type="checkbox"] + span {font-size:0; text-indent:-9999px; overflow:hidden;}  
 
 .datePicker_wrap {display:flex; align-items:center; gap:8px;}
 .datePicker_wrap input.datePicker {width:194px; border-color:var(--Primary-Black); background:var(--Primary-White) url(../images_admin/admin_ico_date.svg) center right 16px no-repeat; color:var(--Primary-Black);}

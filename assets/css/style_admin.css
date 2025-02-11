@@ -123,7 +123,7 @@ table.tbl-st1.border-color-400 {border-color:var(--Grayscale-400) !important;}
 
 /* 테이블에 사용된 버튼 */
 .btn-td-wrap {display:inline-flex; justify-content:space-between; align-items:center; gap:10px; padding-left:8px; padding-right:8px; text-align:left;}
-.btn-td-wrap .title {width:100px; text-align:center;}
+.btn-td-wrap .title {width:100px; text-align:center; margin-bottom:0 !important;}
 .btn-order {display:inline-flex; align-items:center; width:18px; height:18px;}
 .btn-order [type="checkbox"] {position:relative; appearance:none; width:18px; height:18px; cursor:pointer;}
 .btn-order [type="checkbox"]::before {position:absolute; top:0; left:0; content:''; width:100%; height:100%; background:url(../images_admin/arrow_drop_down.svg) center no-repeat;}
@@ -155,6 +155,8 @@ table.tbl-st1.border-color-400 {border-color:var(--Grayscale-400) !important;}
 .Wrap_tree_cont .r_Box .box-white .box-in-form li .th {width:120px; padding:8px 16px;} 
 .Wrap_tree_cont .r_Box .box-white .box-in-form .th p {padding-left:10px;} 
 .Wrap_tree_cont .r_Box .box-white .box-in-form li .td {padding:8px 16px; word-break:break-all;} 
+.Wrap_tree_cont .r_Box .box-white .r-txt-box {padding:16px;}
+.Wrap_tree_cont .r_Box .box-white .r-txt-box .bg-skyblue {padding:20px 16px; word-break:break-all;}
 
 /* 권한관리 */
 .box-white .box-in-form li.pay_detail {display:flex; flex-wrap:wrap; gap:4px; width:calc(100% - 32px) !important; margin:16px !important;} 
@@ -254,3 +256,13 @@ table.tbl-st1.border-color-400 {border-color:var(--Grayscale-400) !important;}
 .ipt_rdo_div .td.form-div ul li .td {margin-top:0; flex-grow:1;} 
 .ipt_rdo_div .td.form-div ul li .td div {display:flex; gap:10px;} 
 .ipt_rdo_div .td.form-div ul li .td .ipt_div {flex-grow:1;} 
+
+
+
+
+.box-transparent {width:100%; background:transparent;}
+.admin_container .tbl-st1 thead th,
+.adminPOP_cont .tbl-st1 thead th {height:56px;}
+
+.box-in-form .table .td .box-in-form {display:flex; width:100%; padding:16px 0;}
+.box-in-form .table .td .box-in-form>li.table {margin-top:0;}
