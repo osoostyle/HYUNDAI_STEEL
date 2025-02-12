@@ -22,7 +22,7 @@
         <ul class="gnb">
             <li><a href="#" class="body16M">표준관리</a></li>
             <li><a href="#" class="body16M">해외법인 표준관리</a></li>
-            <li><a href="#" class="body16M">경영 매뉴얼</a></li>
+            <li ><a href="#" class="body16M">경영 매뉴얼</a></li>
             <li><a href="#" class="body16M">수급업체 작업표준</a></li>
             <li><a href="#" class="body16M">이력 조회</a></li>
             <li class="active"><a href="#" class="body16M">시스템 관리</a></li>
@@ -44,11 +44,10 @@
                 <!-- SNB -->
                 <div class="left_filter_cont">
                     <ul class="snb">
-                        <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_5.svg"></div>부서 및 사용자 관리</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb5_2.svg"></div>시스템 그룹 관리</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb5_3.svg"></div>알림 메일</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb5_4.svg"></div>설정</a></li>
-
+                        <li class="active"><a href="#" class="body16B"><div class="ico_snb admin_menu_team"></div>부서 및 사용자 관리</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_organization"></div>시스템 그룹 관리</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_mail"></div>알림 메일</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_setting"></div>설정</a></li>
                     </ul>
                 </div>
                 <!-- //SNB -->
@@ -453,7 +452,7 @@
                                                     <td class="body14R">-</td>
                                                     <td class="body14R">
                                                         <label class="toggle-switch">
-                                                            <input role="switch" type="checkbox" class="body14R">
+                                                            <input role="switch" name="lock_switch" type="checkbox" class="body14R">
                                                             <span>ON/OFF</span>
                                                         </label>
                                                     </td>
@@ -482,10 +481,7 @@
                                                     <td class="body14R">팀장</td>
                                                     <td class="body14R">-</td>
                                                     <td class="body14R">
-                                                        <label class="toggle-switch">
-                                                            <input role="switch" type="checkbox" class="body14R" checked="">
-                                                            <span>ON/OFF</span>
-                                                        </label>
+
                                                     </td>
                                                     <td class="body14R">
                                                         <label class="toggle-switch2">
@@ -507,10 +503,7 @@
                                                     <td class="body14R">팀장</td>
                                                     <td class="body14R">-</td>
                                                     <td class="body14R">
-                                                        <label class="toggle-switch">
-                                                            <input role="switch" type="checkbox" class="body14R">
-                                                            <span>ON/OFF</span>
-                                                        </label>
+
                                                     </td>
                                                     <td class="body14R">
                                                         <label class="toggle-switch2">
@@ -532,10 +525,7 @@
                                                     <td class="body14R">팀장</td>
                                                     <td class="body14R">-</td>
                                                     <td class="body14R">
-                                                        <label class="toggle-switch">
-                                                            <input role="switch" type="checkbox" class="body14R">
-                                                            <span>ON/OFF</span>
-                                                        </label>
+
                                                     </td>
                                                     <td class="body14R">
                                                         <label class="toggle-switch2">
@@ -557,10 +547,7 @@
                                                     <td class="body14R">팀장</td>
                                                     <td class="body14R">-</td>
                                                     <td class="body14R">
-                                                        <label class="toggle-switch">
-                                                            <input role="switch" type="checkbox" class="body14R">
-                                                            <span>ON/OFF</span>
-                                                        </label>
+
                                                     </td>
                                                     <td class="body14R">
                                                         <label class="toggle-switch2">
@@ -597,10 +584,43 @@
     <!-- //footer -->
 </div>
 
+
+<!-- 잠금 Toast -->
+<div class="toast_message toast_popup bg-status-green" id="toastpopupSuccess">
+    <i class="btn-lock"></i>
+    <p class="body16M fc-100">잠금 처리했습니다.</p>
+</div>
+<!-- 잠금 Toast -->
+
+
+
+
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../assets/js/script.js"></script>
 <script>
     treemap();
+
+    $(document).ready(function(){
+    $("input[name='lock_switch']").change(function(){
+        if($("input[name='lock_switch']").is(":checked")){
+            $('#toastpopupSuccess p').text("잠금 처리했습니다.");
+            $('#toastpopupSuccess').addClass('active');
+            $('.btn-lock').addClass('on');
+            setTimeout(function(){
+                $('#toastpopupSuccess').removeClass('active');
+            },1500);
+
+        }else{
+            $('#toastpopupSuccess').addClass('active');
+            $('#toastpopupSuccess p').text("잠금 해제했습니다.");
+            $('.btn-lock').removeClass('on');
+            setTimeout(function(){
+                $('#toastpopupSuccess').removeClass('active');
+
+            },1500);
+        }
+    });
+});
 </script>
 
 </body>

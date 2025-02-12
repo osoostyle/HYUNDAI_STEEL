@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="title" content="HYUNDAI STEEL 표준관리시스템" />
+<title>HYUNDAI STEEL 표준관리시스템</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/style_admin.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+
+    <!-- header -->
+    <header class="admin_header">
+        <h1 class="logo">
+            <span class="logo_img"></span>
+            <span class="logo_text body14B">표준관리시스템 시스템관리</span>
+        </h1>
+        <ul class="gnb">
+            <li><a href="#" class="body16M">표준관리</a></li>
+            <li><a href="#" class="body16M">해외법인 표준관리</a></li>
+            <li><a href="#" class="body16M">경영 매뉴얼</a></li>
+            <li><a href="#" class="body16M">수급업체 작업표준</a></li>
+            <li><a href="#" class="body16M">이력 조회</a></li>
+            <li class="active"><a href="#" class="body16M">시스템 관리</a></li>
+        </ul>
+        <div class="btnzone">
+            <button class="btn btn-logout btn-medium"><span class="body16M">나가기</span><i class="ico-btn ico_arr"></i></button>
+        </div>
+        
+        
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container admin_container">
+        <div class="inner">
+
+            <div class="content_wrap">
+
+                <!-- SNB -->
+                <div class="left_filter_cont">
+                    <ul class="snb">
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_team"></div>부서 및 사용자 관리</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_organization"></div>시스템 그룹 관리</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_mail"></div>알림 메일</a></li>
+                        <li class="active"><a href="#" class="body16B"><div class="ico_snb admin_menu_setting"></div>설정</a></li>
+                    </ul>
+                </div>
+                <!-- //SNB -->
+
+
+                <div class="content">
+                    <ol class="breadcrumb">
+                        <li>시스템 관리</li>
+                        <li class="on">설정</li>
+                    </ol>
+
+                    <div class="btn_div justify-end">
+                        <button class="btn btn-primary btn-medium"><span class="body14B">부서 등록</span></button>
+                        <button class="btn btn-line-01 btn-medium"><span class="body14B">사용자 등록</span></button>
+                        <button class="btn btn-line-01 btn-medium"><span class="body14B">수정</span></button>
+                        <button class="btn btn-line-01 btn-medium"><span class="body14B">이동</span></button>
+                        <button class="btn btn-line-01 btn-medium"><span class="body14B">삭제</span></button>
+                    </div>
+
+                    <!-- <div class="title">
+                        <div class="txtbox">
+                            <h4 class="head20B">환경/에너지</h4>
+                        </div>
+                    </div>
+                    <div class="box-white">
+                        
+                        <ul class="box-in-form">
+                            <li class="table w100">
+                                <div class="th form-tit tit2">
+                                    <p class="list-dot body14B">표준 번호</p>
+                                </div>
+                                <div class="td form-div">
+                                    <p class="body14R fc-500">관리표준 &gt; 판재사업본부</p>
+                                </div>
+                            </li>
+                            
+                            
+                            
+                            
+                            <li class="table w100">
+                                <div class="th form-tit tit2">
+                                    <p class="list-dot body14B">설명</p>
+                                </div>
+                                <div class="td form-div">
+                                    <p class="body14R fc-500">-</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <div class="accordion accordion_06">
+                        <div class="accordion-item active">
+                            <div class="accordion-link">
+                                <h2 class="title"><span class="head18B">표준관리시스템 공통</span></h2>
+                            </div>
+                            <div class="accordion-desc">
+                                <div class="box-white box-round">
+                                    <ul class="box-in-form">
+                                        <li class="table">
+                                            <div class="th form-tit tit1 w220px">
+                                                <p class="list-dot body16B">업로드 파일</p>
+                                            </div>
+                                            <div class="td form-div">
+                                                <div class="flex flex-wrap items-center body14R">
+                                                    문서에 첨부하는 파일은 최대&nbsp;&nbsp;
+                                                    <div class="ipt_div w100px ">
+                                                        <input type="number" placeholder="" value="15" class="txt-r">
+                                                    </div>
+                                                    &nbsp;개, 파일 하나의 사이즈는&nbsp;&nbsp;
+                                                    <div class="ipt_div w100px">
+                                                        <input type="number" placeholder="" value="15" class="txt-r">
+                                                    </div>
+                                                    &nbsp;MB를 초과할 수 없습니다.
+                                                </div>
+                                                <p class="body14R fc-blue">0인 경우 제한하지 않습니다. 표준 문서는 첨부파일이 해당합니다.</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="table">
+                                            <div class="th form-tit tit1 w220px">
+                                                <p class="list-dot body16B">검토 단계 알림 메일 발송</p>
+                                            </div>
+                                            <div class="td form-div">
+                                                <div class="ipt_chk_div">
+                                                    <input type="checkbox" id="aa1" name="aa1" class="ipt_chk">
+                                                    <label for="aa1" class="label_chk"><span>결재 진행 시 {품질인증표준팀}에게 검토 요청 메일을 발송합니다.</span></label>
+                                                </div>
+                                                <p class="body14R fc-blue mb24">체크를 해제하더라도 {품질인증표준팀}의 검토 단계 결재를 진행합니다. 요청 메일만 발송하지 않습니다.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item active">
+                            <div class="accordion-link">
+                                <h2 class="title"><span class="head18B">표준문서</span></h2>
+                            </div>
+                            <div class="accordion-desc">
+                                <div class="box-white box-round">
+                                    <ul class="box-in-form">
+                                        <li class="table">
+                                            <div class="th form-tit tit1 w220px">
+                                                <p class="list-dot body16B">유효성 평가 알림</p>
+                                            </div>
+                                            <div class="td form-div">
+                                                <div class="flex flex-wrap items-center body14R">
+                                                    문서의 유효 기간이&nbsp;&nbsp;
+                                                    <div class="ipt_div w100px">
+                                                        <input type="number" placeholder="" value="30" class="txt-r">
+                                                    </div>
+                                                    &nbsp;일 남았을 때 표준 목록 및 속성에서 유효 여부를 알려줍니다.
+                                                </div>
+                                                <div class="ipt_chk_div">
+                                                    <input type="checkbox" id="aa1" name="aa1" class="ipt_chk">
+                                                    <label for="aa1" class="label_chk"><span>유효 기간 {알림일} 일 남으면 주 1회 담당자 및 담당 부서 팀장에게 유효성 평가 요청 메일을 발송합니다.</span></label>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="table">
+                                            <div class="th form-tit tit1 w220px">
+                                                <p class="list-dot body16B">일괄 다운로드 파일 보관일</p>
+                                            </div>
+                                            <div class="td form-div">
+                                                <div class="flex flex-wrap items-center body14R">
+                                                    팀 표준에서 일괄 다운로드 요청한 표준 파일은&nbsp;&nbsp;
+                                                    <div class="ipt_div w100px">
+                                                        <input type="number" placeholder="" value="7" class="txt-r">
+                                                    </div>
+                                                    &nbsp;까지 서버에 보관하며,<br>
+                                                    
+                                                </div>
+                                                보관 중에는 팀원은 언제든 다시 다운로드 할 수 있습니다.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item active">
+                            <div class="accordion-link">
+                                <h2 class="title"><span class="head18B">인증 기록 문서</span></h2>
+                            </div>
+                            <div class="accordion-desc">
+                                <div class="box-white box-round">
+                                    <ul class="box-in-form">
+                                        <li class="table">
+                                            <div class="th form-tit tit1 w220px">
+                                                <p class="list-dot body16B">업데이트 예정일 알림</p>
+                                            </div>
+                                            <div class="td form-div">
+                                                <div class="flex flex-wrap items-center body14R">
+                                                    문서의 업데이트 예정일이&nbsp;&nbsp;
+                                                    <div class="ipt_div w100px">
+                                                        <input type="number" placeholder="" value="30" class="txt-r">
+                                                    </div>
+                                                    &nbsp;일 남았을 때 표준 목록 및 속성에서 임박 여부를 알려줍니다.
+                                                </div>
+                                                <div class="ipt_chk_div">
+                                                    <input type="checkbox" id="aa1" name="aa1" class="ipt_chk">
+                                                    <label for="aa1" class="label_chk"><span>예정일이 {알림일} 일 남으면 주 1회 담당자 및 담당 부서 팀장에게 개정 요청 메일을 발송합니다</span></label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_div">
+            <img class="foot_logo" src="../assets/images/svg/logo_footer.svg" alt="HYUNDAI STEEL 로고">
+            <p class="address">경기도 성남시 분당구 분당내곡로 117, 그레이츠 판교 9층 대표전화 : 031-510-2114 / FAX : 031-510-2150</p>
+            <p class="copyright">COPYRIGHT © HYUNDAI STEEL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script>
+    treemap();
+</script>
+
+</body>
+</html>

@@ -356,6 +356,7 @@ table.tbl-p{}
 .tree .bg_hover{display:none;width:268px;height:34px;border-radius:4px;position:absolute;top:-5px;z-index:105;cursor:move;}
 .tree .on>.bg_hover{display:block;background:rgba(202, 240, 248, 0.25);border:1px solid rgba(76, 154, 237, 0.25);}
 .tree .selected>.bg_hover{display:block;background:rgba(202, 240, 248, 0.50);border:1px solid rgba(76, 154, 237, 0.50);}
+
 .tree-toggle-icon{position: relative;z-index:115;display: inline-block;vertical-align: middle;width: 16px;height:16px;background:url(../images/svg/treemap_plus.svg) no-repeat 0 0;margin: 0 6px 0 0;cursor: pointer;}
 .tree-toggle-icon.open{background-image:url(../images/svg/treemap_minus.svg);}
 
@@ -499,15 +500,16 @@ th.th_flex .btn_more_vert{flex-shrink:0;}
 .title span{display:inline-block;vertical-align:middle;}
 .point-dot{display:inline-block;vertical-align:middle;width:6px;height:6px;border-radius:50%;background:var(--Status-Error);margin-left:8px;margin-top:2px;}
 
-.modal.page-modal2{width:1024px;/*max-height:calc(100vh - 136px);*/max-height:calc(100vh - 180px);}
+.modal.page-modal2{width:1024px;/*max-height:calc(100vh - 136px);max-height:calc(100vh - 180px);*/}
 .page-modal2 .modal_cont{padding:32px 4px 32px 24px;}/*scrollBar3가 들어가서 padding값 조정*/
 .page-modal2 .tab-cont.scrollBar3{overflow-y:scroll;height:calc(100vh - 434px);scroll-behavior: smooth;}
 
-.modal.page-modal3{width:1024px;/*max-height:calc(100vh - 136px);*/max-height:calc(100vh - 180px);}
-.page-modal3 .modal_cont{padding:32px 0 0 24px;}/*scrollBar가 들어가서 padding값 조정*/
+.modal.page-modal3{width:1024px;/*max-height:calc(100vh - 136px);max-height:calc(100vh - 180px);*/}
+.page-modal3 .modal_cont{padding:32px 0 0 24px;max-height:calc(100vh - 340px);}/*scrollBar가 들어가서 padding값 조정*/
 .page-modal3 .tab-link{width:976px;}
-.page-modal3 .tab-cont{padding:32px 24px;} 
-.page-modal3 .tab-cont.scrollBar3{overflow-y:scroll;height:calc(100vh - 434px);scroll-behavior: smooth;padding:32px 4px 32px 24px;}
+.page-modal3 .tab-cont{padding:32px 0 0;}
+.page-modal3 .conts{height:calc(100vh - 440px);display:flex;justify-content:space-between;} 
+.page-modal3 .conts.scrollBar3{overflow-y:scroll;height:calc(100vh - 434px);scroll-behavior: smooth;padding:32px 4px 32px 24px;}
 .page-modal3 .modal_bottom{padding-top:24px;}
 
 .go-top{text-align:center;background:var(--Primary-Black);border-radius:4px;box-shadow: 0px 4px 4px 0px #00000040;position:fixed;bottom:0;right:-80px;width:56px;height:56px;padding-top:10px;}
@@ -924,25 +926,26 @@ font-size:12px;text-align:center;}
 .pubilc_view_list .team{color:var(--Secondary-DeepBlue);width:160px;}
 .pubilc_view_list .date{color:var(--Text-400);width:120px;position:absolute;top:10px;right:0;}
 
-/*tree-menu*/
-.tree-menu-wrap{background:#fff;border-radius:8px;height:350px;padding:10px;overflow-y:scroll;overflow-x:auto;margin-top:10px;}
+/** Tree-menu **/
+.tree-menu-wrap{background:#fff;border-radius:8px;height:100%;padding:10px;overflow-y:scroll;overflow-x:auto;margin-top:10px;}
 .tree-menu{position:relative;margin-left:14px;}
-.tree-menu::before {content: '';top:20px; width: 15px;height: calc(100% - 40px);border-left: 1px dashed #bcc2d6;position: absolute;left: 7px;z-index:110;}
+.tree-menu::before {content: '';top:20px; width: 15px;height: calc(100% - 40px);border-left: 1px dashed #bcc2d6;position: absolute;left: 7px;} 
 .tree-menu .first::before{display: none;}
-.tree-menu li{position: relative;}
+.tree-menu li{position:relative;}
 .tree-menu li::before,.tree-menu li::after{content:'';position: absolute;left:7px;z-index:110;}
 .tree-menu li::before{top:3px;width:16px;height: 1em;border-bottom: 1px dashed #bcc2d6;}
 .tree-menu>li::before {display:none;}
-.tree-menu>li:first-child::before{border-left: none;}
-.tree-menu li{}
+.tree-menu>li:first-child::before{border-left:none;}
 .tree-menu li .tree_list{display:inline-block;vertical-align:middle;line-height:16px;position:relative;z-index:110;width:calc(100% - 26px);height:34px;padding:5px 0;white-space:nowrap;}
 .tree-menu li .tree_list>*{display:inline-block;vertical-align:middle;margin-right:7px;position:relative;z-index:120;}
-.tree_list.hover:before,
-.tree_list.checked:before{z-index:115;}
-
+.tree-menu li .tree_list>span{line-height:var(--f-Lh-130);}
+.tree-menu li ul{margin-left:16px;display:none;}
 .tree-menu .no-children .tree_list{margin-left:25px;position:relative;}
-.tree_list.hover:before{content:'';height:34px;position:absolute;left:0;top:0;background:rgba(202, 240, 248, 0.25);border:1px solid rgba(76, 154, 237, 0.25);border-radius:4px;}
-.tree_list.checked:before{content:'';height:34px;position:absolute;left:0;top:0;background:rgba(202, 240, 248, 0.50);border:1px solid rgba(76, 154, 237, 0.50);border-radius:4px;}
+
+.tree_list.hover:before,
+.tree_list.checked:before{z-index:115;content:'';height:34px;position:absolute;left:0;top:0;border-radius:4px;box-shadow: 0px 4px 6px 0px #0000001A;}
+.tree_list.hover:before{background:rgba(202, 240, 248, 0.25);border:1px solid rgba(76, 154, 237, 0.25);}
+.tree_list.checked:before{background:rgba(202, 240, 248, 0.50);border:1px solid rgba(76, 154, 237, 0.50);}
 .tree_list.checked span{font-weight:700;color:var(--Primary-Blue);}
 .depth-1>.tree_list.hover:before,
 .depth-1>.tree_list.checked:before{left:-39px;width:calc(100% + 50px);}
@@ -961,18 +964,16 @@ font-size:12px;text-align:center;}
 .depth-8>.tree_list.hover:before,
 .depth-8>.tree_list.checked:before{left:-151px;width:calc(100% + 162px);}
 
-
-.ico_tree_li{width:24px;height:24px;}
+/* Tree-menu의 아이콘 */
+.ico_tree_li{display:inline-block;width:24px;height:24px;}
 .ico_business{background:url(../images/svg/ico_business.svg) no-repeat center center;}
 .ico_person{background:url(../images/svg/ico_person.svg) no-repeat center center;}
 .ico_team{background:url(../images/svg/ico_team.svg) no-repeat center center;}
-
 .tree_list.checked .ico_business{background:url(../images/svg/ico_business_blue.svg) no-repeat center center;}
 .tree_list.checked .ico_person{background:url(../images/svg/ico_person_blue.svg) no-repeat center center;}
 .tree_list.checked .ico_team{background:url(../images/svg/ico_team_blue.svg) no-repeat center center;}
 
-.tree-menu li.selected>span{color:#2264DC;font-weight:bold;}
-.tree-menu li ul{margin-left:16px;}
+/* Tree-menu의 가로라인 */
 .tree-menu .depth-2::before{left:-8px;z-index:110;width:8px;}
 .tree-menu .depth-3::before{left:-8px;z-index:110;width:12px;}
 .tree-menu .depth-4::before{left:-10px;z-index:110;width:12px;}
@@ -980,41 +981,61 @@ font-size:12px;text-align:center;}
 .tree-menu .depth-6::before{left:-10px;z-index:110;width:12px;}
 .tree-menu .depth-7::before{left:-10px;z-index:110;width:12px;}
 .tree-menu .depth-8::before{left:-10px;z-index:110;width:12px;}
+.tree-menu .no-children::before{width:34px;}/* 하위 메뉴가 없을 때*/
 
+/* Tree-menu의 z-index */
+.tree-menu::before{z-index:115;}
+
+/* Tree-menu의 세로라인 */
+/* Depth1을 제외한 after border-left */
 .tree-menu .has-children:not(.depth-1)::after{content:'';top:17px;width:15px;height:calc(100% - 34px);border-left: 1px dashed #bcc2d6;position: absolute;left:6px;z-index:110;}
-.tree-menu .no-children::before{width:34px}
 
-.tree .bg_hover{display:none;width:268px;height:34px;border-radius:4px;position:absolute;top:-5px;z-index:105;cursor:move;}
-.tree .on>.bg_hover{display:block;background:rgba(202, 240, 248, 0.25);border:1px solid rgba(76, 154, 237, 0.25);}
-.tree .selected>.bg_hover{display:block;background:rgba(202, 240, 248, 0.50);border:1px solid rgba(76, 154, 237, 0.50);}
-.tree-toggle-icon{position: relative;z-index:115;display: inline-block;vertical-align: middle;width: 16px;height:16px;background:url(../images/svg/treemap_plus.svg) no-repeat 0 0;margin: 0 6px 0 0;cursor: pointer;}
-.tree-toggle-icon.open{background-image:url(../images/svg/treemap_minus.svg);}
+/*Last child의 after로 Block을 만들어서 바로 부모의 after라인 가리기*/
+.tree-menu .has-children:last-child::after{border-left:0;border-right: 1px dashed #bcc2d6;left:-12px;width:20px;background:#fff;}
+.tree-menu>li:last-child>ul>li:last-child::after{z-index:115;}
+.tree-menu .has-children.depth-2>ul>li:last-child::after{z-index:120;}
+.tree-menu .has-children.depth-3>ul>li:last-child::after{z-index:125;}
+.tree-menu .has-children.depth-4>ul>li:last-child::after{z-index:130;}
+.tree-menu .has-children.depth-5>ul>li:last-child::after{z-index:135;}
+.tree-menu .has-children.depth-6>ul>li:last-child::after{z-index:140;}
+.tree-menu .has-children.depth-7>ul>li:last-child::after{z-index:145;}
+.tree-menu li .tree_list,.tree_list.hover:before, .tree_list.checked:before{z-index:150!important;}
+.tree-menu .tree-toggle-icon,.tree-menu li .tree_list>*{z-index:160!important;}
 
-.tree-toggle-icon{position: relative;z-index:115;display: inline-block;vertical-align: middle;width: 16px;height:16px;background:url(../images/svg/treemap_plus.svg) no-repeat 0 0;margin: 0 6px 0 0;cursor: pointer;}
-.tree-toggle-icon.open{background-image:url(../images/svg/treemap_minus.svg);}
+.tree-menu .tree-toggle-icon{position: relative;z-index:115;display: inline-block;vertical-align: middle;width: 16px;height:16px;background:url(../images/svg/treemap_plus.svg) no-repeat 0 0;margin: 0 6px 0 0;cursor: pointer;}
+.tree-menu .tree-toggle-icon.open{background-image:url(../images/svg/treemap_minus.svg);} 
 
-.tree-menu .depth-1.on>.bg_hover,
-.tree-menu .depth-1.selected>.bg_hover{left:-15px;width:calc(100% + 20px);}
-.tree-menu .depth-2.on>.bg_hover,
-.tree-menu .depth-2.selected>.bg_hover{left:-31px;width:calc(100% + 36px);}
-.tree-menu .depth-3.on>.bg_hover,
-.tree-menu .depth-3.selected>.bg_hover{left:-47px;width:calc(100% + 52px);}
-.tree-menu .depth-4.on>.bg_hover,
-.tree-menu .depth-4.selected>.bg_hover{left:-63px;width:calc(100% + 68px);}
-.tree-menu .depth-5.on>.bg_hover,
-.tree-menu .depth-5.selected>.bg_hover{left:-79px;width:calc(100% + 84px);}
-.tree-menu .depth-6.on>.bg_hover,
-.tree-menu .depth-6.selected>.bg_hover{left:-95px;width:calc(100% + 100px);}
-.tree-menu .depth-7.on>.bg_hover,
-.tree-menu .depth-7.selected>.bg_hover{left:-111px;width:calc(100% + 116px);}
-.tree-menu .depth-8.on>.bg_hover,
-.tree-menu .depth-8.selected>.bg_hover{left:-127px;width:calc(100% + 132px);}
 
-.pay_left{width:50%;}
+/*결재 정보*/
+.pay_left{width:50%;width:476px;}
 .srch_organ{display:flex;}
 .pay_right{width:50%;margin-left:24px;}
-.organ_tree_menu_cont{width:100%;background:var(--Grayscale-100);border:1px solid var(--Grayscale-300);padding:16px;border-radius:8px;}
+.pay_right .title_div>*{display:inline-block;vertical-align:middle;margin-right:7px;}
+.pay_right .scrollBar3{overflow-y:scroll;height:calc(100% - 39px);}
+.organ_tree_menu_cont{width:100%;background:var(--Grayscale-100);border:1px solid var(--Grayscale-300);padding:16px;border-radius:8px;display:flex;flex-direction:column;height:calc(100% - 39px);}
 
-.pay-list-st>li{margin-bottom:1px;}
-.pay-list-title{background:var(--Grayscale-300);text-align:center;height:52px;color:#fff;display:flex;align-items:center;justify-content:center;}
-.pay-list-cont{background:#fff;border-width:0 1px 1px 1px;border-style:solid;border-color:var(--Grayscale-200);padding:14px 12px;margin-top:1px;} 
+.pay_list_st>li{margin-bottom:1px;}
+.pay_list_title{background:var(--Grayscale-300);text-align:center;height:52px;color:#fff;display:flex;align-items:center;justify-content:center;position:relative;}
+.pay_list_cont{background:#fff;border-width:0 1px 1px 1px;border-style:solid;border-color:var(--Grayscale-200);padding:14px 12px;margin-top:1px;}
+.dept_list{display:flex;align-items:center;gap:10px;}
+.pay_list_cont .dept_list{margin-top:10px;}
+.pay_list_cont .dept_list:first-child{margin-top:0;}
+.dept_list .drag_handle{cursor: all-scroll;}
+.dept_list .drag_handle,
+.dept_list .ico,
+.dept_list .btn-del{flex-shrink:0;}
+.pay_list_title .btn{position:absolute;top:5px;right:8px;padding:0 10px;height:40px;gap:6px;}
+
+.req_app{}
+.req_app.pl{padding-left:28px;}
+.drag_handle{width:18px;height:19px;background:url(../images/svg/drag_handle.svg) no-repeat 0 0;}
+
+.list-box{background:#fff;border:1px solid var(--Grayscale-300);border-radius:8px;padding:8px;overflow-y:scroll;}
+.pay_right .list-box{height:calc(100% - 39px);width:476px;}
+.pay_right .list-box>ul>li{padding:5px 14px;}
+
+/*조직도만 있는 팝업*/
+.modal.organ-modal{width:800px;}
+.organ-modal .modal_cont{display:block;height:calc(100vh - 413px)}
+.organ-modal .modal_cont .conts{height:calc(100vh - 440px);}
+.organ-modal .modal_bottom{padding-top:24px;}

@@ -602,13 +602,27 @@
 
 
 
+<!-- 잠금 Toast -->
+<div class="toast_message toast_popup bg-status-green" id="toastpopupSuccess">
+    <i class="btn-lock on"></i>
+    <p class="body16M fc-100">잠금 해제했습니다.</p>
+</div>
+<!-- 잠금 Toast -->
+
+
+
 
 
 <!-- Modal -->
 <div class="modal_wrap active">
     <div class="modal page-modal">
-        <div class="modal_top">
-            <h1 class="head32B title">사용자 등록</h1>
+        <div class="modal_top flex justify-between items-center">
+            <button class="btn-lock txthide on">잠금</button> <!-- 클릭시 'on'클래스 토글. 잠금/잠금해제 -->
+            <h1 class="head32B title">임진주<span class="head20B ml10">책임매니저</span></h1>
+            <ul class="title-ul-r">
+                <li class="body14R">현대제철 &gt; ... &gt; ... &gt; 품질인증표준팀</li>
+                <li class="body14R"><span class="fc-blue">jinjoo.lim@ hyundai-steel.com</span></li>
+            </ul>
         </div>
 
         <div class="modal_cont setting_standard scrollBar3 adminPOP_cont"> <!-- 관리자페이지 팝업의 경우 adminPOP_cont 클래스가 추가됩니다. -->
@@ -616,152 +630,53 @@
                 <ul class="box-in-form">
                     <li class="table">
                         <div class="th form-tit tit1">
-                            <p class="list-dot body14B">이름 <em class="point">*</em></p>
-                        </div>
-                        <div class="td form-div">
-                            <div class="flex items-center">
-                                <div class="ipt_div w100">
-                                    <input type="text" placeholder="" value="열연 XXX">
-                                    <button type="reset" class="btn_del_keyword"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="table">
-                        <div class="th form-tit tit1">
-                            <p class="list-dot body14B">부서</p>
-                        </div>
-                        <div class="td form-div">
-                            현대제철 > ... > ...> 품질인증표준팀
-                        </div>
-                    </li>
-
-                    <li class="table">
-                        <div class="th form-tit tit1">
-                            <p class="list-dot body14B">직책</p>
-                        </div>
-                        <div class="td form-div">
-                            <div class="select_div" style="width:140px;">
-                                <button class="select_btn">직책</button>
-                                <div class="select_list">
-                                    <ul>
-                                        <li><a href="#">TEXT TEXT1</a></li>
-                                        <li><a href="#">TEXT TEXT2</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="table">
-                        <div class="th form-tit tit1">
-                            <p class="list-dot body14B">이메일 <em class="point">*</em></p>
-                        </div>
-                        <div class="td form-div">
-                            <div class="flex items-center">
-                                <div class="ipt_div w100">
-                                    <input type="text" placeholder="" value="R">
-                                    <button type="reset" class="btn_del_keyword"></button>
-                                </div>
-                            </div>
-                            <p class="summary12R fc-error" style="margin:4px 8px;">올바른 이메일 형식으로 입력해 주십시오.</p>
-                        </div>
-                    </li>
-
-                    <li class="table">
-                        <div class="th form-tit tit1">
-                            <p class="list-dot body14B">잠금 여부</p>
-                        </div>
-                        <div class="td form-div">
-                            <label class="toggle-switch">
-                                <input role="switch" type="checkbox" class="body14R" checked="">
-                                <span>ON/OFF</span>
-                            </label>
-                        </div>
-                    </li>
-
-                    <li class="table">
-                        <div class="th form-tit tit1">
                             <p class="list-dot body14B">대결</p>
                         </div>
                         <div class="td form-div">
                             <ul class="srch_rdo_wrap">
                                 <li class="ipt_rdo_div">
-                                    <input type="radio" id="rdo2" name="rdo_aa" class="ipt_rdo" checked="checked">
+                                    <input type="radio" id="rdo2" name="rdo_aa11" value="설정" class="ipt_rdo" checked="checked">
                                     <label for="rdo2" class="label_rdo"><span>설정</span></label>
                                 </li>
                                 <li class="ipt_rdo_div">
-                                    <input type="radio" id="rdo1" name="rdo_aa" class="ipt_rdo">
+                                    <input type="radio" id="rdo1" name="rdo_aa11" value="해제" class="ipt_rdo">
                                     <label for="rdo1" class="label_rdo"><span>해제</span></label>
                                 </li>
                             </ul>
                             <ul class="box-in-form br-top mt16 flex flex-column gap24 w100">
                                 <li class="table">
                                     <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">부재 사유 <em class="point">*</em></p>
+                                        <p class="list-dot body14B">부재 사유</p>
                                     </div>
                                     <div class="td form-div">
-                                        <ul class="srch_rdo_wrap">
-                                            <li class="ipt_rdo_div">
-                                                <input type="radio" id="rdo200" name="rdo_aa11" class="ipt_rdo" checked="checked">
-                                                <label for="rdo200" class="label_rdo"><span>연차</span></label>
-                                            </li>
-                                            <li class="ipt_rdo_div">
-                                                <input type="radio" id="rdo201" name="rdo_aa11" class="ipt_rdo">
-                                                <label for="rdo201" class="label_rdo"><span>출장</span></label>
-                                            </li>
-                                            <li class="ipt_rdo_div">
-                                                <input type="radio" id="rdo202" name="rdo_aa11" class="ipt_rdo">
-                                                <label for="rdo202" class="label_rdo"><span>휴직</span></label>
-                                            </li>
-                                        </ul>
+                                        출장
                                     </div>
                                 </li>
             
                                 <li class="table">
                                     <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">설명</p>
+                                        <p class="list-dot body14B">부재 메시지</p>
                                     </div>
                                     <div class="td form-div">
-                                        <div class="textarea_div">
-                                            <textarea placeholder="설명을 입력해 주십시오." class="textarea"></textarea>
-                                            <button type="reset" class="btn_del_keyword"></button>
-                                        </div>
-                                        <div class="flex justify-between items-center">
-                                            <p class="body14R fc-400 flex items-center mt10"><img src="../assets/images/svg/ico_info.svg"> <span class="ml8">입력한 메시지는 대결자로 지정한 사용자에게 이메일로 전달됩니다.</span></p>
-                                            <p class="body14R mt10 fc-400 txt-r">2,000</p>
-                                        </div>
+                                        12월 1일부터 15일까지 XXX OOO 차 베트남 다낭으로 출장을 다녀옵니다.
                                     </div>
                                 </li>
 
                                 <li class="table">
                                     <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">대결 기간 <em class="point">*</em></p>
+                                        <p class="list-dot body14B">대결 기간</p>
                                     </div>
                                     <div class="td form-div">
-                                        <div class="datePicker_wrap">
-                                            <input type="text" class="datePicker" readonly="readonly" name="" dir="" id="" title="시작일" value="2025.01.03">
-                                            ~
-                                            <input type="text" class="datePicker" readonly="readonly" name="" dir="" id="" title="종료일" value="2025.01.10">
-                                        </div>
+                                        2025.01.02 ~ 2025.01.16
                                     </div>
                                 </li>
 
                                 <li class="table">
                                     <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">대결자 <em class="point">*</em></p>
+                                        <p class="list-dot body14B">대결자</p>
                                     </div>
                                     <div class="td form-div">
-                                        <div class="select_div" style="width:140px;">
-                                            <button class="select_btn">대결자 선택</button>
-                                            <div class="select_list">
-                                                <ul>
-                                                    <li><a href="#">TEXT TEXT1</a></li>
-                                                    <li><a href="#">TEXT TEXT2</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        손범수 매니저
                                     </div>
                                 </li>
 
@@ -776,8 +691,7 @@
             </div>
         </div>
         <div class="modal_bottom">
-            <button class="btn btn-primary btn-medium btn_m"><span class="body14B">등록</span></button>
-            <button class="btn btn-line-01 btn-medium btn_m"><span class="body14B">취소</span></button>
+            <button class="btn btn-line-01 btn-medium btn_m"><span class="body14B">닫기</span></button>
         </div>
 
         <button class="btn_close">닫기</button>

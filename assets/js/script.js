@@ -366,3 +366,41 @@ $(function(){
 });
 
 
+$(".btn-lock").click(function(){
+  $(this).toggleClass("on");
+  $('#toastpopupSuccess').toggleClass('active');
+  $('#toastpopupSuccess>i').toggleClass('on');
+  $('#toastpopupSuccess p').text("잠금 처리했습니다.");
+  setTimeout(function(){
+      $('#toastpopupSuccess').removeClass('active');
+  },1500);
+});
+
+
+
+
+
+
+
+
+// 사용자 - 속성 조회 팝업 (503)
+$(document).ready(function(){
+
+$("input[name='rdo_aa11']").change(function(){
+
+  $(this).parent().parent().parent().children('.box-in-form').hide();   // 초깃값 설정
+
+  if($("input[name='rdo_aa11']:checked").val() == '설정'){
+    $(this).parent().parent().parent().children('.box-in-form').slideDown();
+  }	
+
+  else if($("input[name='rdo_aa11']:checked").val() == '해제'){
+    $(this).parent().parent().parent().children('.box-in-form').slideUp();
+  }
+});
+  
+});
+
+
+
+

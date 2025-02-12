@@ -44,11 +44,10 @@
                 <!-- SNB -->
                 <div class="left_filter_cont">
                     <ul class="snb">
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_5.svg"></div>부서 및 사용자 관리</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb5_2.svg"></div>시스템 그룹 관리</a></li>
-                        <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb5_3.svg"></div>알림 메일</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb5_4.svg"></div>설정</a></li>
-
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_team"></div>부서 및 사용자 관리</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_organization"></div>시스템 그룹 관리</a></li>
+                        <li class="active"><a href="#" class="body16B"><div class="ico_snb admin_menu_mail"></div>알림 메일</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_setting"></div>설정</a></li>
                     </ul>
                 </div>
                 <!-- //SNB -->
@@ -60,352 +59,152 @@
                         <li class="on">알림 메일</li>
                     </ol>
 
-                    <!-- 왼쪽에 트리가 위치하는 경우의 cont -->
-                    <div class="Wrap_tree_cont">
-                        <div class="l_Side">
-                            <h3 class="title head18B">시스템 그룹</h3>
-                            <!--트리맵-->
-                            <div class="portlet_edit_left">
-                                <div class="p_edit_tab_wrap">
-                                    <div class="p_edit_tab_cont scrollBar2">
-                                        <ul class="tree">
-                                            <li class="first depth-1">
-                                                <span>Depth1 (우클릭해보세요)</span>
-                                                <!-- 트리 설정 다이얼로그가 삽입되는 위치 -->
-                                                <ul>
-                                                    <li class="depth-2">
-                                                        <span>Depth2</span>
-                                                        <ul>
-                                                            <li class="depth-3">
-                                                                <span>Depth3</span>
-                                                                <ul>
-                                                                    <li class="depth-4">
-                                                                        <span>Depth4</span>
-                                                                        <ul>
-                                                                            <li class="depth-5">
-                                                                                <span>Depth5</span>
-                                                                                <ul>
-                                                                                    <li class="depth-6">
-                                                                                        <span>Depth6</span>
-                                                                                        <ul>
-                                                                                            <li class="depth-7">
-                                                                                                <span>Depth7</span>
-                                                                                                <ul>
-                                                                                                    <li class="depth-8">
-                                                                                                        <i class="tree-toggle-icon open"></i><span>Depth8</span>
-                                                                                                    </li>
-                                                                                                    <li class="depth-8">
-                                                                                                        <i class="tree-toggle-icon open"></i><span>Depth8</span>
-                                                                                                    </li>
-                                                                                                </ul>
-                                                                                            </li>
-                                                                                
-                                                                                            <li class="depth-7 no-children">
-                                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                                            </li>
-                                                                                        </ul>
-                                                                                    </li>
-                                                                        
-                                                                                    <li class="depth-6 no-children">
-                                                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                        
-                                                                    <li class="depth-4 no-children">
-                                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                
-                                                            <li class="depth-3 no-children">
-                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                
-                                                    <li class="depth-2">
-                                                        <span>제품개발 규정</span>
-                                                        <ul>
-                                                            <li class="depth-3">
-                                                                <span>TEXT TEXT</span>
-                                                                <ul>
-                                                                    <li class="depth-4">
-                                                                        <span>TEXT TEXT</span>
-                                                                        <ul>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                        
-                                                                    <li class="depth-4 no-children">
-                                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                
-                                                            <li class="depth-3 no-children">
-                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="depth-2">
-                                                        <span>개발지원 규정</span>  
-                                                        <ul>
-                                                            <li class="depth-3">
-                                                                <span>TEXT TEXT</span>
-                                                                <ul>
-                                                                    <li class="depth-4">
-                                                                        <span>TEXT TEXT</span>
-                                                                        <ul>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                        
-                                                                    <li class="depth-4 no-children">
-                                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                
-                                                            <li class="depth-3 no-children">
-                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="depth-2">
-                                                        <span>기타</span>  
-                                                        <ul>
-                                                            <li class="depth-3">
-                                                                <span>TEXT TEXT</span>
-                                                                <ul>
-                                                                    <li class="depth-4">
-                                                                        <span>TEXT TEXT</span>
-                                                                        <ul>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                        
-                                                                    <li class="depth-4 no-children">
-                                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                
-                                                            <li class="depth-3 no-children">
-                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="first depth-1">
-                                                <span>수급업체 작업 표준 접근</span>
-                                                <ul>
-                                                    <li class="depth-2">
-                                                        <span>연구개발기획</span>
-                                                        <ul>
-                                                            <li class="depth-3">
-                                                                <span>TEXT TEXT</span>
-                                                                <ul>
-                                                                    <li class="depth-4">
-                                                                        <span>TEXT TEXT</span>
-                                                                        <ul>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                            <li class="depth-5">
-                                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                        
-                                                                    <li class="depth-4 no-children">
-                                                                        <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                
-                                                            <li class="depth-3 no-children">
-                                                                <i class="tree-toggle-icon open"></i><span>TEXT TEXT</span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                
-                                </div>
-                            </div>
-                            <!--//트리맵-->
+                    <div class="search_result_cont">
+                        <div class="tbl_cont">
+                            <table class="tbl-st1">
+                                <colgroup>
+                                    <col width="718px">
+                                    <col width="160px">
+                                    <col width="160px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <span class="body14M">알림 메일명</span>
+                                            <label class="btn-order f-right">
+                                                <input role="switch" type="checkbox">
+                                                <span>순서 변경</span>
+                                            </label>
+                                        </th>
+                                        <th><span class="body14M">요청 메일</span></th>
+                                        <th><span class="body14M">결과 메일</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            해외법인 표준 제/개정 결재
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            표준 제/개정 결재
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            해외법인 표준 제/개정 결재
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            표준 제/개정 결재
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            해외법인 표준 제/개정 결재
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            표준 제/개정 결재
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R" checked="">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            표준 제/개정 결재
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                        <td class="body14R">
+                                            <label class="toggle-switch">
+                                                <input role="switch" type="checkbox" class="body14R">
+                                                <span>ON/OFF</span>
+                                            </label>
+                                        </td>
+                                    </tr>
 
-
-                            <!-- 트리 설정 팝업 -->
-                            <div class="tree_editPOP scrollBar3">
-                                <button class="body14R">등록</button>
-                                <button class="body14R">수정</button>
-                                <button class="body14R">이동</button>
-                                <button class="body14R">삭제</button>
-                            </div>
-                            <!-- //트리 설정 팝업 -->
-                        </div>
-
-
-                        <div class="r_Box">
-                            <div class="box-white">
-                                <div class="title">
-                                    <div class="txtbox">
-                                        <h4 class="head20B">시스템 관리 그룹</h4>
-                                    </div>
-                                </div>
-                                <div class="r-txt-box">
-                                    <div class="bg-skyblue body14R">
-                                        표준관리시스템 전체 관리 권한을 가집니다.<br>
-                                        결재 프로세스에서 검토를 담당하고 시스템 관리를 통해 각종 문서의 현황과 결재 상태를 관리할 수 있습니다.
-                                    </div>
-                                </div>
-                                <ul class="box-in-form">
-                                    <li class="table w100">
-                                        <div class="th form-tit tit2">
-                                            <p class="list-dot body14B">그룹 인원</p>
-                                        </div>
-                                        <div class="td form-div">
-                                            <p class="body14R fc-500">10명</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="box-transparent mt24">
-                                <div class="w100 flex justify-between items-center">
-                                    <div class="txtbox">
-                                        <h4 class="head20B">사용자 목록</h4>
-                                    </div>
-                                    <div class="flex-inline gap10">
-                                        <button class="btn btn-primary btn-medium"><span class="body14B">부서/사용자 추가</span></button>
-                                        <button class="btn btn-line-01 btn-medium"><span class="body14B">삭제</span></button>
-                                    </div>
-                                </div>
-
-                                <div class="search_result_cont mt24">
-                                    <div class="tbl_cont">
-                                        <table class="tbl-st1">
-                                            <colgroup>
-                                                <col width="60px">
-                                                <col width="205px">
-                                                <col width="205px">
-                                                <col width="205px">
-                                            </colgroup>
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <div class="ipt_chk_div">
-                                                            <input type="checkbox" id="all" name="all" class="ipt_chk" title="행 전체 선택">
-                                                            <label for="all" class="label_chk"></label>
-                                                        </div>
-                                                    </th>
-                                                    <th><span class="body14M">이름</span></th>
-                                                    <th><span class="body14M">그룹</span></th>
-                                                    <th><span class="body14M">하위 인원</span></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="body14R">
-                                                        <div class="ipt_chk_div">
-                                                            <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
-                                                            <label for="row1" class="label_chk"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>품질인증표준팀</td>
-                                                    <td>부서</td>
-                                                    <td>8명명</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="body14R">
-                                                        <div class="ipt_chk_div">
-                                                            <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
-                                                            <label for="row1" class="label_chk"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>품질인증표준팀</td>
-                                                    <td>부서</td>
-                                                    <td>8명명</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="body14R">
-                                                        <div class="ipt_chk_div">
-                                                            <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
-                                                            <label for="row1" class="label_chk"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>품질인증표준팀</td>
-                                                    <td>부서</td>
-                                                    <td>8명명</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="body14R">
-                                                        <div class="ipt_chk_div">
-                                                            <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
-                                                            <label for="row1" class="label_chk"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>품질인증표준팀</td>
-                                                    <td>부서</td>
-                                                    <td>8명명</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="body14R">
-                                                        <div class="ipt_chk_div">
-                                                            <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
-                                                            <label for="row1" class="label_chk"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>품질인증표준팀</td>
-                                                    <td>부서</td>
-                                                    <td>8명명</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="body14R">
-                                                        <div class="ipt_chk_div">
-                                                            <input type="checkbox" id="row1" name="row1" class="ipt_chk" title="행 선택">
-                                                            <label for="row1" class="label_chk"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>품질인증표준팀</td>
-                                                    <td>부서</td>
-                                                    <td>8명명</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <!-- //왼쪽에 트리가 위치하는 경우의 cont -->
-
                 </div>
             </div>
 

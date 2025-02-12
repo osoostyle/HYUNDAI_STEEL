@@ -44,12 +44,12 @@
                 <!-- SNB -->
                 <div class="left_filter_cont">
                     <ul class="snb">
-                        <li class="active"><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_1.svg"></div>관리표준 분류 체계</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_2.svg"></div>기술표준 분류 체계</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_3.svg"></div>유효성 평가표</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_4.svg"></div>결재 모니터링</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_5.svg"></div>담당 부서 삭제된 표준</a></li>
-                        <li><a href="#" class="body16B"><div class="ico_snb"><img src="../assets/images_admin/admin_ico-snb1_6.svg"></div>폐기된 표준</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_book"></div>관리표준 분류 체계</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_verified"></div>기술표준 분류 체계</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_playlistCheck"></div>유효성 평가표</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_stamp"></div>결재 모니터링</a></li>
+                        <li><a href="#" class="body16B"><div class="ico_snb admin_menu_team"></div>담당 부서 삭제된 표준</a></li>
+                        <li class="active"><a href="#" class="body16B"><div class="ico_snb admin_menu_delete"></div>폐기된 표준</a></li>
                     </ul>
                 </div>
                 <!-- //SNB -->
@@ -443,8 +443,29 @@
     <!-- //footer -->
 </div>
 
+
+
+
+    <!-- 복원성공 Toast -->
+    <div class="toast_message toast_popup bg-status-green" id="toastpopupSuccess">
+        <i class="ico_favorite"></i>
+        <p class="body16M fc-100">N(복원한 표준 문서 수) 건의 표준 문서를 복원했습니다.</p>
+    </div>
+    <!-- 복원성공 Toast -->
+
+
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../assets/js/script.js"></script>
+<script>
+$('.btn-primary').on("click",function(){
+    $('#toastpopupSuccess').addClass('active');
+    setTimeout(function(){
+        $('#toastpopupSuccess').removeClass('active');
+        
+    },1500);
+});
+
+</script>
 
 
 </body>
