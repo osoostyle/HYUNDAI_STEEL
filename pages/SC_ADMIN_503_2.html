@@ -20,12 +20,12 @@
                 <span class="logo_text body14B">표준관리시스템 시스템관리</span>
             </h1>
             <ul class="gnb">
-                <li><a href="#" class="body16M">표준관리</a></li>
+                <li class="active"><a href="#" class="body16M">표준관리</a></li>
                 <li><a href="#" class="body16M">해외법인 표준관리</a></li>
                 <li><a href="#" class="body16M">경영 매뉴얼</a></li>
                 <li><a href="#" class="body16M">수급업체 작업표준</a></li>
                 <li><a href="#" class="body16M">이력 조회</a></li>
-                <li class="active"><a href="#" class="body16M">시스템 관리</a></li>
+                <li><a href="#" class="body16M">시스템 관리</a></li>
             </ul>
             <div class="btnzone">
                 <button class="btn btn-logout btn-medium"><span class="body16M">나가기</span><i class="ico-btn ico_arr"></i></button>
@@ -598,17 +598,11 @@
         <!-- //footer -->
     </div>
 
-
-
-
-
-
-
 <!-- Modal -->
 <div class="modal_wrap active">
     <div class="modal page-modal">
         <div class="modal_top">
-            <h1 class="head32B title">사용자 등록</h1>
+            <h1 class="head32B title">부서 등록</h1>
         </div>
 
         <div class="modal_cont setting_standard scrollBar3 adminPOP_cont"> <!-- 관리자페이지 팝업의 경우 adminPOP_cont 클래스가 추가됩니다. -->
@@ -621,8 +615,7 @@
                         <div class="td form-div">
                             <div class="flex items-center">
                                 <div class="ipt_div w100">
-                                    <input type="text" placeholder="" value="열연 XXX">
-                                    <button type="reset" class="btn_del_keyword"></button>
+                                    <input type="text" placeholder="" value="열연 XXXX">
                                 </div>
                             </div>
                         </div>
@@ -630,10 +623,10 @@
 
                     <li class="table">
                         <div class="th form-tit tit1">
-                            <p class="list-dot body14B">부서</p>
+                            <p class="list-dot body14B">부서 경로</p>
                         </div>
                         <div class="td form-div">
-                            <span class="fc-500">현대제철 > ... > ...> 품질인증표준팀</span>
+                            <span class="fc-500">현대제철 &gt; ... &gt; ...&gt; OOO실</span>
                         </div>
                     </li>
 
@@ -656,123 +649,44 @@
 
                     <li class="table">
                         <div class="th form-tit tit1">
-                            <p class="list-dot body14B">이메일 <em class="point">*</em></p>
+                            <p class="list-dot body14B">부서 코드<em class="point">*</em></p>
                         </div>
                         <div class="td form-div">
                             <div class="flex items-center">
                                 <div class="ipt_div w100">
-                                    <input type="text" placeholder="" value="R">
-                                    <button type="reset" class="btn_del_keyword"></button>
+                                    <input type="text" placeholder="" value="000">
                                 </div>
                             </div>
-                            <p class="summary12R fc-error" style="margin:4px 8px;">올바른 이메일 형식으로 입력해 주십시오.</p>
                         </div>
                     </li>
 
                     <li class="table">
-                        <div class="th form-tit tit1">
-                            <p class="list-dot body14B">잠금 여부</p>
+                        <div class="th form-tit tit2">
+                            <p class="list-dot body14B">정렬 순서<em class="point">*</em></p>
                         </div>
                         <div class="td form-div">
-                            <label class="toggle-switch">
-                                <input role="switch" type="checkbox" class="body14R" checked="">
-                                <span>ON/OFF</span>
-                            </label>
+                            <div class="flex items-center">
+                                <div class="ipt_div w100">
+                                    <input type="text" placeholder="" value="000">
+                                </div>
+                            </div>
+                            <p class="summary12R fc-error" style="margin:4px 8px;">숫자만 입력해 주십시오.</em></p>
                         </div>
-                    </li>
+                    </li>  
 
                     <li class="table">
-                        <div class="th form-tit tit1">
-                            <p class="list-dot body14B">대결</p>
+                        <div class="th form-tit tit2">
+                            <p class="list-dot body14B">설명</p>
                         </div>
                         <div class="td form-div">
-                            <ul class="srch_rdo_wrap">
-                                <li class="ipt_rdo_div">
-                                    <input type="radio" id="rdo2" name="rdo_aa" class="ipt_rdo" checked="checked">
-                                    <label for="rdo2" class="label_rdo"><span>설정</span></label>
-                                </li>
-                                <li class="ipt_rdo_div">
-                                    <input type="radio" id="rdo1" name="rdo_aa" class="ipt_rdo">
-                                    <label for="rdo1" class="label_rdo"><span>해제</span></label>
-                                </li>
-                            </ul>
-                            <ul class="box-in-form br-top mt16 flex flex-column gap24 w100">
-                                <li class="table">
-                                    <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">부재 사유 <em class="point">*</em></p>
-                                    </div>
-                                    <div class="td form-div">
-                                        <ul class="srch_rdo_wrap">
-                                            <li class="ipt_rdo_div">
-                                                <input type="radio" id="rdo200" name="rdo_aa11" class="ipt_rdo" checked="checked">
-                                                <label for="rdo200" class="label_rdo"><span>연차</span></label>
-                                            </li>
-                                            <li class="ipt_rdo_div">
-                                                <input type="radio" id="rdo201" name="rdo_aa11" class="ipt_rdo">
-                                                <label for="rdo201" class="label_rdo"><span>출장</span></label>
-                                            </li>
-                                            <li class="ipt_rdo_div">
-                                                <input type="radio" id="rdo202" name="rdo_aa11" class="ipt_rdo">
-                                                <label for="rdo202" class="label_rdo"><span>휴직</span></label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-            
-                                <li class="table">
-                                    <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">설명</p>
-                                    </div>
-                                    <div class="td form-div">
-                                        <div class="textarea_div">
-                                            <textarea placeholder="설명을 입력해 주십시오." class="textarea"></textarea>
-                                            <button type="reset" class="btn_del_keyword"></button>
-                                        </div>
-                                        <div class="flex justify-between items-center">
-                                            <p class="body14R fc-400 flex items-center mt10"><img src="../assets/images/svg/ico_info.svg"> <span class="ml8">입력한 메시지는 대결자로 지정한 사용자에게 이메일로 전달됩니다.</span></p>
-                                            <p class="body14R mt10 fc-400 txt-r">2,000</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="table">
-                                    <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">대결 기간 <em class="point">*</em></p>
-                                    </div>
-                                    <div class="td form-div">
-                                        <div class="datePicker_wrap">
-                                            <input type="text" class="datePicker" readonly="readonly" name="" dir="" id="" title="시작일" value="2025.01.03">
-                                            ~
-                                            <input type="text" class="datePicker" readonly="readonly" name="" dir="" id="" title="종료일" value="2025.01.10">
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="table">
-                                    <div class="th form-tit tit1">
-                                        <p class="list-dot body14B">대결자 <em class="point">*</em></p>
-                                    </div>
-                                    <div class="td form-div">
-                                        <div class="select_div up" style="width:140px;">
-                                            <button class="select_btn">대결자 선택</button>
-                                            <div class="select_list">
-                                                <ul>
-                                                    <li><a href="#">TEXT TEXT1</a></li>
-                                                    <li><a href="#">TEXT TEXT2</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                
-                            </ul>
+                            <div class="textarea_div">
+                                <textarea placeholder="설명을 입력해 주십시오" class="textarea"></textarea>
+                                <button type="reset" class="btn_del_keyword"></button>
+                            </div>
+                            <p class="body14R mt10 fc-400 txt-r">2,000</p>
                         </div>
-                    </li>
-
-
+                    </li>   
                 </ul>
-
             </div>
         </div>
         <div class="modal_bottom">
@@ -787,7 +701,11 @@
 
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../assets/js/script.js"></script>
-
-
+<script>
+    toggleButton();
+</script>
+<script>
+    treemap();
+</script>
 </body>
 </html>

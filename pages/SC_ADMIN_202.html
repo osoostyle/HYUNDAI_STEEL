@@ -448,12 +448,20 @@
     <!-- //footer -->
 </div>
 
-    <!-- 복원성공 Toast -->
+
+
+    <!-- 모든 표준이 복원할 이전 표준 분류가 존재하는 경우 : 복원성공 Toast -->
     <div class="toast_message toast_popup bg-status-green" id="toastpopupSuccess">
-        <i class="ico_favorite"></i>
+        <i class="ico_success"></i>
         <p class="body16M fc-100">N(복원한 표준 문서 수) 건의 표준 문서를 복원했습니다.</p>
     </div>
-    <!-- 복원성공 Toast -->
+
+
+    <!-- 클릭 시 체크한 표준이 없는 경우 : 토스트 메시지 Toast -->
+    <div class="toast_message toast_popup bg-status-yellow" id="toastpopupWarning">
+        <i class="ico_block"></i>
+        <p class="body16M fc-100">표준을 선택해 주십시오.</p>
+    </div>
 
 
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>

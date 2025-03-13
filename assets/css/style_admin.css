@@ -57,7 +57,7 @@ footer.footer {width:100%; height:66px; text-align:left; background:#fff; border
     .ico_snb.admin_menu_history              {background: url(../images_admin/admin_ico-snb4_1.svg);}
     .ico_snb.admin_menu_history:before       {-webkit-mask-image: url(../images_admin/admin_ico-snb4_1.svg);}
     .ico_snb.admin_menu_organization         {background: url(../images_admin/admin_ico-snb5_2.svg); }
-    .ico_snb.admin_menu_organization:before  {-webkit-mask-image: url(../images_admin/admin_ico-snb5_2.svg);}
+    .ico_snb.admin_menu_organization:before  {-webkit-mask-image: url(../images_admin/admin_ico-snb5_2.svg); background-color:transparent;}
     .ico_snb.admin_menu_mail                 {background: url(../images_admin/admin_ico-snb5_3.svg); }
     .ico_snb.admin_menu_mail:before          {-webkit-mask-image: url(../images_admin/admin_ico-snb5_3.svg);}
     .ico_snb.admin_menu_setting              {background: url(../images_admin/admin_ico-snb5_4.svg);}
@@ -128,19 +128,21 @@ footer.footer {width:100%; height:66px; text-align:left; background:#fff; border
 .admin_container .srch_wrap .accordion-desc .form-div .btn-line-02 span {color:var(--fontColor);}
 .admin_container .srch_wrap .box-in-form + .srch_filter_btn_div {padding-top:24px; border-top:1px solid var(--Grayscale-300);}
 /* 검색 결과 */
-.wrap_pt40_pb40_gap24 {display:flex; flex-direction:column; gap:24px; padding-top:40px; padding-bottom:40px;}
-.admin_container .search_result_cont td .ctnt_area {display:inline-flex; justify-content:space-between; align-items:center; gap:10px;}
-.admin_container .search_result_cont td .ctnt_area .text {width:80px; text-align:center; word-break:break-all; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; overflow:hidden;}
-.admin_container .search_result_cont td .accordion-link::after {display:none;}
-.admin_container .search_result_cont td .accordion-item .btn_accr {position:relative; width:44px; height:44px; border-color:var(--Grayscale-400); border-radius:8px; background:var(--Primary-White) url();}
-.admin_container .search_result_cont td .accordion-item .btn_accr::before,
-.admin_container .search_result_cont td .accordion-item .btn_accr::after {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); content:''; background-color:var(--Grayscale-500); border-radius:2px;}
-.admin_container .search_result_cont td .accordion-item .btn_accr::before {width:14px; height:2px; transition:all .15s ease;}
-.admin_container .search_result_cont td .accordion-item .btn_accr::after {display:block; width:2px; height:14px;}
-.admin_container .search_result_cont td .accordion-item.active .btn_accr {border-color:var(--Grayscale-200);}
-.admin_container .search_result_cont td .accordion-item.active .btn_accr::before {background-color:var(--Grayscale-200);}
-.admin_container .search_result_cont td .accordion-item.active .btn_accr::after {display:none;}
-.admin_container .search_result_cont td .accordion-item .accordion-desc {margin-top:15px; padding:15px;}
+.wrap_pt40_pb40_gap24 {display: flex; flex-direction: column; gap: 24px; padding-top: 40px; padding-bottom: 40px;}
+.tbl-st1 .preview_cont {display: flex; align-items: center; gap: 10px;}
+.tbl-st1 .preview_cont .text {display: flex; flex-grow: 1; width: 50%;}
+.tbl-st1 .preview_cont .text span {overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-inline-box;}
+.tbl-st1 .preview_cont .btn_accr {width: 32px; height: 32px; border: none; border-radius: 0; background: url(../images/svg/arr_accordion.svg) no-repeat center; position: relative;}
+.tbl-st1 .preview_cont .btn_accr:hover {cursor: pointer;}
+.tbl-st1 .preview_cont .btn_accr:before {content: ""; width: 100%; height: 100%; position: absolute; left: 0; top: 0; -webkit-mask-image: url(../images/svg/arr_accordion.svg); -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; background-color: #8E97B4; color: #8E97B4;}
+.tbl-st1 .preview_cont .btn_accr.on {transform: rotate(180deg);}
+.tbl-st1 .preview_cont .btn_accr.on:before {background-color: #D2D7E5; color: #D2D7E5;}
+.tbl-st1 .expand_cont {}
+.tbl-st1 .expand_cont td {text-align: left; padding: 12px 24px; background:#fff;}
+.tbl-st1.tbl_bgcolor_2x tr:nth-child(2n).expand_cont td {background:#fff;}
+.tbl-st1.tbl_bgcolor_2x tr:nth-child(4n+3) td,
+.tbl-st1.tbl_bgcolor_2x tr:nth-child(4n+4).expand_cont td {background:#F4F5F8 !important;}
+
 
 
 /* 유효성 평가표 */
@@ -325,10 +327,17 @@ table.tbl-st1.border-color-400 {border-color:var(--Grayscale-400) !important;}
 .btn_copy_file:after {content: ""; -webkit-mask-image: url(../images_admin/ico_copy_file.svg); -webkit-mask-repeat: no-repeat; -webkit-mask-position-x: right; -webkit-mask-size: 18px; text-indent: 0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; color: #1D4676; background-color: #1D4676;}
 .btn_copy_file:hover {cursor:pointer;}
 
-.ipt_pre pre {background: #fff; border: 1px solid var(--Grayscale-300); border-radius: 8px; height: 48px; width: 100%; padding:4px 16px; font-family: inherit; font-size: 14px; color:#4F5A7E;}
-.ipt_pre pre:focus {border-color:var(--Grayscale-600); outline:none;}
+.ipt_pre {background: #fff; border: 1px solid var(--Grayscale-300); border-radius: 8px; height: 48px; width: 100%; font-family: inherit; font-size: 14px; color: #4F5A7E;}
+.ipt_pre>div {width: 100%; height:100%; overflow-y: scroll; background: transparent; box-sizing: border-box;}
+.ipt_pre pre {width: 100%; padding: 4px 16px; font-family: inherit; font-size: 14px; color: #4F5A7E; white-space: pre-wrap; word-wrap: break-word;}
 .ipt_pre pre .var {color:#BCC2D6;}
-
+    .ipt_pre *::-webkit-scrollbar{width:9px;height:9px}
+    .ipt_pre *::-webkit-scrollbar-track {background:transparent;}
+    .ipt_pre *::-webkit-scrollbar-corner {background:transparent;}
+    .ipt_pre *::-webkit-scrollbar-thumb {background:#e3e4e7;border:2px solid transparent; border-radius:8px;cursor:default;} 
+    .ipt_pre *::-webkit-scrollbar-thumb:hover {background:#e3e4e7;border:2px solid transparent; border-radius:8px;cursor:default;}
+    .ipt_pre *::-webkit-scrollbar-thumb:active {background:#e3e4e7;border:2px solid transparent; border-radius:8px;} 
+    .ipt_pre *::-webkit-scrollbar-button {display:none;}
 
 .accordion_06 .accordion-item {margin-bottom: 12px;}
 .accordion_06 .accordion-link {padding-top: 10px; cursor: pointer; margin-bottom: 12px;}

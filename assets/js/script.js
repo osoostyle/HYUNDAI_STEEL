@@ -404,3 +404,31 @@ $("input[name='rdo_aa11']").change(function(){
 
 
 
+$(function(){
+  $(".preview_cont>button").click(function() {
+    $(this).toggleClass("on");
+    $(this).parent().parent().parent().next('.expand_cont').slideToggle();
+	});
+});
+
+
+
+
+
+$(document).ready(function(){
+  $(".toggle-switch2>input").change(function(){
+      if($(".toggle-switch2>input").is(":checked")){
+        $('.sample01').addClass('active');
+        setTimeout(function(){
+            $('.sample01').removeClass('active');
+            
+        },1500);
+      }else{
+        $('.sample00').addClass('active');
+        setTimeout(function(){
+            $('.sample00').removeClass('active');
+            
+        },1500);
+      }
+  });
+});

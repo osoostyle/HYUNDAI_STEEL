@@ -593,6 +593,23 @@
 <!-- 잠금 Toast -->
 
 
+<!-- sample00, sample01 클래스는 토스트메세지 클릭이벤트를 위한 클래스이므로, 개발시에는 없애서 이용하시면됩니다. -->
+<!-- 설정 해제 : 대결자 설정을 해제 Toast -->
+<div class="toast_message toast_popup bg-status-green sample00" id="toastpopupSuccess"> 
+    <i class="ico_success"></i>
+    <p class="body16M fc-100">대결자 설정을 해제했습니다.</p>
+</div>
+
+
+<!-- 대결자 미지정 상태에서 클릭 시  Toast -->
+<div class="toast_message toast_popup bg-status-yellow sample01" id="toastpopupWarning">
+    <i class="ico_block"></i>
+    <p class="body16M fc-100">사용자 속성에서 대결자를 지정해 주십시오.</p>
+</div>
+
+
+
+
 
 
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
@@ -621,6 +638,27 @@
         }
     });
 });
+
+
+
+    $(document).ready(function(){
+    $(".toggle-switch2>input").change(function(){
+        if($(".toggle-switch2>input").is(":checked")){
+            $('.sample01').addClass('active');
+            setTimeout(function(){
+                $('.sample01').removeClass('active');
+                
+            },1500);
+        }else{
+            $('.sample00').addClass('active');
+            setTimeout(function(){
+                $('.sample00').removeClass('active');
+                
+            },1500);
+        }
+    });
+    });
+
 </script>
 
 </body>

@@ -330,7 +330,7 @@
 
                             <!-- 문서 구분 목록 -->
                             <ul class="docu_sort_list mt16">
-                                <li class="docuBox_drag">
+                                <li class="docuBox_drag docuBox_drag_clone">
                                     <i class="ico_file ico_file_etc"></i>
                                     <div class="docuNmBox">
                                         <div class="docuNm body14R">관리계획서
@@ -441,6 +441,20 @@
 
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../assets/js/script.js"></script>
+
+<script>
+
+    $(function() {
+                $(".btn-medium").on("click", function() {
+                    $(".docuBox_drag_clone").clone().appendTo(".docu_sort_list");
+                });
+    });
+    
+    </script>
+        
+</script>
+
+
 
 </body>
 </html>
